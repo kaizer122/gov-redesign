@@ -1,0 +1,1815 @@
+{
+  "meta": {
+    "siteName": "Government Experience Exchange Programme",
+    "shortName": "GEEP",
+    "description": "The Government Experience Exchange Office is a knowledge-sharing platform aiming to transfer the United Arab Emirate’s experience and best practices in the field of government development and modernization to other countries.",
+    "source": "Wayback Machine captures of governmentexchange.gov.ae/en",
+    "capturedAt": "2025-08-10",
+    "logo": "/media/brand/logo-en.png"
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "key": "home"
+    },
+    {
+      "label": "About Us",
+      "key": "about"
+    },
+    {
+      "label": "Best Practices",
+      "key": "best-practices"
+    },
+    {
+      "label": "Areas of Cooperation",
+      "key": "areas"
+    },
+    {
+      "label": "Participating Countries",
+      "key": "countries"
+    },
+    {
+      "label": "Activities",
+      "key": "activities"
+    },
+    {
+      "label": "Media",
+      "key": "media"
+    },
+    {
+      "label": "Contact Us",
+      "key": "contact"
+    }
+  ],
+  "hero": {
+    "title": "Participate with us in the Government Experience Exchange Programme",
+    "subtitle": "Click here to register",
+    "cta": {
+      "label": "Participate With Us Now",
+      "url": "https://platform.uaeglp.gov.ae/Home/SignUp/?langKey=en"
+    },
+    "images": [
+      "/media/quotes/the-late-sheikh-zayed-bin-sultan-al-nahyan.jpg",
+      "/media/quotes/his-highness-sheikh-mohammed-bin-rashid-al-maktoum.jpg",
+      "/media/quotes/his-highness-sheikh-mohamed-bin-zayed-al-nahyan.jpg",
+      "/media/hero/participate.jpg"
+    ]
+  },
+  "quotes": [
+    {
+      "text": "We cannot isolate ourselves from the rest of the world. We befriend in honour, cooperate with dignity, and help without seeking pride.",
+      "author": "The Late Sheikh Zayed bin Sultan Al Nahyan",
+      "image": "/media/quotes/the-late-sheikh-zayed-bin-sultan-al-nahyan.jpg"
+    },
+    {
+      "text": "The governments of the world share our successful experiences to achieve the best of humanity and serve people",
+      "author": "His Highness Sheikh Mohammed bin Rashid Al Maktoum",
+      "role": "Vice President and Prime Minister of the UAE and Ruler of Dubai",
+      "image": "/media/quotes/his-highness-sheikh-mohammed-bin-rashid-al-maktoum.jpg"
+    },
+    {
+      "text": "The UAE is interested in establishing fruitful partnerships with distinct development models.",
+      "author": "His Highness Sheikh Mohamed bin Zayed Al Nahyan",
+      "role": "President of the United Arab Emirates, Ruler of Abu Dhabi",
+      "image": "/media/quotes/his-highness-sheikh-mohamed-bin-zayed-al-nahyan.jpg"
+    }
+  ],
+  "about": {
+    "intro": [
+      "The Government Experience Exchange Office is a knowledge-sharing platform aiming to transfer the United Arab Emirate’s experience and best practices in the field of government development and modernization to other countries.",
+      "Since the programme’s launch, the UAE government has signed agreements with participating countries to build institutional capacities for government development."
+    ],
+    "launched": "The Programme was launched in 2018 by the Prime Minister’s Office at the Ministry of Cabinet Affairs, United Arab Emirates.",
+    "methodology": "The Program knowledge-sharing methodology is based on building partnerships between the UAE government and the governments of participating countries, to exchange the key learnings in areas of cooperation.",
+    "tools": [
+      "Design-thinking workshops",
+      "Virtual & physical sessions",
+      "Field visits",
+      "Capacity Building programmes",
+      "Business models",
+      "White paper & other publications"
+    ],
+    "workflow": [
+      "Agree on the areas of cooperation",
+      "Determine the executive teams",
+      "Sign Memorandum of Understanding",
+      "Develop the action plan",
+      "Periodic meetings and documentation of achievements"
+    ],
+    "slogan": [
+      "Communication",
+      "Exchange",
+      "Development"
+    ]
+  },
+  "stats": {
+    "headline": [
+      {
+        "value": "48+",
+        "label": "Country"
+      },
+      {
+        "value": "65+",
+        "label": "UAE Government Entity"
+      },
+      {
+        "value": "150+",
+        "label": "Expert"
+      },
+      {
+        "value": "34.2+M",
+        "label": "Training Hour"
+      },
+      {
+        "value": "2,500+",
+        "label": "Workshop"
+      },
+      {
+        "value": "10+M",
+        "label": "Trainee"
+      }
+    ],
+    "byNumbers": [
+      {
+        "value": "45",
+        "label": "Countries"
+      },
+      {
+        "value": "65",
+        "label": "Area of cooperation"
+      },
+      {
+        "value": "27,124",
+        "label": "Workshops delivered"
+      },
+      {
+        "value": "31,295,469",
+        "label": "Trainees"
+      }
+    ]
+  },
+  "areas": [
+    {
+      "slug": "government-services",
+      "title": "Government Services",
+      "summary": "The UAE Government aims to reach all customer segments, anytime and anywhere, by providing proactive service initiatives and outstanding, seven-star government services that fulfill customers’ needs, exceed their expectations, and build the capacity of all government services employees in charge of service design and delivery, with world-class skills and experiences as an essential factor to achieve the goals of the UAE Centennial 2071.",
+      "body": [
+        "The UAE Government aims to reach all customer segments, anytime and anywhere, by providing proactive service initiatives and outstanding, seven-star government services that fulfill customers’ needs, exceed their expectations, and build the capacity of all government services employees in charge of service design and delivery, with world-class skills and experiences as an essential factor to achieve the goals of the UAE Centennial 2071. The UAE Government’s leading initiatives in government services, under the umbrella of the Government Experience Exchange Office are represented in two main pillars which are the Capacity building program and Government Mobile Application Award that targets university students to provide creative solutions to improve government services via smartphone applications."
+      ],
+      "image": "/media/areas/government-services.jpg",
+      "logo": "/media/areas/logos/government-services.png"
+    },
+    {
+      "slug": "government-excellence",
+      "title": "Government Excellence",
+      "summary": "The Government Excellence stream aims at transferring the UAE’s experience and best practices in the field of government excellence to other countries by spreading the culture of quality and excellence among government entities’ representatives and developing the excellence model that suites the partner country.",
+      "body": [
+        "The Government Excellence stream aims at transferring the UAE’s experience and best practices in the field of government excellence to other countries by spreading the culture of quality and excellence among government entities’ representatives and developing the excellence model that suites the partner country. Launching official Government Excellence Award and conducting the first cycle of the assessment among the country’s government entities further aims to enhance their performance."
+      ],
+      "image": "/media/areas/government-excellence.jpg",
+      "logo": "/media/areas/logos/government-excellence.png"
+    },
+    {
+      "slug": "government-accelerators",
+      "title": "Government Accelerators",
+      "summary": "The Government Accelerators is a United Arab Emirates Government initiative launched in October 2016.",
+      "body": [
+        "The Government Accelerators is a United Arab Emirates Government initiative launched in October 2016. It serves as a platform for federal and local government entities to address challenges and achieve ambitious goals over short periods of time. It focuses on accelerating the delivery of strategic programs, the development of policies and regulations, and enhancing government services.",
+        "The Government Accelerators initiative aims to re-think how government works by introducing a unique model built on accelerated results, increased collaboration and innovation, by which it emphasizes integration between federal and local government entities, the private sector, academic institutions, and NGOs.",
+        "One of the main pillars of the Government Accelerators methodology is the unique governance model based on the formation of 3 teams (leadership, sponsors, and accelerator team) to ensure the empowerment of the accelerators team and avoid government bureaucracy in decision making."
+      ],
+      "image": "/media/areas/government-accelerators.jpg",
+      "logo": "/media/areas/logos/government-accelerators.png"
+    },
+    {
+      "slug": "government-performance",
+      "title": "Government Performance",
+      "summary": "The Government Performance and National Agenda stream aims to set government performance framework in a way that enables partner country government to enrich its performance management experience, review/develop and refine its national plan (agenda) set out to achieve its future vision, and ensure full and efficient alignment among various government entities and stakeholders.",
+      "body": [
+        "The Government Performance and National Agenda stream aims to set government performance framework in a way that enables partner country government to enrich its performance management experience, review/develop and refine its national plan (agenda) set out to achieve its future vision, and ensure full and efficient alignment among various government entities and stakeholders.",
+        "The stream builds on existing initiatives and proposes ways for improving performance efficiently and effectively (wherever applicable). It further targets setting a developmental roadmap to translate the country’s vision into reality, leveraging a defined set of national priorities and goals, impactful national and strategic KPIs, as well as a defined performance management system."
+      ],
+      "image": "/media/areas/government-performance.jpg",
+      "logo": "/media/areas/logos/government-performance.png"
+    },
+    {
+      "slug": "government-innovation",
+      "title": "Government Innovation",
+      "summary": "The Mohammed Bin Rashid Centre for Government Innovation (MBRCGI) was established to stimulate and enrich the culture of innovation within the government sector through the development of an integrated innovation framework.",
+      "body": [
+        "The Mohammed Bin Rashid Centre for Government Innovation (MBRCGI) was established to stimulate and enrich the culture of innovation within the government sector through the development of an integrated innovation framework. The goal is for innovation to become one of the key pillars of the UAE government in line with the vision of H.H. Sheikh Mohammed Bin Rashid Al Maktoum, Vice President and Prime Minister of the UAE and Ruler of Dubai, which aims to develop government operations and enhance the UAE’s competitiveness, making the UAE one of the most innovative governments worldwide. The Mohammed Bin Rashid Centre for Government Innovation aims to make innovation an everyday practice by experimenting with new approaches, enabling people with the right capabilities, networks and resources, thereby enriching the culture of innovation."
+      ],
+      "image": "/media/areas/government-innovation.jpg",
+      "logo": "/media/areas/logos/government-innovation.png"
+    },
+    {
+      "slug": "competitiveness-and-statistics",
+      "title": "Competitiveness and Statistics",
+      "summary": "The Government Competitiveness stream focuses on global competitiveness reports published by reputable international organizations or academia to cover several sectors such as general competitiveness, entrepreneurship, prosperity, innovation and technology.",
+      "body": [
+        "The Government Competitiveness stream focuses on global competitiveness reports published by reputable international organizations or academia to cover several sectors such as general competitiveness, entrepreneurship, prosperity, innovation and technology.",
+        "It aims to share UAE’s experience in managing and monitoring global competitiveness reports. It also targets establishing strong ties with subject matter experts from different international organizations that publish competitiveness reports, to ensure streamlining the requirements and understanding the reports’ cycle. The Government Competitiveness stream also aims to share the UAE’s best practices in the field of global competitiveness."
+      ],
+      "image": "/media/areas/competitiveness-and-statistics.jpg",
+      "logo": "/media/areas/logos/competitiveness-and-statistics.png"
+    },
+    {
+      "slug": "leadership-and-capacity-building",
+      "title": "Leadership and Capacity Building",
+      "summary": "The Capacity Building program aims at creating change agents within the government to engage with, lead, innovate and reinvigorate their nation’s success.",
+      "body": [
+        "The Capacity Building program aims at creating change agents within the government to engage with, lead, innovate and reinvigorate their nation’s success. The UAE government promotes exchanging experiences and sharing best practices applied within the government. This happens through developing people’s skills and raising their awareness on areas of interest, in line with the government’s needs and priorities. These programs could be delivered in different modes such as trainings, workshops, forums, panel discussions and online courses. Capacity Building programs are dynamic in nature and cater to the needs of governments and different target groups."
+      ],
+      "image": "/media/areas/leadership-and-capacity-building.jpg",
+      "logo": "/media/areas/logos/leadership-and-capacity-building.png"
+    },
+    {
+      "slug": "government-human-resources",
+      "title": "Government Human Resources",
+      "summary": "The government human resources work stream shares the development of human resources in the UAE government through the implementation of novel concepts and the adoption of international standards applied in the field of human resources management globally.",
+      "body": [
+        "The government human resources work stream shares the development of human resources in the UAE government through the implementation of novel concepts and the adoption of international standards applied in the field of human resources management globally. The Government Human Resources aims at setting HR systems, policies and legislation to best manage the human capital in the government sector."
+      ],
+      "image": "/media/areas/government-human-resources.jpg",
+      "logo": "/media/areas/logos/government-human-resources.png"
+    },
+    {
+      "slug": "programming",
+      "title": "Programming",
+      "summary": "In October 2017, His Highness Sheikh Mohammed bin Rashid Al Maktoum launched the One Million Arab Coders, an initiative in collaboration with Dubai Future Foundation.",
+      "body": [
+        "In October 2017, His Highness Sheikh Mohammed bin Rashid Al Maktoum launched the One Million Arab Coders, an initiative in collaboration with Dubai Future Foundation. The aim of the initiative is to empower One Million Arab youth with the language of the future, prepare the next generation of technology experts and create new job opportunities in the region. The platform serves high-quality free online courses and certifications from world leading content providers:",
+        "Udacity and Microsoft. Since its launch, it has received 1 million enrollment applications. Building on the success of this initiative, the initiative has established successful partnerships with different governments as part of the Government Experience Exchange Office."
+      ],
+      "image": "/media/areas/programming.jpg",
+      "logo": "/media/areas/logos/programming.png"
+    },
+    {
+      "slug": "startup-and-entrepreneurship",
+      "title": "Startup and Entrepreneurship",
+      "summary": "AREA 2071 is an innovation ecosystem that brings together talents, government officials, private sector cadres and other great minds to collaborate in designing and testing innovative solutions.",
+      "body": [
+        "AREA 2071 is an innovation ecosystem that brings together talents, government officials, private sector cadres and other great minds to collaborate in designing and testing innovative solutions. Area 2071 creates strategic collaborations, and provides growth opportunities for its members.",
+        "The following programs are offered in Area 2071:",
+        "Dubai Future Accelerators",
+        "Country in Residence",
+        "University Entrepreneurship Program",
+        "Dubai Future Academy"
+      ],
+      "image": "/media/areas/startup-and-entrepreneurship.jpg",
+      "logo": "/media/areas/logos/startup-and-entrepreneurship.png"
+    }
+  ],
+  "countries": [
+    {
+      "id": 193,
+      "name": "Federative Republic of Brazil",
+      "iso": "BR",
+      "description": "The UAE Government has signed strategic partnerships with the Federative Republic of Brazil. The partnership focuses on government accelerators, capacity building, competitiveness, services, programming, economy, and investment.",
+      "workstreams": [
+        "Government Accelerators",
+        "Competitiveness and Statistics",
+        "Programming",
+        "Government Services",
+        "Capacity Building"
+      ],
+      "startYear": "2024",
+      "endYear": "2027",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Workstreams"
+        },
+        {
+          "value": "1,200",
+          "label": "Training hours"
+        },
+        {
+          "value": "175",
+          "label": "Workshops"
+        },
+        {
+          "value": "20",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 194,
+      "name": "Republic of Montenegro",
+      "iso": "ME",
+      "description": "The UAE Government has signed strategic partnerships with the government of Republic of Montenegro.\n\nThis partnership aims to strengthen cooperation across a range of vital areas, including digital transformation, artificial intelligence, sustainable development, business incubators, digital economy, tourism, and capacity building.",
+      "startYear": "2025",
+      "endYear": "2028",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Workstreams"
+        }
+      ]
+    },
+    {
+      "id": 195,
+      "name": "Republic of Indonesia",
+      "iso": "ID",
+      "description": "In 2024, The UAE Government has signed strategic partnerships with the government of Indonesia.The partnership aims to exchange expertise and successful experiences across various fields through the adoption of best government practices.",
+      "startYear": "2024",
+      "endYear": "2027",
+      "stats": [
+        {
+          "value": "460",
+          "label": "Training hours"
+        },
+        {
+          "value": "35",
+          "label": "Workshops"
+        },
+        {
+          "value": "100",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 196,
+      "name": "Republic of Cuba",
+      "iso": "CU",
+      "description": "In 2024, The UAE Government has signed strategic partnerships with the the Republic of Cuba during the World Government Summit, with the aim of strengthening cooperation in the areas of government accelerators, capacity building, and government performance.",
+      "workstreams": [
+        "Government Accelerators",
+        "Government Performance",
+        "Economy",
+        "Government Strategy",
+        "Capacity Building"
+      ],
+      "startYear": "2024",
+      "endYear": "2027",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Workstreams"
+        },
+        {
+          "value": "3,500",
+          "label": "Training hours"
+        },
+        {
+          "value": "500",
+          "label": "Workshops"
+        },
+        {
+          "value": "55",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 197,
+      "name": "Dominican Republic",
+      "iso": "DO",
+      "description": "The UAE and the government of Dominican Republic launched a government partnership aiming at strengthening cooperation in the field of government modernization.The agreement focuses on experience exchange and capacity building to achieve excellence in government performance and innovation in service delivery.",
+      "startYear": "2025",
+      "endYear": "2030",
+      "stats": [
+        {
+          "value": "80",
+          "label": "Training hours"
+        },
+        {
+          "value": "18",
+          "label": "Workshops"
+        },
+        {
+          "value": "5",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "The Arab Republic of Egypt",
+      "iso": "EG",
+      "description": "In February 2018, within the sixth edition of the World Governments Summit, and in the presence of His Highness Sheikh Mohammed Bin Rashid Al Maktoum, UAE Vice President, Prime Minister of the UAE and Ruler of Dubai, a strategic partnership agreement was signed in government modernization between the United Arab Emirates and the Arab Republic of Egypt.\n\nThe strategic partnership aims to exchange governmental experiences between the United Arab Emirates and the Arab Republic of Egypt.",
+      "flag": "/media/flags/eg-the-arab-republic-of-egypt.svg",
+      "workstreams": [
+        "Government Excellence",
+        "Government Accelerators",
+        "Competitiveness and Statistics",
+        "Programming",
+        "Government Capabilities",
+        "Government Services",
+        "Smart Services (Best Mobile Government Award)"
+      ],
+      "startYear": "2018",
+      "endYear": "2027",
+      "stats": [
+        {
+          "value": "6",
+          "label": "Workstreams"
+        },
+        {
+          "value": "546,000",
+          "label": "Training hours"
+        },
+        {
+          "value": "600",
+          "label": "Workshops"
+        },
+        {
+          "value": "29,062",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 149,
+      "name": "Republic of Serbia",
+      "iso": "RS",
+      "description": "His Highness Sheikh Maktoum bin Mohammed bin Rashid Al Maktoum, Deputy Ruler of Dubai, Deputy Prime Minister and Minister of Finance, met with Ana Brnabić, Prime Minister of Serbia, in Dubai.His Highness discussed with the Serbian Prime Minister ways to strengthen bilateral relationships in various fields of mutual interest. His Highness also witnessed the signing of an agreement between the UAE and Serbia to promote knowledge exchange and enhance capacity development and implementation of best practices in each other’s government sectors.\n\nThe agreement between UAE and Serbia follows a series of meetings, summits and visits that fostered knowledge exchange on enhancement of government performance and efficiency with a focus on 13 key pillars. The agreement signed on 12 May 2022 creates a framework for sharing expertise in the areas of Smart Gov. Services, Digital economy, Science and Innovation, Government Capacity-Building, Business Incubators, Creative Industries and Tourism, Education, Coding, AI and Metaverse, Media, Competitiveness, Expo 2020 and Gov. Accelerator.",
+      "workstreams": [
+        "Government Accelerators",
+        "Competitiveness and Statistics",
+        "Programming",
+        "Business Incubators",
+        "Education",
+        "Media & Mass Communication",
+        "Government Services",
+        "Capacity Building",
+        "Digital Economy",
+        "Science and Innovation",
+        "Creative Industries",
+        "Expo2020",
+        "AI and Metaverse"
+      ],
+      "startYear": "2022",
+      "endYear": "2025",
+      "stats": [
+        {
+          "value": "13",
+          "label": "Workstreams"
+        },
+        {
+          "value": "6,565",
+          "label": "Training hours"
+        },
+        {
+          "value": "280",
+          "label": "Workshops"
+        },
+        {
+          "value": "2,783",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Hashemite Kingdom of Jordan",
+      "iso": "JO",
+      "description": "In June 2018, during the visit of a delegation from the United Arab Emirates, headed by His Excellency Mohammed Al Gergawi, Minister of Cabinet Affairs of the United Arab Emirates, to Jordan, a Memorandum of Understanding was signed between the two governments in the strategic partnership in developing government performance as well as forming a joint technical committee of the memorandum of understanding and ensuring its effective implementation, and to form working groups and experts, in support of various initiatives and joint projects.\n\nThe agreement between the two countries included various strategic initiatives and areas of cooperation that would enhance the partnership between the two governments, and contribute to modernizing government performance in the Hashemite Kingdom of Jordan, thus contributing to the development of government performance and upgrading the governmental work system in the public sector.\n\nThe areas of cooperation include developing government services, smart services, government performance, innovation and excellence, building and developing leaders and capabilities of government officials and enhancing competencies, as well as transferring knowledge, and benefiting from mutual experiences in common areas of government work.",
+      "flag": "/media/flags/jo-hashemite-kingdom-of-jordan.svg",
+      "workstreams": [
+        "Government Services",
+        "Government Accelerators",
+        "Government Performance",
+        "Government Innovation",
+        "Government Capabilities",
+        "Smart Services",
+        "Future Foresight",
+        "Business Incubators",
+        "Programming (1M Jordanian Coders)"
+      ],
+      "startYear": "2018",
+      "endYear": "2024",
+      "stats": [
+        {
+          "value": "9",
+          "label": "Workstreams"
+        },
+        {
+          "value": "2,519,761",
+          "label": "Training hours"
+        },
+        {
+          "value": "436",
+          "label": "Workshops"
+        },
+        {
+          "value": "242,062",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Republic of Uzbekistan",
+      "iso": "UZ",
+      "description": "On March 26, 2019, His Excellency Shavkat Mirziyoyev, President of the Republic of Uzbekistan held a fruitful meeting with His Highness Sheikh Mohammed bin Rashid Al Maktoum and His Highness Sheikh Mohammed bin Zayed Al Nahyan. Two weeks later, on April 10, UAE delegation visited the Uzbek capital of Tashkent in The visit culminated in the signing of a partnership agreement to modernize government work between the two countries on April 11. And in May 5 UAE welcomed high-level Uzbek delegation to translate this agreement into reality through launching many joint initiatives.\n\nThe Strategic Partnership in Government Experience Exchange aims to enhance cooperation and exchange experiences and knowledge in various fields, including smart government services, strategy and the national agenda, government accelerators, and many others.",
+      "workstreams": [
+        "Government Services",
+        "Government Accelerators",
+        "Government Performance",
+        "Competitiveness and Statistics",
+        "Government Capabilities",
+        "Government Quality",
+        "Smart Services",
+        "Future Foresight",
+        "Business Incubators",
+        "TAXs Administration",
+        "Smart Safe City",
+        "Doing Business",
+        "Civil Services",
+        "Financial Matters",
+        "Airports Management & Free Zones",
+        "Media & Mass Communication",
+        "Insurance",
+        "Industry",
+        "Economy",
+        "Tourism",
+        "Road Safety",
+        "Higher Education",
+        "Programming (1M Uzbek Coders)",
+        "National Plan / Agenda",
+        "Customs"
+      ],
+      "startYear": "2019",
+      "endYear": "2025",
+      "stats": [
+        {
+          "value": "40",
+          "label": "Workstreams"
+        },
+        {
+          "value": "25,973,363",
+          "label": "Training hours"
+        },
+        {
+          "value": "690",
+          "label": "Workshops"
+        },
+        {
+          "value": "2,850,745",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "name": "Republic of Maldives",
+      "iso": "MV",
+      "description": "The UAE Government signed strategic partnerships with the government of the Republic of Maldives, the signing aims to accelerate government modernization efforts and foster a culture of innovation.\n\nMohammad bin Abdullah Al Gergawi, Minister of Cabinet Affairs, during the World Government Summit 2022 (WGS2022), signed the partnership agreement with Faisal Naseem, Vice President of the Republic of Maldives.\n\nThe agreement benefits governments from the experience of the UAE in development and modernization, human capabilities and adopting best practices in government work. The UAE government will also work together with each government in building government capacities, services, performance and excellence, civil service, competitiveness and statistics, accelerators, business incubators, programming, media, coding, and government innovation.",
+      "workstreams": [
+        "Government Services",
+        "Government Excellence",
+        "Government Performance",
+        "Startup and Entrepreneurship",
+        "Business Incubators",
+        "Education",
+        "Media & Mass Communication",
+        "Capacity Building",
+        "Health Management",
+        "Climate Change",
+        "Heritage and Culture"
+      ],
+      "startYear": "2022",
+      "endYear": "2030",
+      "stats": [
+        {
+          "value": "11",
+          "label": "Workstreams"
+        },
+        {
+          "value": "5,420",
+          "label": "Training hours"
+        },
+        {
+          "value": "35",
+          "label": "Workshops"
+        },
+        {
+          "value": "350",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Republic of Costa Rica",
+      "iso": "CR",
+      "description": "The United Arab Emirates & Republic of Costa Rica bilateral agreement aims to enhance cooperation and exchange experiences and knowledge in the areas of capacity building through holding ministerial sessions, virtual workshops, and field visits. Through the supervision of a joint committee.\n\nThe MOU was signed in Feb 2019 where training, workshops, and programs were launched in various areas of cooperation.",
+      "flag": "/media/flags/cr-republic-of-costa-rica.png",
+      "workstreams": [
+        "Government Accelerators",
+        "Government Performance",
+        "Government Innovation",
+        "Government Capabilities",
+        "Digital Economy"
+      ],
+      "startYear": "2019",
+      "endYear": "2027",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Workstreams"
+        },
+        {
+          "value": "11,600",
+          "label": "Training hours"
+        },
+        {
+          "value": "800",
+          "label": "Workshops"
+        },
+        {
+          "value": "1,500",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 153,
+      "name": "Republic of Rwanda",
+      "iso": "RW",
+      "description": "Lieutenant General His Highness Sheikh Saif bin Zayed Al Nahyan,Deputy Prime Minister and Minister of Interior, and Édouard Ngirente, Prime Minister of the Republic of Rwanda, witnessed the launch of a partnership between the governments of the United Arab Emirates and the Republic of Rwanda in the field of government work modernization, as part of the government experience exchange program partnerships.\n\nThe cooperation focuses on empowering government agencies and human capabilities in Rwanda and enhancing the exchange of government expertise and experiences between the two sides.",
+      "workstreams": [
+        "Government Services",
+        "Government Accelerators",
+        "Government Performance",
+        "Competitiveness and Statistics",
+        "Capacity Building",
+        "Programming (1M Coders)",
+        "Women's Empowerment"
+      ],
+      "startYear": "2023",
+      "endYear": "2026",
+      "stats": [
+        {
+          "value": "7",
+          "label": "Workstreams"
+        },
+        {
+          "value": "40,000",
+          "label": "Training hours"
+        },
+        {
+          "value": "2,970",
+          "label": "Workshops"
+        },
+        {
+          "value": "10,000",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Republic of Senegal",
+      "iso": "SN",
+      "description": "His Highness Sheikh Mohammad Bin Zayed President of the United Arab Emirates and ruler of Abu Dhabi, and Macky Sall President of Senegal, witnessed the signing of agreements and Memorandums of Understanding in February 2020 between the two countries. The agreement aims to enhance cooperation and exchange experiences and knowledge in the areas of government services, government performance, government excellence, and digital transformation. Through the supervision of a joint committee.\n\nThe MoU between the UAE and the Government of Senegal related to government modernization and development was signed by Mohammad bin Abdullah Al Gergawi, Minister of Cabinet Affairs, and Amadou Ba Minister of Foreign Affairs of Senegal.",
+      "workstreams": [
+        "Government Services",
+        "Government Excellence",
+        "Government Accelerators",
+        "Government Performance",
+        "Government Innovation",
+        "Capacity Building",
+        "Smart Services (Best Mobile Government Award)",
+        "Programming (1M Coders)",
+        "Strategies and Policies"
+      ],
+      "startYear": "2020",
+      "endYear": "2026",
+      "stats": [
+        {
+          "value": "9",
+          "label": "Workstreams"
+        },
+        {
+          "value": "306,000",
+          "label": "Training hours"
+        },
+        {
+          "value": "320",
+          "label": "Workshops"
+        },
+        {
+          "value": "13,600",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 147,
+      "name": "Republic of Seychelles",
+      "iso": "SC",
+      "description": "The UAE Government has signed a strategic partnership with the government of Seychelles.\n\nThe signing aims to accelerate government modernisation efforts and foster a culture of innovation.\n\nHis Excellency Mohammad bin Abdullah Al Gergawi, Minister of Cabinet Affairs, during the World Government Summit 2022 (WGS2022), signed the partnership agreement with Her Excellency Devika Vidot, Minister of Investment, Entrepreneurship & Industry, in the Republic of Seychelles.\n\nThe agreement will see the government benefit from the experience of the UAE in development and modernization, human capabilities and adopting best practices in government work. The MoU will focus on 9 key pillars, in the areas of Capacity Building, Government Accelerator, Government Services, Urban planning, Civil services, Government performance, Government competitiveness and finical Sector",
+      "workstreams": [
+        "Government Excellence",
+        "Government Accelerators",
+        "Government Performance",
+        "Competitiveness and Statistics",
+        "Startup and Entrepreneurship",
+        "Smart Services",
+        "Civil Services",
+        "Financial Matters",
+        "Capacity Building"
+      ],
+      "startYear": "2022",
+      "endYear": "2030",
+      "stats": [
+        {
+          "value": "9",
+          "label": "Workstreams"
+        },
+        {
+          "value": "3,735",
+          "label": "Training hours"
+        },
+        {
+          "value": "134",
+          "label": "Workshops"
+        },
+        {
+          "value": "540",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Hellenic Republic",
+      "iso": "GR",
+      "description": "The Memorandum of understanding between the United Arab Emirates and the Hellenic Republic was signed during the UAE-Greece Strategic Cooperation Forum in July 2020.\n\nThe United Arab Emirates and the Hellenic Republic aim to enhance cooperation and exchange experiences and knowledge in the fields of artificial intelligence, government performance, and government accelerators, through the supervision of a joint committee.",
+      "workstreams": [
+        "Government Services",
+        "Government Accelerators",
+        "Government Performance",
+        "Artificial Intelligence"
+      ],
+      "startYear": "2020",
+      "endYear": "2023",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Workstreams"
+        },
+        {
+          "value": "347",
+          "label": "Training hours"
+        },
+        {
+          "value": "28",
+          "label": "Workshops"
+        },
+        {
+          "value": "341",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "name": "Republic of Sudan",
+      "iso": "SD",
+      "description": "The United Arab Emirates and the Republic of Sudan launched a strategic partnership in government modernization in 2021. As part of their efforts to enhance cooperation and exchange experiences and knowledge in various fields including.\n\nThe signing of the Strategic partnership came as part of an official visit of a delegation from the UAE government to the Republic of Sudan, headed by Her Excellency Ohoud bint Khalfan Al Roumi, Minister of State for Government Development and the Future to enhance the march of distinguished bilateral relations, and opportunities to expand the circle of cooperation and exchange of knowledge and expertise in the areas of government work, and witnessed the signing of the strategic partnership agreement in modernization. The government, through which the two sides will work to share experiences and knowledge to develop government work in various areas of cooperation.",
+      "flag": "/media/flags/sd-republic-of-sudan.png",
+      "workstreams": [
+        "Government Excellence",
+        "Government Accelerators",
+        "Government Performance",
+        "Competitiveness and Statistics",
+        "Civil Services",
+        "Government Strategy",
+        "Capacity Building",
+        "Primary Education",
+        "Government Communication",
+        "Agriculture sector",
+        "Higher Education",
+        "Smart Services (Best Mobile Government Award)",
+        "Programming (1M Coders)",
+        "Health Management"
+      ],
+      "startYear": "2021",
+      "endYear": "2024",
+      "stats": [
+        {
+          "value": "14",
+          "label": "Workstreams"
+        },
+        {
+          "value": "1,120",
+          "label": "Training hours"
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "name": "Co-operative Republic of Guyana",
+      "iso": "GY",
+      "description": "The UAE Government has signed strategic partnerships with the government of Guyana, the signing aims to accelerate government modernization efforts and foster a culture of innovation.\n\nMohammad bin Abdullah Al Gergawi, Minister of Cabinet Affairs and Chairman of the World Government Summit Organization, during the World Government Summit 2022 (WGS2022), signed the partnership agreement with Deodat Indar, Minister within the Ministry of Public Works, Guyana.\n\nThe agreement will see the governments benefit from the experience of the UAE in development and modernization, human capabilities and adopting best practices in government work. The UAE government will also work together with each government in building government capacities, services, performance and excellence, civil service, competitiveness and statistics, accelerators, business incubators, programming, media, coding, and government innovation.",
+      "workstreams": [
+        "Government Accelerators",
+        "Government Performance",
+        "Government Innovation",
+        "Competitiveness and Statistics",
+        "Leadership and Capacity Building",
+        "Programming",
+        "Future Foresight",
+        "Smart Services (Best Mobile Government Award)"
+      ],
+      "startYear": "2022",
+      "endYear": "2025",
+      "stats": [
+        {
+          "value": "8",
+          "label": "Workstreams"
+        },
+        {
+          "value": "303,300",
+          "label": "Training hours"
+        },
+        {
+          "value": "480",
+          "label": "Workshops"
+        },
+        {
+          "value": "8,600",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Republic of Iraq",
+      "iso": "IQ",
+      "description": "The government of the United Arab Emirates and the government of the Republic of Iraq launched a strategic partnership in government modernization and development in 2021, based on enhancing the exchange of knowledge, expertise and successful experiences between the two countries.\n\nThe strategic partnership agreement includes 11 workstreams, including government performance, government excellence, government services, government capacity building, civil service, competitiveness and statistics, government accelerators, business incubators, media, government innovation, and programming.",
+      "flag": "/media/flags/iq-republic-of-iraq.png",
+      "workstreams": [
+        "Government Services",
+        "Government Excellence",
+        "Government Accelerators",
+        "Government Performance",
+        "Government Innovation",
+        "Competitiveness and Statistics",
+        "Business Incubators",
+        "Civil Services",
+        "Media & Mass Communication",
+        "Capacity Building",
+        "Programming (1M Coders)"
+      ],
+      "startYear": "2021",
+      "endYear": "2024",
+      "stats": [
+        {
+          "value": "12",
+          "label": "Workstreams"
+        },
+        {
+          "value": "9,613",
+          "label": "Training hours"
+        },
+        {
+          "value": "48",
+          "label": "Workshops"
+        },
+        {
+          "value": "1,104",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 143,
+      "name": "Kyrgyz Republic",
+      "iso": "KG",
+      "description": "The signing of a memorandum of cooperation in government modernization between the government of the UAE and the government of the Kyrgyz Republic, to strengthen cooperation and exchange expertise and experiences, to improve performance and productivity, and achieve sustainable development in the government work system in Kyrgyzstan.\n\nThe memorandum was signed by His Excellency Mohammad bin Abdullah Al Gergawi, Minister of Cabinet Affairs, and Akilbek Jabarov, Prime Minister of the Kyrgyz Republic, in the presence of His Highness Sheikh Maktoum bin Mohammed bin Rashid Al Maktoum.",
+      "workstreams": [
+        "Government Accelerators",
+        "Programming",
+        "Government Quality",
+        "Youth",
+        "Economy",
+        "Government Services",
+        "Capacity Building"
+      ],
+      "startYear": "2021",
+      "endYear": "2030",
+      "stats": [
+        {
+          "value": "9",
+          "label": "Workstreams"
+        },
+        {
+          "value": "19,000",
+          "label": "Training hours"
+        },
+        {
+          "value": "1,600",
+          "label": "Workshops"
+        },
+        {
+          "value": "1,720",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Republic of Colombia",
+      "iso": "CO",
+      "description": "The United Arab Emirates & Republic of Colombia bilateral agreement was signed in Feb 2019. The partnership between the two governments aims to enhance cooperation and exchange experiences and knowledge in the areas of capacity building in the leadership and services. Supervised by a joint committee from both countries.",
+      "flag": "/media/flags/co-republic-of-colombia.svg",
+      "workstreams": [
+        "Government Excellence",
+        "Government Accelerators",
+        "Government Performance",
+        "Competitiveness and Statistics",
+        "Programming",
+        "Smart Services",
+        "Youth",
+        "Civil Services",
+        "Capacity Building"
+      ],
+      "startYear": "2021",
+      "endYear": "2029",
+      "stats": [
+        {
+          "value": "9",
+          "label": "Workstreams"
+        },
+        {
+          "value": "10,760",
+          "label": "Training hours"
+        },
+        {
+          "value": "190",
+          "label": "Workshops"
+        },
+        {
+          "value": "680",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 182,
+      "name": "Republic of Madagascar",
+      "iso": "MG",
+      "description": "The UAE Government has signed strategic partnerships with the government of Madagascar.\n\nThe signing aims to accelerate government modernization efforts and foster a culture of innovation.\n\nMohammad bin Abdullah Al Gergawi, Minister of Cabinet Affairs and Chairman of the World Government Summit Organisation, during the World Government Summit 2024 (WGS2024), signed the partnership agreement with H.E. Rasata Rafaravavitafika, the Minister of Foreign Affairs in the Government of Madagascar.\n\nThe agreement will see the government benefit from the experience of the UAE in development and modernization, human capabilities and adopting best practices in government work. The MoU will focus on 7 key pillars, in the areas of Coding, Capacity Building, Government Excellence, Government Services, Digitalization and Digital Transformation in Gov Services, Government Accelerators, and Artificial Intelligence",
+      "workstreams": [
+        "Government Excellence",
+        "Government Accelerators",
+        "Government Services",
+        "Artificial Intelligence",
+        "Capacity Building",
+        "Programming (1M Coders)"
+      ],
+      "startYear": "2024",
+      "endYear": "2027",
+      "stats": [
+        {
+          "value": "6",
+          "label": "Workstreams"
+        },
+        {
+          "value": "12,000",
+          "label": "Training hours"
+        },
+        {
+          "value": "1,558",
+          "label": "Workshops"
+        },
+        {
+          "value": "403",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "name": "Kingdom of Spain",
+      "iso": "ES",
+      "description": "The United Arab Emirates & Kingdom of Spain launched a strategic partnership which was signed in February 2022. in the presence of His Highness Mohammed bin Rashid Al Maktoum, Vice President and Prime Minister of the United Arab Emirates and Ruler of Dubai and His Excellency Pedro Sánchez, The Prime Minister of Kingdom of Spain.\n\nThe partnership between the two governments aims to enhance cooperation and exchange experiences and knowledge in the areas of Management, Decision Making, Transparency, Women Empowerment, and Accountability Mechanisms. Supervised by a joint committee from both countries.",
+      "workstreams": [
+        "Government Accelerators",
+        "Government Strategy",
+        "National Plan / Agenda"
+      ],
+      "startYear": "2022",
+      "endYear": "2025",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Workstreams"
+        },
+        {
+          "value": "253",
+          "label": "Training hours"
+        },
+        {
+          "value": "33",
+          "label": "Workshops"
+        },
+        {
+          "value": "105",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "name": "Republic of Barbados",
+      "iso": "BB",
+      "description": "The UAE Government has signed a bilateral cooperation with the government of Barbados.\n\nThe signing aims to accelerate government modernization efforts and foster a culture of innovation.\n\nMohammad bin Abdullah Al Gergawi, Minister of Cabinet Affairs and Chairman of the World Government Summit Organisation, during the World Government Summit 2022 (WGS2022), signed the partnership agreement with Mia Mottley, Prime Minister of Barbados.",
+      "workstreams": [
+        "Government Excellence",
+        "Government Accelerators",
+        "Government Performance",
+        "Government Innovation",
+        "Competitiveness and Statistics",
+        "Programming",
+        "Government Services",
+        "Capacity Building"
+      ],
+      "startYear": "2022",
+      "endYear": "2030",
+      "stats": [
+        {
+          "value": "8",
+          "label": "Workstreams"
+        },
+        {
+          "value": "5,260",
+          "label": "Training hours"
+        },
+        {
+          "value": "860",
+          "label": "Workshops"
+        },
+        {
+          "value": "75",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 183,
+      "name": "Mongolia",
+      "iso": "MN",
+      "description": "The UAE Government has signed strategic partnerships with the government of Mongolia.\n\nThe signing aims to accelerate government modernization efforts and foster a culture of innovation.\n\nMohammad bin Abdullah Al Gergawi, Minister of Cabinet Affairs and Chairman of the World Government Summit Organisation, during the World Government Summit 2024 (WGS2024), signed the partnership agreement with H.E. Uchral Nyam Osor, Mongolia's Minister of Digital Development and Communications.\n\nThe agreement will see the government benefit from the experience of the UAE in development and modernization, human capabilities and adopting best practices in government work. The MoU will focus on 5 key pillars, in the areas of Sustainable Development Goals, Government Performance, Government Services, Digitalization of Public Services, and Capacity Building.",
+      "workstreams": [
+        "Government Services",
+        "Government Performance",
+        "Smart Services",
+        "Capacity Building",
+        "Climate Change"
+      ],
+      "startYear": "2023",
+      "endYear": "2026",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Workstreams"
+        },
+        {
+          "value": "25",
+          "label": "Training hours"
+        },
+        {
+          "value": "6",
+          "label": "Workshops"
+        },
+        {
+          "value": "19",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "name": "Central African Republic",
+      "iso": "CF",
+      "description": "His Highness Sheikh Mohammed Bin Rashid Al Maktoum, UAE Vice President, Prime Minister of the UAE and Ruler of Dubai and His Excellency Faustin-Archange Touadéra, President of the Central African Republic witnessed the signing of a bilateral agreement focused on establishing collaboration to share expertise on government excellence.\n\nThe agreement was signed by His Excellency Mohammad bin Abdullah Al Gergawi, Minister of Cabinet Affairs and His Excellency Obed Namsio, Minister of State and Director of the Cabinet of the President of the Central African Republic.",
+      "startYear": "2023",
+      "endYear": "2026",
+      "stats": [
+        {
+          "value": "28",
+          "label": "Training hours"
+        },
+        {
+          "value": "34",
+          "label": "Workshops"
+        },
+        {
+          "value": "6",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 154,
+      "name": "Republic of Paraguay",
+      "iso": "PY",
+      "description": "His Highness Sheikh Mohammed bin Rashid Al Maktoum, Vice President and Prime Minister of the UAE and Ruler of Dubai, met with Mario Abdo Benítez, President of Paraguay, on the sidelines of the World Government Summit, and discussed bilateral ties between the two countries and ways to further boost cooperation in the next phase in the fields of economy, investment and trade to support their sustainable development goals. The meeting also highlighted the UAE and Paraguay’s shared desire to explore new partnership opportunities that will further strengthen bridges of cooperation, especially in the field of government development.\n\nHis Highness and Mario Abdo Benítez witnessed the signing of a cooperation agreement that seeks to drive government modernization. The agreement aims to promote Paraguay’s government capabilities and empower its cadres across various government fields, drawing from the UAE's successful experience in government development.\n\nThe agreement focuses on exchanging knowledge, experiences, and best practices in government work, building capabilities of human cadres, boosting performance and evaluation systems, supporting various government development and innovation efforts, leading government excellence, finding effective proactive solutions to challenges, and developing various economic, technological, environmental, and social fields to enable future governments and improve the quality of life across communities.",
+      "workstreams": [
+        "Government Services",
+        "Artificial Intelligence",
+        "Capacity Building",
+        "Digital Economy"
+      ],
+      "startYear": "2023",
+      "endYear": "2026",
+      "stats": [
+        {
+          "value": "4",
+          "label": "Workstreams"
+        },
+        {
+          "value": "4,625",
+          "label": "Training hours"
+        },
+        {
+          "value": "655",
+          "label": "Workshops"
+        },
+        {
+          "value": "545",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 155,
+      "name": "Republic of Georgia",
+      "iso": "GE",
+      "description": "Sheikh Mohammed bin Rashid Al Maktoum, Vice President and Prime Minister of the UAE and Ruler of Dubai, and Irakli Garibashvili Prime Minister of Georgia, witnessed the signing of an agreement between the two countries focused on establishing collaboration to share expertise in the field of government modernization as part of the Government Experience Exchange Programme. The agreement seeks to strengthen the capabilities of the government in Georgia and provide the latest tools to develop the skills of government employees.",
+      "workstreams": [
+        "Government Performance",
+        "Government Innovation",
+        "Programming",
+        "Smart Services",
+        "Future Foresight",
+        "Government Services",
+        "Artificial Intelligence",
+        "Capacity Building"
+      ],
+      "startYear": "2023",
+      "endYear": "2026",
+      "stats": [
+        {
+          "value": "8",
+          "label": "Workstreams"
+        },
+        {
+          "value": "2,160",
+          "label": "Training hours"
+        },
+        {
+          "value": "25",
+          "label": "Workshops"
+        },
+        {
+          "value": "90",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 156,
+      "name": "Republic of Albania",
+      "iso": "AL",
+      "description": "His Highness Sheikh Mohammed bin Rashid Al Maktoum, met with Edi Rama, Prime Minister of Albania, on the sidelines of the World Government Summit (WGS) 2023.\n\nHis Highness and the Prime Minister of Albania discussed bilateral ties between the two countries and ways to further strengthen cooperation in various fields. The meeting also highlighted the UAE and Albania’s shared desire to boost the exchange of knowledge and expertise in the field of government. Further, Sheikh Mohammed and Edi Rama witnessed the signing of the bilateral agreement focused on establishing collaboration to share expertise on government excellence as part of the Government Experience Exchange Programme (GEEP).",
+      "workstreams": [
+        "Government Performance",
+        "Government Innovation",
+        "Leadership and Capacity Building",
+        "Civil Services",
+        "Financial Matters",
+        "Government Services"
+      ],
+      "startYear": "2023",
+      "endYear": "2026",
+      "stats": [
+        {
+          "value": "7",
+          "label": "Workstreams"
+        },
+        {
+          "value": "2,700",
+          "label": "Training hours"
+        },
+        {
+          "value": "360",
+          "label": "Workshops"
+        },
+        {
+          "value": "77",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 157,
+      "name": "Republic of Malta",
+      "iso": "MT",
+      "description": "the Republic of Malta joined the Government Experience Exchange Program to accelerate modernization and development in various areas of government work.Under this agreement, six areas of cooperation have been established, through which the Republic of Malta and the United Arab Emirates collaborate to advance digital technology, health and quality of life, sustainable resource utilization, smart manufacturing, programming, and capacity building.",
+      "workstreams": [
+        "Capacity Building"
+      ],
+      "startYear": "2023",
+      "endYear": "2026",
+      "stats": [
+        {
+          "value": "6",
+          "label": "Workstreams"
+        },
+        {
+          "value": "11,000",
+          "label": "Training hours"
+        },
+        {
+          "value": "2,000",
+          "label": "Workshops"
+        },
+        {
+          "value": "124",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 158,
+      "name": "Kurdistan Region of Iraq",
+      "iso": "IQ",
+      "description": "The United Arab Emirates Government signed strategic partnerships with the governments of the Iraqi Kurdistan Regional Government. The signing aims to accelerate government modernization efforts and foster a culture of innovation.\n\nMohammad bin Abdullah Al Gergawi, Minister of Cabinet Affairs, during the World Government Summit 2022, signed the partnership agreement with Masrour Barzani, President of the Kurdistan Regional Government of Iraq.",
+      "workstreams": [
+        "Government Services",
+        "Government Performance",
+        "Leadership and Capacity Building",
+        "TAXs Administration",
+        "Media & Mass Communication",
+        "Economy",
+        "Capacity Building",
+        "Agriculture sector",
+        "Digitalization of Banking Sector"
+      ],
+      "startYear": "2022",
+      "endYear": "2030",
+      "stats": [
+        {
+          "value": "9",
+          "label": "Workstreams"
+        },
+        {
+          "value": "25,000",
+          "label": "Training hours"
+        },
+        {
+          "value": "240",
+          "label": "Workshops"
+        },
+        {
+          "value": "500",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "name": "Republic of Kazakhstan",
+      "iso": "KZ",
+      "description": "The Republic of Kazakhstan joined the Government Experience Exchange Program in 2023 as part of its efforts to strengthen government work.Through this program, the Republic of Kazakhstan has collaborated with the United Arab Emirates across six different work streams, with the aim of developing advanced leadership capacities, modernizing government processes, and elevating digital transformation to new horizons.",
+      "workstreams": [
+        "Government Accelerators",
+        "Government Performance",
+        "Government Innovation",
+        "Programming",
+        "Tourism",
+        "Government Services",
+        "Artificial Intelligence",
+        "Capacity Building"
+      ],
+      "startYear": "2023",
+      "endYear": "2026",
+      "stats": [
+        {
+          "value": "8",
+          "label": "Workstreams"
+        },
+        {
+          "value": "21,322",
+          "label": "Training hours"
+        },
+        {
+          "value": "274",
+          "label": "Workshops"
+        },
+        {
+          "value": "834",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "name": "Turkmenistan",
+      "iso": "TM",
+      "description": "Within the framework of cooperation between the United Arab Emirates and Turkmenistan on the government knowledge exchange program, His Excellency Muhammad bin Abdullah Al Gergawi, Minister of Cabinet Affairs of the United Arab Emirates, and His Excellency Rashid Meredov, Deputy Prime Minister of Turkmenistan and Minister of Foreign Affairs, signed a memorandum of understanding between the governments of the United Arab Emirates and Turkmenistan on Exchanging experiences in the field of developing and modernizing governments, on the sidelines of the World Government Summit, held in Dubai from 13-15 February 2023.",
+      "workstreams": [
+        "Government Innovation",
+        "Competitiveness and Statistics",
+        "Government Services",
+        "Capacity Building"
+      ],
+      "startYear": "2023",
+      "endYear": "2026",
+      "stats": [
+        {
+          "value": "4",
+          "label": "Workstreams"
+        },
+        {
+          "value": "4,270",
+          "label": "Training hours"
+        },
+        {
+          "value": "600",
+          "label": "Workshops"
+        },
+        {
+          "value": "45",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 162,
+      "name": "Republic of Zimbabwe",
+      "iso": "ZW",
+      "description": "As part of the government knowledge exchange program partnerships, the governments of the United Arab Emirates and Zimbabwe during the 10th edition of the World Government Summit, signed a bilateral cooperation agreement to exchange experiences in the field of developing government modernization, and improving governance and evaluation processes, and innovation programs, by benefiting from the experiences of the UAE in government work.",
+      "workstreams": [
+        "Government Excellence",
+        "Government Accelerators",
+        "Government Performance",
+        "Government Innovation",
+        "Competitiveness and Statistics",
+        "Government Human Resources",
+        "Programming",
+        "Civil Services",
+        "Capacity Building"
+      ],
+      "startYear": "2023",
+      "endYear": "2026",
+      "stats": [
+        {
+          "value": "9",
+          "label": "Workstreams"
+        },
+        {
+          "value": "15,000",
+          "label": "Training hours"
+        },
+        {
+          "value": "1,067",
+          "label": "Workshops"
+        },
+        {
+          "value": "837",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 161,
+      "name": "Romania",
+      "iso": "RO",
+      "description": "The United Arab Emirates and Romania, represented by His Excellency Abdulla Nasser Lootah, Deputy Minister of Cabinet Affairs for Competitiveness and Knowledge Exchange, and Minister Mircea Abrudean, Secretary General of the Government of Romania, signed a memorandum of understanding during the 10th edition of the World Government Summit. This agreement focuses on experience exchange cooperation in the field of government development and modernization, enhancing the efficiency of central public administration institutions through exchanging knowledge, experiences, and development models, and benefiting from the UAE's successful experience in government work.The cooperation focuses on the workstreams of Digitalization and Digital Transformation in Government Services, Government Accelerators, Capacity Building, Sustainable Development Goals, Economy and Investment, Artificial Intelligence, Space, and Innovation.",
+      "workstreams": [
+        "Government Excellence",
+        "Government Accelerators",
+        "Government Innovation",
+        "Civil Services",
+        "Economy",
+        "Government Services",
+        "Artificial Intelligence",
+        "Capacity Building",
+        "Digital Economy"
+      ],
+      "startYear": "2023",
+      "endYear": "2026",
+      "stats": [
+        {
+          "value": "10",
+          "label": "Workstreams"
+        },
+        {
+          "value": "2,600",
+          "label": "Training hours"
+        },
+        {
+          "value": "3,600",
+          "label": "Workshops"
+        },
+        {
+          "value": "230",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 180,
+      "name": "The Federal Democratic Republic of Ethiopia",
+      "iso": "ET",
+      "description": "His Highness Sheikh Mohamed bin Zayed Al Nahyan, President of the United Arab Emirates and Dr. Abiy Ahmed, Prime Minister of the Federal Democratic Republic of Ethiopia, witnessed the signing of a Memorandum of Understanding (MoU) to exchange experiences in the field of government development and modernization, aimed at strengthening cooperation between the two governments.\n\nThe agreement was signed by His Excellency Mohammad bin Abdullah Al Gergawi, Minister of Cabinet Affairs; and Her Excellency Alemtsehay Paulos, Minister of Cabinet Affairs of the Federal Democratic Republic of Ethiopia.",
+      "workstreams": [
+        "Government Performance",
+        "Civil Services",
+        "Government Services",
+        "Capacity Building",
+        "Programming (1M Coders)"
+      ],
+      "startYear": "2023",
+      "endYear": "2026",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Workstreams"
+        },
+        {
+          "value": "1,400,000",
+          "label": "Training hours"
+        },
+        {
+          "value": "324",
+          "label": "Workshops"
+        },
+        {
+          "value": "461,828",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 184,
+      "name": "The Republic Uganda",
+      "iso": "UG",
+      "description": "The partnership between the government of the UAE and the government of the Republic of Uganda, which focuses on exchanging experiences in the field of government development and modernization in a way that contributes to the development of government services, strengthening institutional capabilities and performance measurement systems in the government sector, and establishing an institutional framework to enhance and develop cooperation between the two countries and benefit from successful development models and exchange experiences. and successful practice.\n\nThe partnership was signed by His Excellency Mohammed bin Abdullah Al Gergawi, Minister of Cabinet Affairs and Chairman of the World Government Summit Foundation, and His Excellency General Odongo Jeji Abubakar, Minister of Foreign Affairs of the Republic of Uganda as part of the activities of the World Government Summit 2024.",
+      "workstreams": [
+        "Leadership and Capacity Building",
+        "Government Services"
+      ],
+      "startYear": "2024",
+      "endYear": "2027",
+      "stats": [
+        {
+          "value": "3",
+          "label": "Workstreams"
+        },
+        {
+          "value": "512",
+          "label": "Training hours"
+        },
+        {
+          "value": "58",
+          "label": "Workshops"
+        },
+        {
+          "value": "17",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 188,
+      "name": "Côte d'Ivoire",
+      "iso": "CI",
+      "description": "The governments of the United Arab Emirates and Côte d'Ivoire have launched a strategic partnership to exchange experience and expertise across 10 key areas in the fields of government work modernization and development. This new partnership adds to the UAE's government experience exchange initiatives with governments around the world, aimed at expanding the horizons of international cooperation to share future government experiences and practices.",
+      "workstreams": [
+        "Government Excellence",
+        "Government Accelerators",
+        "Government Performance",
+        "Government Innovation",
+        "Competitiveness and Statistics",
+        "Government Human Resources",
+        "Programming",
+        "Government Services",
+        "Capacity Building",
+        "Strategies and Policies"
+      ],
+      "startYear": "2024",
+      "endYear": "2027",
+      "stats": [
+        {
+          "value": "10",
+          "label": "Workstreams"
+        },
+        {
+          "value": "25",
+          "label": "Training hours"
+        },
+        {
+          "value": "30",
+          "label": "Workshops"
+        },
+        {
+          "value": "6",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 189,
+      "name": "The Republic of the Philippines",
+      "iso": "PH",
+      "description": "The United Arab Emirates and the Republic of the Philippines have signed a memorandum of understanding aimed to strengthen government modernization and development. This partnership is based on the exchange of experience and expertise in various fields.",
+      "startYear": "2025",
+      "endYear": "2028"
+    },
+    {
+      "id": 163,
+      "name": "Republic of Azerbaijan",
+      "iso": "AZ",
+      "description": "Ilham Aliyev, President of Azerbaijan, received Mohammad bin Abdullah Al Gergawi, Minister of Cabinet Affairs, who was heading the Emirati governmental delegation visiting the Azeri capital, Baku.\n\nDuring the meeting, the two sides signed a cooperation agreement aimed at exchanging expertise in areas of government modernization between the UAE and Azerbaijan.\n\nThe bilateral cooperation agreement, promotes the exchange of government expertise, and focusses on eight pillars, which are government excellence, government services, government capacity building, competitiveness and statistics, policies and strategies, government performance, and government accelerators.",
+      "workstreams": [
+        "Government Services",
+        "Government Excellence",
+        "Government Accelerators",
+        "Government Performance",
+        "Competitiveness and Statistics",
+        "Capacity Building",
+        "Strategies and Policies",
+        "Volunteering Experience"
+      ],
+      "startYear": "2022",
+      "endYear": "2025",
+      "stats": [
+        {
+          "value": "8",
+          "label": "Workstreams"
+        },
+        {
+          "value": "16,000",
+          "label": "Training hours"
+        },
+        {
+          "value": "115",
+          "label": "Workshops"
+        },
+        {
+          "value": "390",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 181,
+      "name": "Brunei Darussalam",
+      "iso": "BN",
+      "description": "In February 2024, a bilateral cooperation agreement on government modernization was signed between the governments of the United Arab Emirates and Brunei Darussalam as part of government experience exchange partnerships",
+      "workstreams": [
+        "Government Accelerators",
+        "Government Performance",
+        "Programming",
+        "Government Services",
+        "Climate Change"
+      ],
+      "startYear": "2024",
+      "endYear": "2027",
+      "stats": [
+        {
+          "value": "6",
+          "label": "Workstreams"
+        },
+        {
+          "value": "2,530",
+          "label": "Training hours"
+        },
+        {
+          "value": "40",
+          "label": "Workshops"
+        },
+        {
+          "value": "95",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 190,
+      "name": "Socialist Republic of Vietnam",
+      "iso": "VN",
+      "description": "",
+      "workstreams": [
+        "Strategies and Policies",
+        "Transparency",
+        "Women's Empowerment",
+        "Accountability Mechanisms",
+        "Decision Making"
+      ],
+      "startYear": "2024",
+      "endYear": "2027",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Workstreams"
+        },
+        {
+          "value": "280",
+          "label": "Training hours"
+        },
+        {
+          "value": "3,940",
+          "label": "Workshops"
+        },
+        {
+          "value": "22",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 185,
+      "name": "Kingdom of Eswatini",
+      "iso": "SZ",
+      "description": "The governments of the United Arab Emirates and Kingdom of Eswatini signed a cooperation agreement to exchange expertise in government development and modernisation. This agreement is part of the UAE Government Experience Exchange Programme, which aims to transfer and share best practices with governments worldwide and expand partnerships with countries on the African continent.\n\nH.E. Omar Sultan Al Olama, Minister of State for Artificial Intelligence, Digital Economy and Remote Work Applications, Director General of the Prime Minister’s Office; and Honourable Savannah Maziya, Minister of Information, communication and Technology (ICT) signed the agreement.",
+      "workstreams": [
+        "Government Performance",
+        "Competitiveness and Statistics",
+        "Programming",
+        "Government Services",
+        "Capacity Building"
+      ],
+      "startYear": "2024",
+      "endYear": "2027",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Workstreams"
+        },
+        {
+          "value": "5,385",
+          "label": "Training hours"
+        },
+        {
+          "value": "1,890",
+          "label": "Workshops"
+        },
+        {
+          "value": "70",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 186,
+      "name": "Bermuda",
+      "iso": "BM",
+      "description": "The governments of the United Arab Emirates and Bermuda have signed a Memorandum of Understanding (MoU) on experiences exchange in the development and modernisation of government models.\n\nThe agreement, signed at the United Nations (UN) High-Level Political Forum (HLPF) on Sustainable Development, builds on the close bilateral relations between the UAE and Bermuda and aims to help the two agile, future-oriented governments drive economic, environmental and social development.\n\nUnder the MoU, the UAE Ministry of Cabinet Affairs and Bermuda’s Ministry of Economy and Labour will create a framework for sharing information on initiatives for enhancing government services and policies. The framework will see the governments share best practises in human capacity building to help public sector employees gain critical skills in areas including technology and leadership.",
+      "workstreams": [
+        "Government Accelerators",
+        "Government Performance",
+        "Programming",
+        "Capacity Building"
+      ],
+      "startYear": "2024",
+      "endYear": "2027",
+      "stats": [
+        {
+          "value": "4",
+          "label": "Workstreams"
+        },
+        {
+          "value": "2,500",
+          "label": "Training hours"
+        },
+        {
+          "value": "50",
+          "label": "Workshops"
+        },
+        {
+          "value": "370",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 187,
+      "name": "The Republic of Kenya",
+      "iso": "KE",
+      "description": "Within the initiatives of the UAE Government Experience Exchange Programme GEEP, the governments of the UAE and the Republic of Kenya have launched a new partnership to exchange knowledge and share experiences in governance and governmental work development. The two parties signed a Memorandum of Understanding MoU in the presence of His Excellency Sheikh Shakhboot bin Nahyan Al Nahyan, Minister of State, during the fourth session of the UAE-Kenya joint Committee.\n\nThe MoU was signed by Her Excellency Maryam Bint Ahmed Al Hammadi, Minister of State and Secretary General of the UAE Cabinet, and His Excellency Musalia Mudavadi, Prime Cabinet Secretary and Cabinet Secretary for Foreign and Diaspora Affairs of Kenya.",
+      "workstreams": [
+        "Strategies and Policies",
+        "Women's Empowerment"
+      ],
+      "startYear": "2024",
+      "endYear": "2027",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Workstreams"
+        },
+        {
+          "value": "10",
+          "label": "Training hours"
+        },
+        {
+          "value": "4",
+          "label": "Workshops"
+        },
+        {
+          "value": "5",
+          "label": "Trainees"
+        }
+      ]
+    },
+    {
+      "id": 192,
+      "name": "Principality of Andorra",
+      "iso": "AD",
+      "description": "As part of the United Arab Emirates’ efforts to strengthen international cooperation in government development, The UAE Government has signed strategic partnerships with the government of Andorra.The signing aims to strengthen cooperation in several areas, including cybersecurity, data analysis, artificial intelligence, e-government, investment, and finance.",
+      "workstreams": [
+        "Programming",
+        "Artificial Intelligence",
+        "AI and Metaverse"
+      ],
+      "startYear": "2024",
+      "endYear": "2027",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Workstreams"
+        },
+        {
+          "value": "160",
+          "label": "Training hours"
+        },
+        {
+          "value": "22",
+          "label": "Workshops"
+        },
+        {
+          "value": "7",
+          "label": "Trainees"
+        }
+      ]
+    }
+  ],
+  "bestPractices": [],
+  "bestPracticesIntro": {
+    "title": "Sharing the UAE's Experience Globally",
+    "body": [
+      "In a land of sand dunes and sky-high buildings, there existed a visionary government leading the charge in modernizing its systems and processes. The UAE is determined to take government activities to new heights. We are convinced that simply consuming knowledge was not enough; and we wanted to manage and produce knowledge that could benefit the nation and the world at large.",
+      "To acheive this goal, we are committed to share our experience with other governments, recognizing the value of collaboration and knowledge-sharing. With a wealth of cultural resources at its disposal, the UAE amassed an impressive amount of knowledge over the years, and its eager to put it to good use."
+    ],
+    "quote": {
+      "text": "The UAE is keen to build and promote partnerships and share knowledge on government modernization and promoting societies wellbeing with countries eager to enhance the lives of their people, global organizations and institutions, and private sector leaders, who share the same vision for development",
+      "author": "His Highness Sheikh Mohammed bin Rashid Al Maktoum",
+      "role": "Vice President and Prime Minister of the UAE and Ruler of Dubai",
+      "image": "/media/quotes/his-highness-sheikh-mohammed-bin-rashid-al-maktoum-best-practices.jpg"
+    }
+  },
+  "activities": [],
+  "media": [
+    {
+      "title": "Mohammed bin Rashid attends graduation of first cohorts of Global Government Leaders Program, Future Government Leaders Program",
+      "type": "photo",
+      "image": "/media/media/mohammed-bin-rashid-attends-graduation-of-first-cohorts-of-global-government.jpg"
+    }
+  ],
+  "contact": {
+    "office": "Government Experience Exchange Office",
+    "address": "Emirates Towers Dubai, United Arab Emirates",
+    "phone": "+971 4 777 1244",
+    "email": "GEEO@moca.gov.ae",
+    "social": [
+      {
+        "platform": "X",
+        "url": "https://x.com/Govexchangeae"
+      },
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/Govexchange"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/govexchange/"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/govexchange/"
+      },
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/channel/UCf5vWPy3dgOdza4nTBmlqug"
+      }
+    ]
+  },
+  "contactForm": {
+    "subjects": [
+      "Inquiry",
+      "Become a Trainer in GEEP",
+      "Government Partnership"
+    ]
+  }
+}

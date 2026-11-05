@@ -1,0 +1,2315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="ltr">
+	<head>
+			<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W8B64HC');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Social Media Feeds</title>
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no, maximum-scale=1.0">
+
+	<link rel="preload" href="https://governmentexchange.gov.ae/assets/frontend/dist/images/logo.svg" as="image">
+    <link rel="shortcut icon" href="https://governmentexchange.gov.ae/assets/frontend/dist/images/favicon.ico">
+	<meta name="author" content="Government Experience Exchange Programme" />
+		<meta name="description" content="Government Experience Exchange Programme" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Government Experience Exchange Programme" />
+	<meta property="og:title" content="Social Media Feeds" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://governmentexchange.gov.ae/en/best-practices" />
+    <meta property="og:image" content="https://governmentexchange.gov.ae/assets/frontend/dist/images/logo.svg" />
+    <meta property="og:description" content="Government Experience Exchange Programme" />
+	
+	    		<link rel="stylesheet" href="https://governmentexchange.gov.ae/assets/frontend/dist/styles/page.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://governmentexchange.gov.ae/assets/frontend/dist/styles/geep-custom.css"> 
+<link rel="stylesheet" href="https://governmentexchange.gov.ae/assets/frontend/dist/styles/bestPractice.css"> 
+<link rel="stylesheet" href="https://governmentexchange.gov.ae/assets/frontend/dist/styles/practice-preview.css"> 
+<!-- <link rel="stylesheet" href="https://governmentexchange.gov.ae/assets/frontend/dist/styles/swiper.min.css">  -->
+<link rel="stylesheet" href="https://governmentexchange.gov.ae/assets/frontend/dist/styles/dev.css?215539470">  
+    <style>
+    
+      .loader {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999999;
+        background: #fff;
+        margin: auto;
+        overflow: hidden;
+        -webkit-animation: bgChange 1.5s ease 0.5s;
+                animation: bgChange 1.5s ease 0.5s;
+      }
+    
+    
+    
+      .loader .loader-img {
+        padding: 35px 35px;
+        text-align: center;
+        position: relative;
+        z-index: 3;
+      }
+    
+      .loader .loader-img img {
+        max-width: 90%;
+        width: 100%;
+        height: auto
+      }
+    
+      .loader-block{
+        position: relative;
+        width: 32vw;
+        height: 32vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+      }
+    
+      @media  only screen and (min-width:768px) and (max-width:1200px){
+       .loader-block{
+         width: 40vw;
+         height: 40vw;
+       }
+      }
+    
+      @media  only screen and (max-width:767px){
+       .loader-block{
+         width: 100%;
+         height: 50vw;
+       }
+      }
+    
+      .loader-block:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #CDAF36;
+        -webkit-transform-origin: center;
+            -ms-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate(90deg) scale(6);
+            -ms-transform: rotate(90deg) scale(6);
+                transform: rotate(90deg) scale(6);
+        -webkit-animation: boxChange 2s ease;
+                animation: boxChange 2s ease;
+      }
+    
+      .is-loaded .liner_ {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        -webkit-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+                transform: translateY(100%);
+      }
+    
+      .is-loaded .loader {
+        -webkit-transition: opacity 0.2s ease 0.6s, -webkit-transform 0.6s ease;
+        transition: opacity 0.2s ease 0.6s, -webkit-transform 0.6s ease;
+        -o-transition: transform 0.6s ease, opacity 0.2s ease 0.6s;
+        transition: transform 0.6s ease, opacity 0.2s ease 0.6s;
+        transition: transform 0.6s ease, opacity 0.2s ease 0.6s, -webkit-transform 0.6s ease;
+        -webkit-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+                transform: translateY(100%);
+      }
+    
+      .liner_{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 5px;
+        -webkit-transition: all ease 0.3s;
+        -o-transition: all ease 0.3s;
+        transition: all ease 0.3s;
+      }
+    
+      @-webkit-keyframes bgChange {
+        0%{background-color: #fff;}
+        100%{background-color: #000;}
+      }
+    
+      @keyframes  bgChange {
+        0%{background-color: #fff;}
+        100%{background-color: #000;}
+      }
+    
+      @-webkit-keyframes boxChange {
+        0%{-webkit-transform: rotate(0deg);transform: rotate(0deg); border-radius: 50%;}
+        50%{-webkit-transform: rotate(45deg);transform: rotate(45deg); border-radius: 0;}
+        100%{-webkit-transform: rotate(90deg) scale(6);transform: rotate(90deg) scale(6);}
+      }
+    
+      @keyframes  boxChange {
+        0%{-webkit-transform: rotate(0deg);transform: rotate(0deg);  border-radius: 50%;}
+        50%{-webkit-transform: rotate(45deg);transform: rotate(45deg);  border-radius: 0%;}
+        100%{-webkit-transform: rotate(90deg) scale(6);transform: rotate(90deg) scale(6);}
+      }
+    </style>	
+
+	
+		
+</head>
+<body  class="en inner__page __mediacenter" >
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8B64HC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	<header id="header">
+        <div class="navbar ">
+          <div class="barnd_box left_"><a class="navbar-brand" href="https://governmentexchange.gov.ae/en" title="">
+            <!-- <img src="https://governmentexchange.gov.ae/storage/post/BLqK6d0Zp8bee0uMRh0HxFTUlcZ4uRflUkVCUHGA.svg" alt=""> -->
+                 
+            <img src="https://governmentexchange.gov.ae/assets/frontend/dist/images/logo-en.png" alt=""> 
+                                  </a></div>
+          <div class="nav_box_wrapper" id="master_menu">
+            <nav class="navbar-inner">
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                  <a href="https://governmentexchange.gov.ae/en" class="nav-link scroll" data-href="#home"  aria-title="" >Home</a>
+                </li>
+                <li class="nav-item ">
+                  <a href="https://governmentexchange.gov.ae/en/about" class="nav-link scroll"  aria-title="" >About Us</a>
+                </li>
+                <li class="nav-item ">
+                  <a href="https://governmentexchange.gov.ae/en/best-practice" class="nav-link" aria-title="" >Best Practices</a>
+                </li>
+                <li class="nav-item ">
+                  <a href="https://governmentexchange.gov.ae/en/areas" class="nav-link scroll"  aria-title="" >Areas of Cooperation</a>
+                </li>
+                <li class="nav-item  ">
+                  <a href="https://governmentexchange.gov.ae/en/participating-countries" class="nav-link scroll"  aria-title="" >Participating Countries</a>
+                </li>
+                <li class="nav-item ">
+                  <a href="https://governmentexchange.gov.ae/en/activities" class="nav-link scroll"  aria-title="" >Activities</a>
+                </li>
+                <li class="nav-item ">
+                  <a href="https://governmentexchange.gov.ae/en/media-center" class="nav-link scroll" aria-title="" >Media</a>
+                </li>
+                <li class="nav-item ">
+                  <a href="https://governmentexchange.gov.ae/en/contact" class="nav-link" aria-title="" >Contact Us</a>
+                </li>
+              
+                <li class="nav-item">
+                  <a href="https://governmentexchange.gov.ae/language/ar" class="nav-link" aria-title="" >العربية</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="toggler_">
+               <button class="menu_trigger hamburglar" data-traget="master_menu">
+                 <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </button>
+          </div>
+        </div>
+      </header>
+
+
+<div class="float_coun">
+  <a href="#" target="blank_">
+    <span>Participate With Us Now</span>
+  </a>
+</div>
+  <!--   <div class="cursor"></div>
+    <div class="cursor2"></div> -->	<div class="loader">
+    <div class="loader-block">
+        <div class="loader-img">
+            <!-- <img src="https://governmentexchange.gov.ae/storage/post/BLqK6d0Zp8bee0uMRh0HxFTUlcZ4uRflUkVCUHGA.svg" alt=""> -->
+            <img src="https://governmentexchange.gov.ae/assets/frontend/dist/images/logo-en.png" alt=""> 
+
+        </div>
+
+    </div>
+
+    <div class="liner_">
+      <div class="linePreloader"></div>
+    </div>
+</div>
+	
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://governmentexchange.gov.ae/assets/frontend/dist/styles/bestPractice.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://governmentexchange.gov.ae/assets/frontend/sweetalert2/sweetalert2.min.css">
+  <style>
+    .container {
+      width: 100%;
+      max-width: 80%;
+      margin: auto;
+    }
+.best-practices .title_box {
+    position: relative;    
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+.best-practices .title_box .line {
+    position: relative;
+    width: 2px;
+    height: 6vw;
+    background-color: #cdaf36;    
+    transform-origin: top;
+}
+    .text-center {
+      text-align: center;
+    }
+
+    .best-practices {
+      margin-bottom: 35px;
+      margin-top:140px;
+    }
+
+    .best-practices .title_box .line {
+      transition: inherit;
+      transition: inherit;
+      -webkit-transform: inherit;
+      -ms-transform: scaleY(0);
+      transform: inherit;
+      -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+      transform-origin: top;
+    }
+
+    .practice-form-tab input {
+      width: 100%;
+      border-radius: 5px !important;
+    }
+
+    .best-practices .mb-3 {
+      margin-bottom: 15px;
+    }
+
+    .practice-form-tab .form {
+      border: 2px solid #ebebeb;
+      padding: 25px;
+      border-radius: 15px;
+      margin:1em 0;
+    }
+
+    .best-practices .intro {
+      margin: 0 0 15px 0;
+      padding: 8px 10px;
+      background: #f0efe9;
+      font-weight: 500;
+      text-align: start;
+    }
+
+    .practice-form-tab label {
+      width: 100%;
+      font-size: 1.1vw;
+      color:#3C3C3C;
+    }
+
+    .practice-form-tab .form-select {
+      width: 100% !important;
+      border: 1px solid #f1f1f1 !important;
+      height: 40px !important;
+      margin-top: 5px !important;
+      padding: 0 10px !important;
+      border-radius: 5px !important;
+      color: #c3bfbf;
+    }
+
+    .practice-form-tab .input-style {
+      border: 1px solid #f1f1f1 !important;
+      height: 40px !important;
+      margin-bottom: 0 !important;
+    }
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: transparent;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-repeat: no-repeat;
+      background-position-x: 100%;
+      background-position-y: 2px;
+      border: 1px solid #dfdfdf;
+      border-radius: 2px;
+      /* margin-right: 2rem; */
+      padding: 1rem;
+      padding-right: 2rem;
+      background-size: 35px;
+    }
+
+    .file-div .actual-btn {
+      color: white;
+      cursor: pointer;
+      width: 45px;
+      margin: 0;
+      padding: 1px;
+      position: absolute;
+      right: 1px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0;
+      background: #f0efe9;
+    }
+
+    #file-chosen {
+      margin-left: 0.3rem;
+      font-family: sans-serif;
+    }
+
+    .file-div {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .file-span {
+      width: 100%;
+      display: flex;
+      border: 1px solid #f1f1f1;
+      height: 40px;
+      align-items: center;
+      padding: 7px;
+      margin-left: 0 !important;
+      color:#c3bfbf;
+    }
+
+    .img-box-main {
+      display: flex;
+      align-items: center;
+    }
+
+    .img-box {
+      width: 65px;
+      height: 45px;
+      padding: 3px;
+      margin-right: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .img-box img {
+      width: 100%;
+      height:100%;
+      border-radius: 5px;
+      opacity: .5;
+    }
+
+    .img-box img.active {
+      opacity: 1;
+    }
+
+    .img-box.active {
+      border: 1px solid #aa8747;
+      opacity: 1;
+    }
+
+    .btn.btn-primary {
+      padding: 0.2rem 1.8rem;
+    background: transparent;
+    border: 0px solid #a78340;
+    /* color: #A27D3A; */
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.5vw;
+    background: -webkit-linear-gradient(305deg,#cdaf36,#a5803c 85%);
+    color: #fff;
+    border-radius: 1.5em;
+    }
+    .btn.btn-primary:hover{
+      background: #fff;
+    color: #a5803c;
+    -webkit-box-shadow: 1px 2px 10px #cdaf36;
+    box-shadow: 1px 2px 10px #cdaf36;
+    }
+
+    .div-one {
+      position:relative;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .div-two {
+      position:relative;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+.div-two .error, .div-one .error, .other-stream .error
+    {
+      background:#fd625c;
+      width: fit-content;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding:0 1em;
+    }
+    .div-two input[type=text]:not(.browser-default), .div-one input[type=text]:not(.browser-default){
+      width:100% !important;
+    }
+    #stream_name_en-error.error, #practice_title_en-error.error,#practice_title_ar-error.error, #stream_name_ar-error.error{
+      background:#fd625c;
+    width: fit-content;
+    padding:0 1em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    }
+
+    .box-form {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      gap: 15px;
+    }
+    #preview-tabs {
+      text-align: right;
+    }
+   
+#preview-tabs #content2  .form-en-link-view{
+  text-align:left !important;
+}
+#preview-tabs #content2  .form-en-link-view label {      
+    text-align: left !important;
+    display: block;
+}
+
+    #preview-tabs section {
+      display: none;
+      padding: 2em 0;
+      flex: 1;
+    }
+
+    #preview-tabs .custom-input-new {
+      display: none;
+    }
+    
+#preview-tabs .form label{
+  text-align: start !important;
+  display: flex;  
+}
+    #preview-tabs .custom-label-new {
+      display: inline-block;
+      margin: 0 0 -1px;
+      padding: 0.5em 2em;
+      font-weight: 600;
+      text-align: center;
+      background: #f8f8f8;
+      border-bottom: 2px solid #BCBCBC !important;
+      border: 0;
+      color: #b6afaf;
+      font-size:1.25vw;
+    }
+
+    #preview-tabs .custom-label-new:hover {
+      color: #888;
+      cursor: pointer;
+    }
+
+    #preview-tabs .custom-input-new:checked+label {
+      color:#CDAF36;
+      border-bottom: 2px solid #cdaf36 !important;
+      border: 0;
+      background: #f9f5e6;
+      font-size:1.25vw;
+    }
+
+    .preview-tab-form #preview-tabs main {
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+    .section_title span{
+      font-size:2.5vw;
+    }
+    .section_title.intro span{
+      font-size:1.25vw;
+      color:#000000;
+    }
+    .navbar {
+        background-color :rgba(0, 0, 0, 0.8);
+    }
+
+    #content1 .form-arabic .section_title.intro span {
+      display:flex !important;
+      justify-content:end !important;
+    }
+    #content1 .form-arabic label, #content1 .form-arabic input, #content1.form-arabic select, #content1 .form-arabic span{
+justify-content:end;
+text-align:end;
+    }
+    #content1 #stream_name_ar.form-select {
+      padding: 0 35px !important;
+      text-align:right;
+    }
+    #content1 .file-chosen-ar.file-span{
+      padding: 7px 54px !important;
+    }
+    #content2 .file-span{
+      padding: 7px 54px;
+    }
+    
+    #content2 #stream_name_ar.form-select {    
+    padding: 0 31px !important;    
+    text-align: right!important;
+}
+
+#content2 .form-en-link-view .intro {
+    margin: 0 0 15px 0;
+    padding: 8px 10px;
+    background: #f0efe9;
+    font-weight: 500;
+    text-align: start;
+    float: left;
+    width: 100%;
+}
+
+#content2 .form-en-link-view .section_title.intro span {   
+    float: left;    
+}
+#content2.practice-form-tab .form-select{
+  text-align:left !important;
+}
+#preview-tabs #content2 .form-en-link-view input{
+  text-align:left;
+}
+#preview-tabs #content2 .form-en-link-view .input-style.checker::placeholder, .box-form .div-one .input-style{
+  padding-left: 10px; 
+}
+ .box-form .div-two .input-style.checker::placeholder{
+padding-left: 10px;
+}
+#practice_title_en .input-style.checker::placeholder{
+  padding-left: 10px;
+}
+#preview-tabs #content2 .form-en-link-view .actual-btn {
+    text-align: left !important;
+    display: flex;
+}
+#content1 .file-div .actual-btn{
+  display:flex;
+  justify-content:center;
+}
+
+#content2 #file-chosen_en, #content2 #file-chosen-doc_en, #content2 #file-chosen-img_en{
+  display: grid !important;
+  text-align:left !important;
+  padding: 0 10px !important;
+}
+#stream_name_ar {
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    background: transparent !important;
+    background-image: url('') !important;
+    background-position: right center !important;
+    background-repeat: no-repeat !important;   
+    padding-right: 20px !important; 
+    direction: rtl !important;
+}
+.arabic-drop p {
+  position: absolute;
+    left: 14px;
+    top: 28px;
+    z-index: 0;
+}
+.div-two #email_en{
+  color:#000;
+  padding-left:10px;
+}
+
+.div-two #email_ar{
+  color:#000;
+  padding-left:10px;
+}
+
+    @media  only screen and (max-width: 1024px){
+    #preview-tabs .custom-input-new:checked+label, #preview-tabs .custom-label-new {  
+    font-size: 18px !important;
+}
+.section_title.intro span,.practice-form-tab label ,.btn.btn-primary  {
+    font-size: 2vw;
+}
+    }
+    
+    @media  only screen and (max-width: 768px){
+    .box-form {
+    display: block;   
+}
+.div-one, .div-two{
+  width:100%;
+}
+.section_title span {
+    font-size: 3vw;
+}
+#preview-tabs .custom-input-new:checked+label, #preview-tabs .custom-label-new {
+    font-size: 2.5vw;
+}
+.section_title.intro span,.practice-form-tab label ,.btn.btn-primary  {
+    font-size: 2.5vw;
+}
+    }
+    @media  only screen and (max-width: 676px){
+.section_title.intro span, .practice-form-tab label, .btn.btn-primary {
+    font-size: 18px;
+}
+.tab-small small{
+  font-size: 14px !important;
+}
+
+    } 
+  
+  </style>
+</head>
+
+<body>
+ 
+  <section class="best-practices">
+    <div class="container">
+      <h2 class="section_title"><span>Best Practices</span></h2>
+      <div class="title_box">
+        <span class="line"></span>
+      </div>
+      <h2 class="section_title text-center"><span>SUBMIT YOUR BEST PRACTICES</span></h2>
+      <div id="preview-tabs" class="preview-tab-form">
+
+        <main>
+
+          <input id="tab1" type="radio" name="tabs"  class="custom-input-new" value=0>
+          <label for="tab1" class="custom-label-new">English</label>
+
+          <input id="tab2" type="radio" name="tabs" class="custom-input-new" value=1>
+          <label for="tab2" class="custom-label-new" >العربية</label>
+              <div id="content1" class="practice-form-tab ">
+          <form method="POST" action="https://governmentexchange.gov.ae/en/createPractice" enctype="multipart/form-data" id='practice_form'>
+            <input type="hidden" name="_token" value="OnUBJ6vK4jxazAxlJOk3xIDjsZcZNkH4rGOaWR6W">
+            <!--  -->
+            <div class="form" id="form_en"  name="form_en">
+            <!-- <form method="POST" action="https://governmentexchange.gov.ae/en/createPractice" accept-charset="UTF-8" id="practice_form" class="practice_form" enctype="multipart/form-data"><input name="_token" type="hidden" value="OnUBJ6vK4jxazAxlJOk3xIDjsZcZNkH4rGOaWR6W"> -->
+                <h4 class="section_title intro"><span>Intros</span></h4>
+                <div class="mb-3 other-stream">
+                  <label for="stream_name_en" class="">
+                    Workstream*</label>
+                    <select name="stream_name_en" id="stream_name_en"  class="form-select checker" placeholder="" required>
+                                                                                    <option value="Government Services" data-attr="governemnt-services" > Government Services</option>
+                                                            <option value="Government Excellence" data-attr="government-excellence" > Government Excellence</option>
+                                                            <option value="Government Accelerators" data-attr="government-accelerators" > Government Accelerators</option>
+                                                            <option value="Government Performance" data-attr="government-performance" > Government Performance</option>
+                                                            <option value="Government Innovation" data-attr="governmation-innovation" > Government Innovation</option>
+                                                            <option value="Competitiveness and Statistics" data-attr="government-competitiveness" > Competitiveness and Statistics</option>
+                                                            <option value="Leadership and Capacity Building" data-attr="leadership-and-capacity-building" > Leadership and Capacity Building</option>
+                                                            <option value="Government Human Resources" data-attr="government-human-resources" > Government Human Resources</option>
+                                                            <option value="Programming" data-attr="programming" > Programming</option>
+                                                            <option value="Startup and Entrepreneurship" data-attr="startup-and-entrepreneurship" > Startup and Entrepreneurship</option>
+                                                            <option value="Government Capabilities" data-attr="government-capabilities" > Government Capabilities</option>
+                                                            <option value="Government Quality" data-attr="government-quality" > Government Quality</option>
+                                                            <option value="Smart Services" data-attr="smart-services" > Smart Services</option>
+                                                            <option value="Future Foresight" data-attr="future-foresight" > Future Foresight</option>
+                                                            <option value="Business Incubators" data-attr="business-incubators" > Business Incubators</option>
+                                                            <option value="Youth" data-attr="youth" > Youth</option>
+                                                            <option value="Strategic Plan" data-attr="strategic-plan" > Strategic Plan</option>
+                                                            <option value="TAXs Administration" data-attr="taxs" > TAXs Administration</option>
+                                                            <option value="Education" data-attr="education" > Education</option>
+                                                            <option value="Smart Safe City" data-attr="smart-safe-city" > Smart Safe City</option>
+                                                            <option value="Doing Business" data-attr="doing-business" > Doing Business</option>
+                                                            <option value="Civil Services" data-attr="civil-service" > Civil Services</option>
+                                                            <option value="Financial Matters" data-attr="financial-system" > Financial Matters</option>
+                                                            <option value="Airports Management &amp; Free Zones" data-attr="customs-airports-free-zones" > Airports Management &amp; Free Zones</option>
+                                                            <option value="Media &amp; Mass Communication" data-attr="media-mass-communication" > Media &amp; Mass Communication</option>
+                                                            <option value="Insurance" data-attr="insurance" > Insurance</option>
+                                                            <option value="Industry" data-attr="industry" > Industry</option>
+                                                            <option value="Economy" data-attr="economy" > Economy</option>
+                                                            <option value="Tourism" data-attr="tourism" > Tourism</option>
+                                                            <option value="Road Safety" data-attr="road-safety" > Road Safety</option>
+                                                            <option value="Government Services" data-attr="gov-services" > Government Services</option>
+                                                            <option value="1 Million Jordanian Coders" data-attr="1-million-jordanian-coders" > 1 Million Jordanian Coders</option>
+                                                            <option value="Artificial Intelligence" data-attr="artificial-intelligence" > Artificial Intelligence</option>
+                                                            <option value="Government Strategy" data-attr="government-strategy" > Government Strategy</option>
+                                                            <option value="Capacity Building" data-attr="capacity-building" > Capacity Building</option>
+                                                            <option value="Best mGov Service Award" data-attr="best-mgov-service-award" > Best mGov Service Award</option>
+                                                            <option value="Primary Education" data-attr="primary-education" > Primary Education</option>
+                                                            <option value="Government Communication" data-attr="government-communication" > Government Communication</option>
+                                                            <option value="Agriculture sector" data-attr="agriculture" > Agriculture sector</option>
+                                                            <option value="Higher Education" data-attr="higher-education" > Higher Education</option>
+                                                            <option value="Health  Department" data-attr="health-department" > Health  Department</option>
+                                                            <option value="Smart Services (Best Mobile Government Award)" data-attr="smart-services-best-mobile-government-award" > Smart Services (Best Mobile Government Award)</option>
+                                                            <option value="Programming (1M Jordanian Coders)" data-attr="programming-1m-jordanian-coders" > Programming (1M Jordanian Coders)</option>
+                                                            <option value="Programming (1M Uzbek Coders)" data-attr="programming-1m-uzbek-coders" > Programming (1M Uzbek Coders)</option>
+                                                            <option value="Programming (1M Coders)" data-attr="programming-1m-coders" > Programming (1M Coders)</option>
+                                                            <option value="Strategies and Policies" data-attr="strategies-and-policies" > Strategies and Policies</option>
+                                                            <option value="Health Management" data-attr="health-management" > Health Management</option>
+                                                            <option value="National Plan / Agenda" data-attr="national-plan-agenda" > National Plan / Agenda</option>
+                                                            <option value="Customs" data-attr="customs" > Customs</option>
+                                                            <option value="Volunteering Experience" data-attr="volunteering-experience" > Volunteering Experience</option>
+                                                            <option value="Digitalization of Banking Sector" data-attr="digitalization-of-banking-sector" > Digitalization of Banking Sector</option>
+                                                            <option value="Climate Change" data-attr="climate-change" > Climate Change</option>
+                                                            <option value="Heritage and Culture" data-attr="heritage-and-culture" > Heritage and Culture</option>
+                                                            <option value="Management" data-attr="management" > Management</option>
+                                                            <option value="Transparency" data-attr="transparency" > Transparency</option>
+                                                            <option value="Women&#039;s Empowerment" data-attr="women-s-empowerment" > Women&#039;s Empowerment</option>
+                                                            <option value="Accountability Mechanisms" data-attr="accountability-mechanisms" > Accountability Mechanisms</option>
+                                                            <option value="Decision Making" data-attr="decision-making" > Decision Making</option>
+                                                            <option value="Digital Economy" data-attr="digital-economy" > Digital Economy</option>
+                                                            <option value="Science and Innovation" data-attr="science-and-innovation" > Science and Innovation</option>
+                                                            <option value="Creative Industries" data-attr="creative-industries" > Creative Industries</option>
+                                                            <option value="Expo2020" data-attr="expo2020" > Expo2020</option>
+                                                            <option value="AI and Metaverse" data-attr="ai-and-metaverse" > AI and Metaverse</option>
+                                                            <option value="Programming (150k Guyanese Coders)" data-attr="programming-150k-guyanese-coders" > Programming (150k Guyanese Coders)</option>
+                                                            <option value="Banking System" data-attr="banking-system" > Banking System</option>
+                                                                            <option value="Other" data-attr="Other" > Other</option>
+
+                    </select>
+                </div>
+                <div class="mb-3 other-stream" id="other_stream">
+                  <label for="other_stream_name_en" class="">
+                  Workstream*</label>
+                  <input type="text" class="input-style checker" id="other_stream_name_en" name="other_stream_name_en" aria-describedby="" required data-msg="This field is required">
+                </div>
+                <div class="mb-3 box-form" >
+                    <div class="div-one">
+                        <label for="recommended_team_en" class="">
+                        Brief about the work stream*</label>
+                          <input type="text" class="input-style checker" id="recommended_team_en" name="recommended_team_en" aria-describedby="" required data-msg="This field is required">
+                          <input type="text" class="input-style" id="lang_en" name="lang_en" aria-describedby="" hidden value="1">
+                          
+                    </div>
+                    <div class="div-two">
+                        <label for="website_en" class="">
+                            Website*</label>
+                          <input type="text" class="input-style checker" id="website_en" name="website_en" aria-describedby="" required data-msg="This field is required" placeholder=" https://www.example.com">
+                          <label class="error-label" id="website_en_error"></label>
+                    </div>
+                </div>
+                <div class="mb-3 box-form" >
+                    <div class="div-one">
+                        <label for="contact_person_en" class="">
+                            Contact Person Name*</label>
+                          <input type="text" class="input-style checker" id="contact_person_en" name="contact_person_en" aria-describedby="" required>
+                    </div>
+                    <div class="div-two">
+                        <label for="email_en" class="">
+                            Email*</label>
+                          <input type="text" class="input-style checker" id="email_en" name="email_en" aria-describedby="" required type="email" placeholder=" name@example.com">
+                    </div>
+                </div>
+                <!--  -->
+                <h4 class="section_title intro"><span>Proposed Best Practice</span></h4>
+                <div class="mb-3">
+                  <label for="practice_title_en" class="">
+                    Title*</label>
+                    <div>
+                    <input type="text" class="input-style checker" id="practice_title_en" name="practice_title_en" aria-describedby="" required placeholder="">
+                </div>
+                </div>
+                <div class="mb-3 box-form" >
+                    <div class="div-one">
+                        <label for="initiative_brief_en" class="">
+                            Brief About The Initiative*</label>
+                          <input type="text" class="input-style checker" id="initiative_brief_en" name="initiative_brief_en" aria-describedby="" required>
+                    </div>
+                    <div class="div-two">
+                        <label for="prerequisite_en" class="">
+                            Prerequisite*</label>
+                          <input type="text" class="input-style checker" id="prerequisite_en" name="prerequisite_en" aria-describedby="" required>
+                    </div>
+                </div>
+                <div class="mb-3 box-form" >
+                    <div class="div-one">
+                        <label for="outcome_en" class="">
+                            Outcome*</label>
+                          <input type="text" class="input-style checker" id="outcome_en" name="outcome_en" aria-describedby="" required>
+                    </div>
+                    <div class="div-two">
+                        <label for="duration_en" class="">
+                            Duration*</label>
+                          <input type="text" class="input-style checker" id="duration_en" name="duration_en" aria-describedby="" required>
+                    </div>
+                </div>
+                <!--  -->
+                 <!--  -->
+                 <h4 class="section_title intro"><span>Attachments</span></h4>
+                 <div class="mb-3">
+                   <label for="entity_logo_en" class="">
+                     Entity Logo</label>
+                    <!--  -->
+                    <div class="file-div">
+                        <span id="file-chosen_en" class="file-span" >No file chosen</span>
+                        <input type="file" id="entity_logo_en" name="entity_logo_en" accept=".jpg, .jpeg, .png" hidden  data-msg="This field is required" />
+                        <label for="entity_logo_en" class="actual-btn">
+                        <!-- <img src="https://governmentexchange.gov.ae/storage/post/file-attach.png" alt="" class="" style="width: 20px;" />     -->
+                        <img src="https://governmentexchange.gov.ae/assets/frontend/dist/images/best-practice/file-attach.png" alt="" class="" style="width: 20px;" />  
+                        </label>
+                    </div>
+                    <input type="text" id="entity_logo_64_en" name="entity_logo_64_en" hidden/>
+                    <!--  -->
+                 </div>
+                 <div class="mb-3">
+                    <label for="" class="">
+                      Supporting Documents</label>
+                     <!--  -->
+                     <div class="file-div"> 
+                        <span id="file-chosen-doc_en" class="file-span" >No file chosen</span> 
+                        <input type="file" id="supporting_documents_en" name="supporting_documents_en[]" hidden multiple  data-msg="This field is required" accept=".pdf, .doc, .docx"/> 
+                        <label for="supporting_documents_en" class="actual-btn"> 
+                        <!-- <img src="https://governmentexchange.gov.ae/storage/post/file-attach.png" alt="" class="" style="width: 20px;" /> -->
+                        <img src="https://governmentexchange.gov.ae/assets/frontend/dist/images/best-practice/file-attach.png" alt="" class="" style="width: 20px;" />  
+                        </label> 
+                        <ul id="file-list_en" hidden></ul> 
+                      </div>
+                     <!--  -->
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="">
+                      Upload Images</label>
+                     <!--  -->
+                     <div class="file-div">
+                         <span id="file-chosen-img_en" class="file-span" >No file chosen</span>
+                        <input type="file" id="image_en" name="image_en" hidden accept=".jpg, .jpeg, .png"  data-msg="This field is required" />
+                        <label for="image_en" class="actual-btn">
+                         <!-- <img src="https://governmentexchange.gov.ae/storage/post/file-attach.png" alt="" class="" style="width: 20px;" />     -->
+                         <img src="https://governmentexchange.gov.ae/assets/frontend/dist/images/best-practice/file-attach.png" alt="" class="" style="width: 20px;" />  
+                         </label>
+                         <input type="text" id="img_logo_64_en" name="img_logo_64_en" hidden/>
+                     </div>
+                     <p class="tab-small"><small>The image should have a minimum size of 830 KB, a width of 1416 pixels, and a height of 382 pixels.</small></p>
+                     <!--  -->
+                  </div>
+                  <div class="mb-3 img-box-main" style="">
+                    <div  class="img-box active" id="img-box_en" style="display:none">
+                        <img src=""alt="" class="active" id="image-preview_en">
+                    </div>
+                  </div>
+                 <!--  -->
+                 <div class="mb-3 text-right">
+                    <button class="btn btn-primary" type="button" id="next_btn_en">Next</button>
+                 </div>
+              <!-- </form> -->
+              <!-- </form> -->
+            </div>
+            <div class="form form-arabic" id="form_ar"  name="form_ar">
+            <!-- <form method="POST" action="https://governmentexchange.gov.ae/en/createPractice" accept-charset="UTF-8" id="practice_form" class="practice_form" enctype="multipart/form-data"><input name="_token" type="hidden" value="OnUBJ6vK4jxazAxlJOk3xIDjsZcZNkH4rGOaWR6W"> -->
+                <h4 class="section_title intro"><span>مقدمة</span></h4>
+                <div class="mb-3 arabic-drop" style="position:relative;">
+                  <label for="stream_name_ar" class="">
+                  محاور التعاون*</label>
+                    <select name="stream_name_ar" id="stream_name_ar"  class="form-select checker" placeholder="" required style="position:relative;z-index:9;">
+                                                                        <option value="الخدمات الحكومية" data-attr="governemnt-services" > الخدمات الحكومية</option>
+                                                    <option value="التميز الحكومي" data-attr="government-excellence" > التميز الحكومي</option>
+                                                    <option value="المسرعات الحكومية" data-attr="government-accelerators" > المسرعات الحكومية</option>
+                                                    <option value="الأداء الحكومي" data-attr="government-performance" > الأداء الحكومي</option>
+                                                    <option value="الابتكار الحكومي" data-attr="governmation-innovation" > الابتكار الحكومي</option>
+                                                    <option value="التنافسية والإحصاء" data-attr="government-competitiveness" > التنافسية والإحصاء</option>
+                                                    <option value="القيادات وبناء القدرات" data-attr="leadership-and-capacity-building" > القيادات وبناء القدرات</option>
+                                                    <option value="الموارد البشرية الحكومية" data-attr="government-human-resources" > الموارد البشرية الحكومية</option>
+                                                    <option value="البرمجة – مبادرة المليون مبرمج" data-attr="programming" > البرمجة – مبادرة المليون مبرمج</option>
+                                                    <option value="ريادة الأعمال والشركات الناشئة" data-attr="startup-and-entrepreneurship" > ريادة الأعمال والشركات الناشئة</option>
+                                                    <option value="بناء القدرات الحكومية" data-attr="government-capabilities" > بناء القدرات الحكومية</option>
+                                                    <option value="الجودة  الحكومية" data-attr="government-quality" > الجودة  الحكومية</option>
+                                                    <option value="جائزة التطبيقات الذكية" data-attr="smart-services" > جائزة التطبيقات الذكية</option>
+                                                    <option value="استشراف المستقبل" data-attr="future-foresight" > استشراف المستقبل</option>
+                                                    <option value="حاضنات الأعمال" data-attr="business-incubators" > حاضنات الأعمال</option>
+                                                    <option value="الشباب" data-attr="youth" > الشباب</option>
+                                                    <option value="الخطة  الاستراتيجية" data-attr="strategic-plan" > الخطة  الاستراتيجية</option>
+                                                    <option value="إدارة الضرائب" data-attr="taxs" > إدارة الضرائب</option>
+                                                    <option value="التعليم" data-attr="education" > التعليم</option>
+                                                    <option value="المدينة الآمنة الذكية" data-attr="smart-safe-city" > المدينة الآمنة الذكية</option>
+                                                    <option value="مزاولة الأعمال" data-attr="doing-business" > مزاولة الأعمال</option>
+                                                    <option value="الخدمة المدنية" data-attr="civil-service" > الخدمة المدنية</option>
+                                                    <option value="القطاع المالي" data-attr="financial-system" > القطاع المالي</option>
+                                                    <option value="إدارة المطارات والمناطق الحرة" data-attr="customs-airports-free-zones" > إدارة المطارات والمناطق الحرة</option>
+                                                    <option value="الإعلام والاتصال الجماهيري" data-attr="media-mass-communication" > الإعلام والاتصال الجماهيري</option>
+                                                    <option value="التأمين" data-attr="insurance" > التأمين</option>
+                                                    <option value="الصناعة" data-attr="industry" > الصناعة</option>
+                                                    <option value="الاقتصاد" data-attr="economy" > الاقتصاد</option>
+                                                    <option value="السياحة" data-attr="tourism" > السياحة</option>
+                                                    <option value="أمن الطرق" data-attr="road-safety" > أمن الطرق</option>
+                                                    <option value="الخدمات الحكومية" data-attr="gov-services" > الخدمات الحكومية</option>
+                                                    <option value="مليون مبرمج  أردني" data-attr="1-million-jordanian-coders" > مليون مبرمج  أردني</option>
+                                                    <option value="الذكاء  الاصطناعي" data-attr="artificial-intelligence" > الذكاء  الاصطناعي</option>
+                                                    <option value="الخطة  الاستراتيجية" data-attr="government-strategy" > الخطة  الاستراتيجية</option>
+                                                    <option value="بناء القدرات الحكومية" data-attr="capacity-building" > بناء القدرات الحكومية</option>
+                                                    <option value="جائزة أفضل تطبيق خدمات حكومية" data-attr="best-mgov-service-award" > جائزة أفضل تطبيق خدمات حكومية</option>
+                                                    <option value="التعليم الأساسي" data-attr="primary-education" > التعليم الأساسي</option>
+                                                    <option value="الاتصال الحكومي" data-attr="government-communication" > الاتصال الحكومي</option>
+                                                    <option value="القطاع الزراعي" data-attr="agriculture" > القطاع الزراعي</option>
+                                                    <option value="التعليم العالي" data-attr="higher-education" > التعليم العالي</option>
+                                                    <option value="الإدارة الصحة" data-attr="health-department" > الإدارة الصحة</option>
+                                                    <option value="الخدمات الذكية (جائزة التطبيقات الذكية)" data-attr="smart-services-best-mobile-government-award" > الخدمات الذكية (جائزة التطبيقات الذكية)</option>
+                                                    <option value="البرمجة (مليون مبرمج أردني)" data-attr="programming-1m-jordanian-coders" > البرمجة (مليون مبرمج أردني)</option>
+                                                    <option value="البرمجة (مليون مبرمج أوزبكي)" data-attr="programming-1m-uzbek-coders" > البرمجة (مليون مبرمج أوزبكي)</option>
+                                                    <option value="البرمجة (مليون مبرمج)" data-attr="programming-1m-coders" > البرمجة (مليون مبرمج)</option>
+                                                    <option value="الاستراتيجيات والسياسات" data-attr="strategies-and-policies" > الاستراتيجيات والسياسات</option>
+                                                    <option value="الإدارة الصحية" data-attr="health-management" > الإدارة الصحية</option>
+                                                    <option value="الاستراتيجية / الخطة الوطنية" data-attr="national-plan-agenda" > الاستراتيجية / الخطة الوطنية</option>
+                                                    <option value="الجمارك" data-attr="customs" > الجمارك</option>
+                                                    <option value="الخبرات التطوعية" data-attr="volunteering-experience" > الخبرات التطوعية</option>
+                                                    <option value="رقمنة القطاع المصرفي" data-attr="digitalization-of-banking-sector" > رقمنة القطاع المصرفي</option>
+                                                    <option value="التغيير المناخي" data-attr="climate-change" > التغيير المناخي</option>
+                                                    <option value="الحفاظ على التراث" data-attr="heritage-and-culture" > الحفاظ على التراث</option>
+                                                    <option value="إدارة العمل الحكومي" data-attr="management" > إدارة العمل الحكومي</option>
+                                                    <option value="الشفافية في العمل الحكومي" data-attr="transparency" > الشفافية في العمل الحكومي</option>
+                                                    <option value="تمكين المرأة" data-attr="women-s-empowerment" > تمكين المرأة</option>
+                                                    <option value="آليات المحاسبة" data-attr="accountability-mechanisms" > آليات المحاسبة</option>
+                                                    <option value="اتخاذ القرارات" data-attr="decision-making" > اتخاذ القرارات</option>
+                                                    <option value="الاقتصاد الرقمي" data-attr="digital-economy" > الاقتصاد الرقمي</option>
+                                                    <option value="العلوم والابتكار" data-attr="science-and-innovation" > العلوم والابتكار</option>
+                                                    <option value="القطاعات الابداعية" data-attr="creative-industries" > القطاعات الابداعية</option>
+                                                    <option value="إكسبو2020" data-attr="expo2020" > إكسبو2020</option>
+                                                    <option value="الذكاء الاصطناعي والميتافيرس" data-attr="ai-and-metaverse" > الذكاء الاصطناعي والميتافيرس</option>
+                                                    <option value="البرمجة" data-attr="programming-150k-guyanese-coders" > البرمجة</option>
+                                                    <option value="النظام المصرفي" data-attr="banking-system" > النظام المصرفي</option>
+                                                                          <option value="آخر" data-attr="Other" > آخر</option>
+                    </select>
+                    <p>&#11206;</p>
+                </div>
+                <div class="mb-3 other-stream" id="other_stream">
+                  <label for="other_stream_name_ar" class="">
+                  محاور التعاون*</label>
+                  <input type="text" class="input-style checker" id="other_stream_name_ar" name="other_stream_name_ar" aria-describedby="" required data-msg="This field is required">
+                </div>
+                <div class="mb-3 box-form" >
+                <div class="div-two">
+                        <label for="website_ar" class="">
+                        موقع إلكتروني*</label>
+                          <input type="text" class="input-style checker" id="website_ar" name="website_ar" aria-describedby=""  placeholder=" https://www.example.com" required>
+                    </div>
+                    <div class="div-one">
+                        <label for="recommended_team_ar" class="">
+                        نبذة مختصرة عن مسار العمل*</label>
+                          <input type="text" class="input-style checker" id="recommended_team_ar" name="recommended_team_ar" aria-describedby=""  data-msg="This field is required" required>
+                          <input type="text" class="input-style" id="lang_ar" name="lang_ar" aria-describedby="" hidden value="1">
+                    </div>
+                    
+                </div>
+                <div class="mb-3 box-form" >
+                <div class="div-two">
+                        <label for="email_ar" class="">
+                        بريد إلكتروني*</label>
+                          <input type="text" class="input-style checker" id="email_ar" name="email_ar" aria-describedby=""  placeholder=" name@example.com" required>
+                    </div>
+                    <div class="div-one">
+                        <label for="contact_person_ar" class="">
+                        التواصل *</label>
+                          <input type="text" class="input-style checker" id="contact_person_ar" name="contact_person_ar" aria-describedby="" required>
+                    </div>
+                    
+                </div>
+                <!--  -->
+                <h4 class="section_title intro"><span>أفضل الممارسات المقترحة</span></h4>
+                <div class="mb-3">
+                  <label for="practice_title_ar" class="">
+                  العنوان*</label>
+                    <div>
+                    <input type="text" class="input-style checker" id="practice_title_ar" name="practice_title_ar" aria-describedby="" required>
+                </div>
+                </div>
+                <div class="mb-3 box-form" >
+                <div class="div-two">
+                        <label for="prerequisite_ar" class="">
+                        المتطلبات الأساسية*</label>
+                          <input type="text" class="input-style checker" id="prerequisite_ar" name="prerequisite_ar" aria-describedby="" required>
+                    </div>
+                    <div class="div-one">
+                        <label for="initiative_brief_ar" class="">
+                        نبذة عن المبادرة*</label>
+                          <input type="text" class="input-style checker" id="initiative_brief_ar" name="initiative_brief_ar" aria-describedby="" required>
+                    </div>
+                    
+                </div>
+                <div class="mb-3 box-form" >
+                <div class="div-two">
+                        <label for="duration_ar" class="">
+                        المدة*</label>
+                          <input type="text" class="input-style checker" id="duration_ar" name="duration_ar" aria-describedby="" required>
+                    </div>
+                    <div class="div-one">
+                        <label for="outcome_ar" class="">
+                        النتائج*</label>
+                          <input type="text" class="input-style checker" id="outcome_ar" name="outcome_ar" aria-describedby="" required>
+                    </div>
+                   
+                </div>
+                <!--  -->
+                 <!--  -->
+                 <!-- <h4 class="section_title intro"><span>المرفقات</span></h4> -->
+                 <div class="mb-3">
+                   <!-- <label for="entity_logo_ar" class="">
+                   شعار الجهة</label> -->
+                    <!--  -->
+                    <!-- <div class="file-div">
+                        <span id="file-chosen_ar" class="file-chosen-ar file-span" >لم تقم باختيار ملف</span>
+                        <input type="file" id="entity_logo_ar" name="entity_logo_ar" accept=".jpg, .jpeg, .png" hidden />
+                        <label for="entity_logo_ar" class="actual-btn">
+                        
+                        <img src="https://governmentexchange.gov.ae/assets/frontend/dist/images/best-practice/file-attach.png" alt="" class="" style="width: 20px;" />  
+                        </label>
+                    </div> -->
+                    <input type="text" id="entity_logo_64_ar" name="entity_logo_64_ar" hidden />
+                    <!--  -->
+                 </div>
+                 <div class="mb-3">
+                    <!-- <label for="" class="">
+                    الوثائق الداعمة</label> -->
+                     <!--  -->
+                     <!-- <div class="file-div"> 
+                        <span id="file-chosen-doc_ar" class="file-chosen-ar file-span" >لم تقم باختيار ملف</span> 
+                        <input type="file" id="supporting_documents_ar" name="supporting_documents_ar[]" hidden multiple  accept=".pdf, .doc, .docx"/> 
+                        <label for="supporting_documents_ar" class="actual-btn"> 
+                        
+                        <img src="https://governmentexchange.gov.ae/assets/frontend/dist/images/best-practice/file-attach.png" alt="" class="" style="width: 20px;" />  
+                        </label> 
+                        <ul id="file-list_ar" hidden></ul> 
+                      </div> -->
+                     <!--  -->
+                  </div>
+                  <div class="mb-3">
+                    <!-- <label for="" class="">
+                    تحميل الصور</label> -->
+                     <!--  -->
+                     <!-- <div class="file-div">
+                         <span id="file-chosen-img_ar" class="file-chosen-ar file-span" >لم تقم باختيار ملف</span>
+                         <input type="file" id="image_ar" name="image_ar" hidden  accept=".jpg, .jpeg, .png" />
+                         <label for="image_ar" class="actual-btn">
+                         
+                         <img src="https://governmentexchange.gov.ae/assets/frontend/dist/images/best-practice/file-attach.png" alt="" class="" style="width: 20px;" />  
+                         </label>
+                         <input type="text" id="img_logo_64_ar" name="img_logo_64_ar" hidden/>
+                     </div>
+                     <p class="tab-small"><small>يجب أن يكون حجم الصورة 830 كيلو بايت على الأقل، وعرضها 1416 بكسل، وارتفاعها 382 بكسل.</small></p> -->
+                     <!--  -->
+                  </div>
+                  <div class="mb-3 img-box-main" style="">
+                    <!-- <div  class="img-box active" id="img-box_ar" style="display:none">
+                        <img src=""alt="" class="active" id="image-preview_ar">
+                    </div> -->
+                  </div>
+                 <!--  -->
+                 <div class="mb-3 text-right">
+                    <button class="btn btn-primary" id="preview_btn" type="button">معاينة</button>
+                 </div>
+
+                 <div class="aj_loader">
+                      <div class="inner_loader">
+                        <div class="c_loader"></div>
+                      </div>
+                      <div class="message_box "></div>
+                  </div>
+              <!-- </form> -->
+              <!-- </form> -->
+            </div>
+          </form>
+        </div>
+            </main>
+      </div>
+
+    </div>
+  </section>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"95fdc1c7c91b3897","version":"2025.6.2","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"3473c6733b5248f386c411c0edcc1479","b":1}' crossorigin="anonymous"></script>
+</body>
+
+
+	<footer>
+  <div class="container">
+    <div class="inner">
+      <ul class="footer_social">
+         <li><a href="https://x.com/Govexchangeae" target="blank_" class="newSvg">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 98" fill="none" >
+            <path d="M57.0697 41.4969L92.7677 0H84.3076L53.312 36.0303L28.5548 0H0L37.4375 54.4849L0 98H8.46016L41.1937 59.9507L67.3383 98H95.893L57.0674 41.4969H57.0697ZM45.4827 54.9642L41.689 49.539L11.5081 6.36847H24.5023L48.8576 41.209L52.6505 46.6342L84.3114 91.9209H71.3187L45.4827 54.9665V54.9642Z" fill="black"/>
+        </svg>
+         </a></li>
+          <li><a href="https://www.facebook.com/Govexchange" target="blank_"><i class="icon icon-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/govexchange/" target="blank_"><i class="icon icon-linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/govexchange/" target="blank_"><i class="icon icon-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCf5vWPy3dgOdza4nTBmlqug" target="blank_">
+            <svg viewBox="-21 -117 682.66672 682" xmlns="http://www.w3.org/2000/svg"><path d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0"></path></svg>
+          </a></li>
+      </ul>
+      <p class="text-center">GOVERNMENT EXPERIENCE EXCHANGE OFFICE © 2025 ALL RIGHTS RESERVED</p>
+    </div>
+  </div>
+  <div class="progress-wrap"><svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" ></path></svg></div>
+</footer>	    		<!-- Styles -->
+
+<!-- Scripts -->
+<script>
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    if (window.document.documentMode || isSafari) {
+        var blz_elemt = document.getElementsByClassName('b-lazy');
+        for (var i = 0; i < blz_elemt.length; ++i) {
+            var src_ = blz_elemt[i].dataset,
+                src_data = JSON.parse(JSON.stringify(src_));
+            for (var key in src_data) {
+                var file_path = src_data[key];
+                if (file_path.split('.').pop() == 'webp') {
+                    new_file = file_path.substr(0, file_path.lastIndexOf(".")) + ".jpg";
+                    blz_elemt[i].dataset[key] = new_file;
+                }
+            }
+        }
+    }
+</script>
+
+<script src="https://governmentexchange.gov.ae/assets/frontend/dist/scripts/lib/modernizr.min.js"></script>
+<script src="https://governmentexchange.gov.ae/assets/frontend/dist/scripts/lib/jquery-3.5.1.min.js"></script>
+<script src="https://governmentexchange.gov.ae/assets/frontend/dist/scripts/lib/jquery-migrate-3.3.0.min.js"></script>
+<!-- <script src="https://governmentexchange.gov.ae/assets/frontend/dist/scripts/swiper.min.js"></script>
+<script src="https://governmentexchange.gov.ae/assets/frontend/dist/scripts/best_jquery.min.js"></script> -->
+    <script src="https://governmentexchange.gov.ae/assets/frontend/dist/scripts/min/page_plugins.js"></script>
+    <script src="https://governmentexchange.gov.ae/assets/frontend/dist/scripts/min/page.js"></script>
+    <script type="text/javascript" src="https://governmentexchange.gov.ae/assets/frontend/sweetalert2/sweetalert2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit&hl=en" async defer></script>
+<script>
+
+    $(function() {
+        var targetVideo = $("#background_video source") 
+        var targetVideoPhone = $("#background_video source").attr("data-phone");
+        var targetVideoTab = $("#background_video source").attr("data-tablet");
+
+
+         setTimeout(function(){
+           if( $(window).width() < 767){
+                targetVideo.attr("src", targetVideoPhone)
+                setTimeout(function() {
+                    $("#background_video")[0].load();
+                },500)
+            }else if($(window).width() >= 768 && $(window).width() < 1200){
+                targetVideo.attr("src", targetVideoTab)
+                setTimeout(function() {
+                    $("#background_video")[0].load();
+                },500)
+            }
+          },100)
+    });
+    
+
+
+    function mediaSwiper(swiperTarge) {
+
+            var tragetData = `${swiperTarge} .swiper-container`
+
+            var slides = $(swiperTarge).find('.swiper-slide').length;
+
+            if(slides < 2){
+                $(swiperTarge).find('.swiper_nav').hide();
+            }
+
+            mediaSwiperMain: {
+                 new Swiper(tragetData, {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    speed: 500,
+                    navigation: {
+                        nextEl: `${swiperTarge} .next_`,
+                        prevEl: `${swiperTarge} .prev_`,
+                    },
+                    breakpoints: {
+                        0: {
+                            slidesPerView: 1,
+                        },
+                        960: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        }
+                    },
+                    on: {
+                        init: function() {
+                            window.bLazy.revalidate();
+                        },
+                        slideChange: function() {
+                            window.bLazy.revalidate();
+                        }
+                    },
+
+                });
+            }
+
+            
+        };
+
+        mediaSwiper('[data-photo-swiper]');
+        mediaSwiper('[data-video-swiper]');
+        mediaSwiper('[data-report-swiper]');
+
+        $('[data-tab-nav]').on('click', function() {
+            setTimeout(function() {
+                mediaSwiper('[data-photo-swiper]');
+                mediaSwiper('[data-video-swiper]');
+                mediaSwiper('[data-report-swiper]');
+            },100)
+        });
+
+
+
+    function sendAjax(url, type, dataToSend, callback, async) {
+        if ($('#commonAjaxLoader').length) {
+            $('#commonAjaxLoader').show();
+        }
+        $.ajax({
+            url: url,
+            type: type,
+            async: async !==undefined ? async :false,
+            data: dataToSend,
+            dataType: 'json',
+            statusCode: {
+                302: function() {
+                    alert('Forbidden. Access Restricted');
+                },
+                403: function() {
+                    alert('Forbidden. Access Restricted', '403');
+                },
+                404: function() {
+                    alert('Page not found', '404');
+                },
+                500: function() {
+                    alert('Unexpected Error', '500');
+                }
+            }
+        }).done(function(responseData) {
+            callback(responseData);
+            $('#commonAjaxLoader').hide();
+
+        }).fail(function(jqXHR, textStatus) {
+            $('#commonAjaxLoader').hide();
+            callback(jqXHR);
+
+        });
+    }
+
+    var recaptchaArr = [];
+
+    function CaptchaCallback() {
+        $('.recaptcha').each(function() {
+            var id = $(this).attr('id');
+            if (id) {
+                var tmp = grecaptcha.render($(this).attr('id'), {
+                    'sitekey': '6LdrSBsUAAAAAK4SPutVxZFwpJ7Cl6kTb93wITcb',
+                    'theme': 'light',
+                    'lang': 'en'
+                });
+                recaptchaArr.push({
+                    ID: $(this).attr('id'),
+                    obj: tmp
+                });
+            }
+        })
+
+    };
+
+    function haveRecaptchaResponse(elemID) {
+        var hasResponse = false;
+        $(recaptchaArr).each(function(i, v) {
+            if (v.ID == elemID) {
+                if (grecaptcha.getResponse(v.obj) != '') {
+                    hasResponse = true;
+                }
+            }
+        });
+        return hasResponse;
+    }
+
+    function renderLoadMoreButton(obj) {
+	  	var loaderStyle = (obj.paginateURL != "") ? "" : "display:none;";
+
+	    var button = [
+	      '<div style="' + loaderStyle + '" class="btn_group" id="load_more_'+ obj.activeTab +'" data-redirect="' + obj.paginateURL + '">',
+	      '<a href="#" class="btn_classic">' + obj.text + '</a></div>',
+	    ];
+
+	    $("#" + obj.wrapperName).after(button.join(''));
+	}
+
+    function loaderButtonStatus(el, paginateURL) {
+	  	if(paginateURL === "") {
+	         $(el).hide();
+	      } else {
+	         $(el).show();
+	         $(el).attr("data-redirect", paginateURL);
+	      }
+	}    
+
+    </script>
+	
+    
+    <script src="https://governmentexchange.gov.ae/assets/frontend/mask/jquery.mask.min.js"></script>
+    <script src="https://governmentexchange.gov.ae/assets/frontend/jQueryValidate/jquery.validate.js"></script>
+
+
+    <script>
+
+        $(document).ready(function(){
+
+         
+          $("#other_stream_name_en").val("none");
+           $("#other_stream_name_ar").val("لا أحد");
+          // if (sessionStorage.getItem('showOtherStream') === 'true') {
+          //       $("#form_en #other_stream, #form_ar #other_stream").show();
+          // }else{
+            $("#form_en #other_stream, #form_ar #other_stream").hide();
+          // }
+
+          // Check if 'showOtherStream' is set in sessionStorage
+          var showOtherStream = sessionStorage.getItem('showOtherStream');
+          // Check if the preview button was clicked
+          var previewButtonClick = sessionStorage.getItem('previewButtonClick');
+
+          if (previewButtonClick === 'true') {
+            // Retain the 'showOtherStream' session
+            if (showOtherStream === 'true') {
+                //$("#form_en #other_stream, #form_ar #other_stream").show();
+                sessionStorage.removeItem('previewButtonClick');
+            }
+        } else {
+          //$("#form_en #other_stream, #form_ar #other_stream").hide();
+            // Clear all sessions if the preview button was not clicked
+            sessionStorage.clear();
+        }
+
+          
+
+          var lang = "en";
+          let currentTab = '';
+        if(lang == 'en'){
+            $('#tab1').attr('checked', true);
+            switchTab('tab1');
+            
+        }else{
+            $('#tab2').attr('checked', true);
+            switchTab('tab2');
+            
+        }
+          
+          const preview = getCookie('preview');
+          if(preview != '1'){
+            clearAllCookies();
+          }
+
+          // window.addEventListener('beforeunload', function(event) {
+          //           // Check if it's a page refresh
+
+          //           console.log(performance.navigation.type)
+          //           if ('page load',performance.navigation.type === 1) {
+          //               // Clear cookies or perform other actions on page refresh
+          //               clearAllCookies();
+          //           }
+                  // });
+          
+          function clearAllCookies() {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i];
+                    const eqPos = cookie.indexOf('=');
+                    const cookieName = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+                    document.cookie = `${cookieName}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+                }
+                }
+                
+
+                window.onload = function(){
+                
+                    if (performance.navigation.type === 0 || performance.navigation.type === 1) {
+                        // Clear cookies or perform other actions on page refresh
+                        clearAllCookies();
+                    }
+                   
+                    var radioValue = $("input[name='tabs']:checked").val();
+                    var lang = "en";
+                      let currentTab = '';
+                    if(lang == 'en'){
+                      $('input[type="radio"][name="tabs"][value="0"]').prop('checked', true);
+                        switchTab('tab1');
+                        
+                    }else{
+                      $('input[type="radio"][name="tabs"][value="1"]').prop('checked', true);
+                        switchTab('tab2');
+                        
+                    }
+                }
+
+
+
+$('#stream_name_en').on('change', function() {
+           
+            var selectedDataAttr = $(this).find('option:selected').data('attr');
+            
+            $('#stream_name_ar option[data-attr="' + selectedDataAttr + '"]').prop('selected', true);
+        });
+
+        $('#stream_name_ar').on('change', function() {
+           
+            var selectedDataAttr = $(this).find('option:selected').data('attr');
+           
+            $('#stream_name_en option[data-attr="' + selectedDataAttr + '"]').prop('selected', true);
+        });
+          
+          
+          
+          //   if(radioValue == 0){
+          //       $("#form_ar").hide();
+          //       $("#form_en").show();
+          //   }
+          //   else{
+          //       $("#form_en").hide();
+          //       $("#form_ar").show();
+          //   }
+
+          $('#tab2').click(function(){
+            switchTab('tab2');
+          });
+
+          $('#tab1').click(function(){
+            switchTab('tab1');
+          });
+
+          // Function to switch tabs
+        function switchTab(tabId) {
+            currentTab = tabId;
+            if(tabId == "tab1"){
+              $('#tab1').attr('checked', true);
+              $('#tab2').attr('checked', false);
+              $('#form_en').show();
+              $('#form_ar').hide();
+            }
+            else if(tabId == "tab2"){
+              $('#tab2').attr('checked', true);
+              $('#tab1').attr('checked', false);
+              $('#form_ar').show();
+              $('#form_en').hide();
+            }
+            window.history.pushState({ tab: tabId }, '', `#${tabId}`);
+        }
+         // Event listener for back button
+         window.addEventListener('popstate', (event) => {
+            if (event.state && event.state.tab) {
+                switchTab(event.state.tab);
+            }
+        });
+
+          $.validator.addMethod( "myEmail", function( value, element ) {
+      return this.optional( element ) || /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test( value );
+    }, "Invalid Email");
+
+    var formEN = $("#form_en");
+
+    $.validator.addMethod("fileType", function(value, element) {
+        // Check if a file is selected
+        if (element.files.length > 0) {
+            // Get the file's extension
+            var fileExtension = value.split('.').pop().toLowerCase();
+
+            // Define the allowed file extensions
+            var allowedExtensions = ["jpg", "jpeg", "png", "gif"];
+
+            // Check if the file extension is in the allowedExtensions array
+            return $.inArray(fileExtension, allowedExtensions) !== -1;
+        }
+        return true; // No file selected; validation passes
+    }, "Please select a valid image file (jpg, jpeg, png, gif)");
+
+
+    formEN.validate({
+        errorPlacement: function(error, element) {
+            // You can customize error placement here if needed
+            error.insertAfter(element);
+            element.focus();
+        },
+        rules: {
+           
+            recommended_team_en: {
+                required: true,
+            }, 
+            other_stream_name_en: {
+                required: true,
+            }, 
+            stream_name_en: {
+                required: true,
+            }, 
+              website_en:{
+                required: true,
+            }, 
+              contact_person_en:"required",
+              email_en:{
+                required:true,
+                myEmail:true
+              },
+              practice_title_en:"required",
+              initiative_brief_en:"required",
+              prerequisite_en:"required",
+              outcome_en:"required",
+              duration_en:"required",
+              other_stream_name_en: {
+                required: true,
+            },
+              
+            
+        },
+        messages: {
+          recommended_team_en:{
+                required:"This field is required",
+              },
+          other_stream_name_en:{
+                required:"This field is required",
+              },
+            stream_name_en:{
+                required:"This field is required",
+              },
+              
+              website_en:{
+                required:"This field is required",
+              },
+              contact_person_en:{
+                required:"This field is required",
+              },
+              email_en:{
+                required:"This field is required",
+                myEmail:"Enter a valid email"
+              },
+              practice_title_en:{
+                required:"This field is required",
+              },
+              initiative_brief_en:{
+                required:"This field is required",
+              },
+              prerequisite_en:{
+                required:"This field is required",
+              },
+              outcome_en:{
+                required:"This field is required",
+              },
+              duration_en:{
+                required:"This field is required",
+              },
+              
+
+        },
+        
+    });
+
+    $('#next_btn_en').click(function() {
+      var en_flag = 0;
+      var form = $('#form_en');
+      var errorMsg = "";
+     
+      var recommended_team_en = $('#recommended_team_en');
+      var stream_name_en = $('#stream_name_en');
+      var website_en = $('#website_en');
+      var contact_person_en = $('#contact_person_en');
+      var email_en = $('#email_en');
+      var practice_title_en = $('#practice_title_en');
+      var initiative_brief_en = $('#initiative_brief_en');
+      var prerequisite_en = $('#prerequisite_en');
+      var outcome_en = $('#outcome_en');
+      var duration_en = $('#duration_en');
+      var other_stream_name_en = $('#other_stream_name_en');
+    
+      
+      if(stream_name_en.valid() & recommended_team_en.valid() & website_en.valid() & contact_person_en.valid() & email_en.valid() 
+      & practice_title_en.valid() & initiative_brief_en.valid() & prerequisite_en.valid() & outcome_en.valid() 
+    & duration_en.valid() & other_stream_name_en.valid() ){
+      // document.getElementById('tab2').click();
+      var email_en = $("#email_en").val();
+        var emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+        if (!emailPattern.test(email_en)) {
+            en_flag = 1;
+            if( lang == 'ar'){
+              errorMsg = errorMsg + " تنسيق البريد الإلكتروني غير صالح";
+              }else{
+                errorMsg = errorMsg + " Invalid email format";
+              }
+
+        }
+        var websiteValue = $("#website_en").val();
+        var websitePattern = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/;
+        if (!websitePattern.test(websiteValue)) {
+          en_flag = 1;
+          if( lang == 'ar'){
+            errorMsg = errorMsg + " تنسيق عنوان URL لموقع الويب غير صالح";
+            }else{
+              errorMsg = errorMsg + " Invalid website URL format";
+            }
+        }
+    }
+    else{
+      en_flag = 1;
+      if( lang == 'ar'){
+      errorMsg = errorMsg + " يرجى ملء الحقول الإلزامية";
+      }else{
+        errorMsg = errorMsg + " Please fill mandatory fields";
+      }
+    }
+
+    if( en_flag === 0){
+      document.getElementById('tab2').click();
+    }else{
+       
+      var formattedErrorMsg = errorMsg.replace(/, /g, '<br>');
+      var firstErrorElement = form.find(':input.error').first();
+      firstErrorElement.focus();
+      Swal.fire({
+                    type: 'error',
+                    text: errorMsg,
+                    confirmButtonText: "Ok",
+                    confirmButtonColor: '#cdaf36'
+                  });
+    }
+
+    });
+
+    var formAR = $("#practice_form");
+
+    formAR.validate({
+        errorPlacement: function(error, element) {
+            // You can customize error placement here if needed
+            error.insertAfter(element);
+            element.focus();
+            
+        },
+        rules: {
+
+          recommended_team_en: {
+                required: true,
+            }, 
+            other_stream_name_en: {
+                required: true,
+            }, 
+            stream_name_en: {
+                required: true,
+            }, 
+              website_en:{
+                required: true,
+            }, 
+              contact_person_en:"required",
+              email_en:{
+                required:true,
+                myEmail:true
+              },
+              practice_title_en:"required",
+              initiative_brief_en:"required",
+              prerequisite_en:"required",
+              outcome_en:"required",
+              duration_en:"required",
+
+         
+            recommended_team_ar: {
+                required: true,
+            },
+            other_stream_name_ar: {
+                required: true,
+            },
+            stream_name_ar: {
+                required: true,
+            }, 
+              website_ar:{
+                required: true,
+            }, 
+              contact_person_ar:"required",
+              email_ar:{
+                required:true,
+                email:true
+              },
+              practice_title_ar:"required",
+              initiative_brief_ar:"required",
+              prerequisite_ar:"required",
+              outcome_ar:"required",
+              duration_ar:"required",
+            
+            
+        },
+        messages: {
+            // Specify custom error messages for fields within the div
+
+            recommended_team_en:{
+                required:"This field is required",
+              },
+              other_stream_name_en:{
+                required:"This field is required",
+              },
+            stream_name_en:{
+                required:"This field is required",
+              },
+              
+              website_en:{
+                required:"This field is required",
+              },
+              contact_person_en:{
+                required:"This field is required",
+              },
+              email_en:{
+                required:"This field is required",
+                myEmail:"Enter a valid email"
+              },
+              practice_title_en:{
+                required:"This field is required",
+              },
+              initiative_brief_en:{
+                required:"This field is required",
+              },
+              prerequisite_en:{
+                required:"This field is required",
+              },
+              outcome_en:{
+                required:"This field is required",
+              },
+              duration_en:{
+                required:"This field is required",
+              },
+            
+            recommended_team_ar: {
+                required: "هذه الخانة مطلوبه",
+                // Add other custom error messages as needed
+            },
+            other_stream_name_ar:{
+              required:"هذه الخانة مطلوبه",
+              },
+            stream_name_ar:{
+                required:"هذه الخانة مطلوبه",
+              },
+              
+              website_ar:{
+                required:"هذه الخانة مطلوبه",
+              },
+              contact_person_ar:{
+                required:"هذه الخانة مطلوبه",
+              },
+              email_ar:{
+                required:"هذه الخانة مطلوبه",
+                email:"Enter a valid email"
+              },
+              practice_title_ar:{
+                required:"هذه الخانة مطلوبه",
+              },
+              initiative_brief_ar:{
+                required:"هذه الخانة مطلوبه",
+              },
+              prerequisite_ar:{
+                required:"هذه الخانة مطلوبه",
+              },
+              outcome_ar:{
+                required:"هذه الخانة مطلوبه",
+              },
+              duration_ar:{
+                required:"هذه الخانة مطلوبه",
+              },
+              
+        },
+        focusInvalid: true,
+    });
+              
+        
+    $('#preview_btn').click(function() {
+    var errorMsg = " ";
+    var flag = 0;
+    console.log('ar',$('#stream_name_ar').valid())
+    console.log('en',$('#stream_name_en').valid())
+    var recommended_team_ar = $('#recommended_team_ar');
+    var stream_name_ar = $('#stream_name_ar');
+    var website_ar = $('#website_ar');
+    var contact_person_ar = $('#contact_person_ar');
+    var email_ar = $('#email_ar');
+    var practice_title_ar = $('#practice_title_ar');
+    var initiative_brief_ar = $('#initiative_brief_ar');
+    var prerequisite_ar = $('#prerequisite_ar');
+    var outcome_ar = $('#outcome_ar');
+    var duration_ar = $('#duration_ar');
+    var other_stream_name_ar = $('#other_stream_name_ar');
+    if(stream_name_ar.valid() & recommended_team_ar.valid() & website_ar.valid() & contact_person_ar.valid() & email_ar.valid() 
+    & practice_title_ar.valid() & initiative_brief_ar.valid() & prerequisite_ar.valid() & outcome_ar.valid() 
+    & duration_ar.valid() ){
+    var errorMsg = "";
+    var flag = 0;
+    var isFormValid = $("#practice_form").valid();
+     
+    if(isFormValid){
+        
+    $(".checker").each(function(){
+      console.log("check",$(this))
+      if($(this).val()==''){
+        console.log("error",$(this))
+        flag = 1;
+                  
+        
+        if( lang == 'ar'){
+        errorMsg = ", يرجى ملء المحتوى باللغة الإنجليزية والعربية";
+        }else{
+          errorMsg = " Please fill English & Arabic Content";
+        }
+
+      }
+          
+    });
+
+    var email_ar = $("#email_ar").val();
+    var emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+    if (!emailPattern.test(email_ar)) {
+    flag = 1;
+    
+    if( lang == 'ar'){
+    errorMsg = errorMsg + ", تنسيق البريد الإلكتروني غير صالح";
+    }else{
+      errorMsg = errorMsg + ", Invalid email format";
+    }
+        }
+        var websiteValue = $("#website_ar").val();
+    var websitePattern = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/;
+    if (!websitePattern.test(websiteValue)) {
+    flag  = 1;
+    
+    if( lang == 'ar'){
+    errorMsg = errorMsg + ", تنسيق عنوان URL لموقع الويب غير صالح";
+    }else{
+      errorMsg = errorMsg + ", Invalid website URL format";
+    }
+        }
+ 
+    }
+   
+
+    }
+    else{
+      flag = 1;
+      if( lang == 'ar'){
+      errorMsg = errorMsg + ", يرجى ملء الحقول الإلزامية";
+      }else{
+        errorMsg = errorMsg + ", Please fill mandatory fields";
+      }
+    }
+    
+    if(flag === 0){
+      $("#practice_form").submit();
+    }else{
+      var formattedErrorMsg = errorMsg.replace(/, /g, '<br>');
+      Swal.fire({
+      type: 'error',
+      html: formattedErrorMsg,
+      confirmButtonText: "Ok",
+      confirmButtonColor: '#cdaf36'
+      });
+    }
+      
+    });
+
+          
+
+    const entity_logo_en = document.getElementById('entity_logo_en');
+
+    const fileChosen_en = document.getElementById('file-chosen_en');
+
+      if(entity_logo_en){
+        entity_logo_en.addEventListener('change', function(){
+       
+       fileChosen_en.textContent = this.files[0].name
+       const fileInput = this; 
+         if (fileInput.files && fileInput.files[0]) { 
+           const reader = new FileReader(); 
+           reader.onload = function (e) { 
+             const base64String = e.target.result; 
+             const updatedString = base64String.replace('data:image/jpeg;base64,','');
+             // $('#entity_logo_64_en').val(updatedString); 
+             $('#entity_logo_64_en').val(base64String); 
+             document.cookie = `entity_logo_en_filename=${encodeURIComponent(fileChosen_en.textContent)}; path=/`;
+
+           }; 
+             reader.readAsDataURL(fileInput.files[0]);
+
+            
+         } 
+     });
+      }
+
+  function getCookie(cookieName) {
+  const name = cookieName + '=';
+  const cookies = document.cookie.split(';');
+  for (let i = 0; i < cookies.length; i++) {
+    let cookie = cookies[i].trim();
+    if (cookie.indexOf(name) === 0) {
+      return decodeURIComponent(cookie.substring(name.length, cookie.length));
+    }
+  }
+  return '';
+}
+const entity_logo_en_filename = getCookie('entity_logo_en_filename');
+
+if (entity_logo_en_filename) {
+  // Display the filename on the page
+  document.getElementById('file-chosen_en').textContent = entity_logo_en_filename;
+}
+
+
+      const entity_logo_ar = document.getElementById('entity_logo_ar');
+
+    const fileChosen_ar = document.getElementById('file-chosen_ar');
+
+     if(entity_logo_ar){
+      entity_logo_ar.addEventListener('change', function(){
+       
+       fileChosen_ar.textContent = this.files[0].name
+       const fileInput = this; 
+         if (fileInput.files && fileInput.files[0]) { 
+           const reader = new FileReader(); 
+           reader.onload = function (e) { 
+             const base64String = e.target.result; 
+             const updatedString = base64String.replace('data:image/jpeg;base64,','');
+             // $('#entity_logo_64_ar').val(updatedString); 
+             $('#entity_logo_64_ar').val(base64String); 
+             document.cookie = `entity_logo_ar_filename=${encodeURIComponent(fileChosen_ar.textContent)}; path=/`;
+           }; 
+             reader.readAsDataURL(fileInput.files[0]);
+
+             
+         } 
+     });
+     }
+
+      const entity_logo_ar_filename = getCookie('entity_logo_ar_filename');
+
+if (entity_logo_ar_filename) {
+  // Display the filename on the page
+  document.getElementById('file-chosen_ar').textContent = entity_logo_ar_filename;
+}
+
+      // Get references to the file input and the file list 
+      const fileInput_en = $('#supporting_documents_en')[0]; 
+      const fileList_en = $('#file-list_en'); 
+      // Add an event listener for the change event on the file input 
+      if(fileInput_en && fileList_en){
+        fileInput_en.addEventListener('change', function() { 
+        // Get the selected files 
+        const selectedFiles = fileInput_en.files; 
+        const allowedExtensions = ["pdf", "doc", "docx"];
+
+        // Clear the previous file list 
+        fileList_en.empty(); 
+        let validFiles = true;
+        // Display the selected files in the list 
+        for (let i = 0; i < selectedFiles.length; i++) { 
+          const file = selectedFiles[i];
+          const fileExtension = file.name.split('.').pop().toLowerCase();
+
+          if (allowedExtensions.indexOf(fileExtension) === -1) {
+            validFiles = false;
+            // You can show an error message or perform some action here for invalid files.
+            Swal.fire({
+                    type: 'error',
+                    text: "Please select files in PDF or document formats.",
+                    confirmButtonText: "Ok",
+                    confirmButtonColor: '#cdaf36'
+                  });
+          }
+
+          const listItem = $('<li>'); 
+          listItem.text(selectedFiles[i].name); 
+          fileList_en.append(listItem); 
+        } 
+          // Update the file-chosen span 
+          const fileChosen = $('#file-chosen-doc_en'); 
+
+          document.cookie = `supporting_documents_en=${encodeURIComponent(selectedFiles.length)}; path=/`;
+          if (validFiles && selectedFiles.length > 0) { 
+            fileChosen.text(selectedFiles.length + ' file(s) chosen'); 
+          } else {
+            fileChosen.text('No file chosen');
+           } 
+          });
+      }
+
+const supporting_documents_en = getCookie('supporting_documents_en');
+
+if (supporting_documents_en) {
+  // Display the filename on the page
+  const fileChosen = $('#file-chosen-doc_en'); 
+  fileChosen.text(supporting_documents_en + ' file(s) chosen'); 
+}
+
+          // Get references to the file input and the file list 
+      const fileInput_ar = $('#supporting_documents_ar')[0]; 
+      const fileList_ar = $('#file-list_ar'); 
+      // Add an event listener for the change event on the file input 
+      if(fileInput_ar && fileList_ar){
+        fileInput_ar.addEventListener('change', function() { 
+        // Get the selected files 
+        const selectedFiles = fileInput_ar.files; 
+        const allowedExtensions = ["pdf", "doc", "docx"];
+       
+        // Clear the previous file list 
+        fileList_ar.empty();
+        let validFiles = true; 
+        // Display the selected files in the list 
+        for (let i = 0; i < selectedFiles.length; i++) { 
+          const file = selectedFiles[i];
+          const fileExtension = file.name.split('.').pop().toLowerCase();
+
+          if (allowedExtensions.indexOf(fileExtension) === -1) {
+            validFiles = false;
+            // You can show an error message or perform some action here for invalid files.
+            Swal.fire({
+                    type: 'error',
+                    text: "يرجى تحديد الملفات بتنسيق PDF أو المستندات.",
+                    confirmButtonText: "Ok",
+                    confirmButtonColor: '#cdaf36'
+                  });
+          }
+
+
+          const listItem = $('<li>'); 
+          listItem.text(selectedFiles[i].name); 
+          fileList_ar.append(listItem); } 
+          // Update the file-chosen span 
+          const fileChosen = $('#file-chosen-doc_ar'); 
+          document.cookie = `supporting_documents_ar=${encodeURIComponent(selectedFiles.length)}; path=/`;
+          if (validFiles && selectedFiles.length > 0) { 
+            fileChosen.text(selectedFiles.length + ' file(s) chosen'); 
+          } else {
+            fileChosen.text('لم تقم باختيار ملف');
+           } 
+          });
+      }
+
+const supporting_documents_ar = getCookie('supporting_documents_ar');
+
+if (supporting_documents_en) {
+  // Display the filename on the page
+  const fileChosen = $('#file-chosen-doc_ar'); 
+  fileChosen.text(supporting_documents_en + ' file(s) chosen'); 
+}
+
+     const img_logo_en = document.getElementById('image_en');
+
+    const file_img_en = document.getElementById('file-chosen-img_en');
+
+
+    if(img_logo_en && file_img_en){
+      img_logo_en.addEventListener('change', function() {
+    const fileInput = this;
+    file_img_en.textContent = this.files[0].name
+    const imagePreview = document.getElementById('image-preview_en');
+    const imgBox = document.getElementById('img-box_en');
+
+    if (fileInput.files && fileInput.files[0]) {
+        const selectedFile = fileInput.files[0];
+
+        // Check image dimensions here
+        const minWidth = 1416; // Set your minimum width requirement
+        const minHeight = 382; // Set your minimum height requirement
+        const minSize = 830000;
+
+        const reader = new FileReader();
+        const image = new Image();
+
+        reader.onload = function (e) {
+            const base64String = e.target.result;
+            const updatedString = base64String.replace('data:image/jpeg;base64,', '');
+            // $('#img_logo_64_ar').val(updatedString);
+            $('#img_logo_64_en').val(base64String);
+
+            // Check image dimensions
+            image.src = e.target.result;
+
+            image.onload = function () {
+                if (image.width >= minWidth && image.height >= minHeight) {
+
+                  if (selectedFile.size < minSize){
+                  Swal.fire({
+                    type: 'info',
+                    text: 'Image must be at least 830 kb.',
+                    confirmButtonText: "Ok",
+                    confirmButtonColor: '#cdaf36'
+                  });
+                  fileInput.value = '';
+                    img_logo_en.value = '';
+                    file_img_en.textContent = 'No file chosen';
+                    imagePreview.src = '';
+                }else{
+                  // Image meets the minimum requirements, you can proceed with the upload.
+                    
+                  document.cookie = `img_logo_en_filename=${encodeURIComponent(file_img_en.textContent)}; path=/`;
+                    const objectURL = URL.createObjectURL(selectedFile);
+                    imagePreview.src = objectURL;
+                    imgBox.style.display = 'block';
+
+                }
+
+                    
+                }else {
+                    // Image doesn't meet the minimum requirements, display an error message.
+                    Swal.fire({
+                    type: 'info',
+                    text: 'Image must be at least ' + minWidth + 'x' + minHeight + ' pixels.',
+                    confirmButtonText: "Ok",
+                    confirmButtonColor: '#cdaf36'
+                  });
+                    // Clear the file input
+                    fileInput.value = '';
+                    img_logo_en.value = '';
+                    file_img_en.textContent = 'No file chosen';
+                    imagePreview.src = '';
+                }
+                
+                
+            };
+        };
+
+        // Read the file as a data URL
+        reader.readAsDataURL(selectedFile);
+    }
+});
+    }
+
+
+      const img_logo_en_filename = getCookie('img_logo_en_filename');
+
+if (img_logo_en_filename) {
+  // Display the filename on the page
+  document.getElementById('file-chosen-img_en').textContent = img_logo_en_filename;
+}
+
+    const img_logo_ar = document.getElementById('image_ar');
+
+    const file_img_ar = document.getElementById('file-chosen-img_ar');
+
+    
+    if(img_logo_ar && file_img_ar){
+      img_logo_ar.addEventListener('change', function() {
+    const fileInput = this;
+    file_img_ar.textContent = this.files[0].name
+    const imagePreview = document.getElementById('image-preview_ar');
+    const imgBox = document.getElementById('img-box_ar');
+
+    if (fileInput.files && fileInput.files[0]) {
+        const selectedFile = fileInput.files[0];
+
+        // Check image dimensions here
+        const minWidth = 1416; // Set your minimum width requirement
+        const minHeight = 382; // Set your minimum height requirement
+        var minSize = 830000;
+
+        const reader = new FileReader();
+        const image = new Image();
+
+        reader.onload = function (e) {
+            const base64String = e.target.result;
+            const updatedString = base64String.replace('data:image/jpeg;base64,', '');
+            // $('#img_logo_64_ar').val(updatedString);
+            $('#img_logo_64_ar').val(base64String);
+
+            // Check image dimensions
+            image.src = e.target.result;
+
+            image.onload = function () {
+                if (image.width >= minWidth && image.height >= minHeight) {
+                  if(selectedFile.size < minSize){
+                  Swal.fire({
+                    type: 'info',
+                    text: 'يجب أن لا يقل حجم الصورة عن 830 كيلو بايت',
+                    confirmButtonText: "Ok",
+                    confirmButtonColor: '#cdaf36'
+                  });
+
+                   // Clear the file input
+                   fileInput.value = '';
+                    img_logo_ar.value = '';
+                    file_img_ar.textContent = 'لم تقم باختيار ملف';
+                    imagePreview.src = '';
+                }else{
+                  // Image meets the minimum requirements, you can proceed with the upload.
+                    
+                  document.cookie = `img_logo_ar_filename=${encodeURIComponent(file_img_en.textContent)}; path=/`;
+                    const objectURL = URL.createObjectURL(selectedFile);
+                    imagePreview.src = objectURL;
+                    imgBox.style.display = 'block';
+                }
+                    
+                }else {
+                    // Image doesn't meet the minimum requirements, display an error message.
+                    Swal.fire({
+                    type: 'info',
+                    text: 'يجب أن تكون الصورة على الأقل ' + minWidth + 'x' + minHeight + ' بكسل.',
+                    confirmButtonText: "Ok",
+                    confirmButtonColor: '#cdaf36'
+                  });
+
+                   // Clear the file input
+                   fileInput.value = '';
+                    img_logo_ar.value = '';
+                    file_img_ar.textContent = 'لم تقم باختيار ملف';
+                    imagePreview.src = '';
+                   
+                }
+                 
+                
+            };
+        };
+
+        // Read the file as a data URL
+        reader.readAsDataURL(selectedFile);
+    }
+});
+    }
+
+      const img_logo_ar_filename = getCookie('img_logo_ar_filename');
+
+if (img_logo_ar_filename) {
+  // Display the filename on the page
+  document.getElementById('file-chosen-img_ar').textContent = img_logo_ar_filename;
+}
+
+
+$('select').on('change', function() {
+console.log(this.value)
+  if(this.value == "Other"){
+   
+    //$("#form_en #other_stream, #form_ar #other_stream").show();
+    $("#other_stream_name_en").val("none");
+    $("#other_stream_name_ar").val("لا أحد");
+    sessionStorage.setItem('showOtherStream', 'true');
+  }
+  else{
+    
+    //$("#form_en #other_stream, #form_ar #other_stream").hide();
+    $("#other_stream_name_en").val("none");
+    $("#other_stream_name_ar").val("لا أحد");
+    sessionStorage.removeItem('showOtherStream');
+  }
+});
+
+     });
+      </script>
+</body>
+</html>
