@@ -1,0 +1,73 @@
+import { useId, useRef, useState, type KeyboardEvent, type ReactNode } from 'react'
+
+export interface Tab {
+  key: string
+  label: string
+  content: ReactNode
+}
+
+/** DS tabs with the WAI-ARIA tabs pattern: arrow keys, Home and End move between tabs. */
+export function Tabs({ tabs, label }: { tabs: Tab[]; label: string }) {
+  const id = useId()
+  const [active, setActive] = useState(0)
+  const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
+
+  const select = (index: number) => {
+    const next = (index + tabs.length) % tabs.length
+    setActive(next)
+    tabRefs.current[next]?.focus()
+  }
+
+  const onKeyDown = (e: KeyboardEvent) => {
+    const moves: Record<string, number> = { ArrowRight: active + 1, ArrowLeft: active - 1, Home: 0, End: tabs.length - 1 }
+    if (e.key in moves) {
+      e.preventDefault()
+      select(moves[e.key])
+    }
+  }
+
+  return (
+    <div>
+      <div className="aegov-tab">
+        <div
+          role="tablist"
+          aria-label={label}
+          className="tab-items gap-4 overflow-x-auto md:gap-6 lg:gap-8"
+          onKeyDown={onKeyDown}
+        >
+          {tabs.map((tab, i) => (
+            <button
+              key={tab.key}
+              ref={(el) => {
+                tabRefs.current[i] = el
+              }}
+              type="button"
+              role="tab"
+              id={`${id}-tab-${i}`}
+              aria-selected={i === active}
+              aria-controls={`${id}-panel-${i}`}
+              tabIndex={i === active ? 0 : -1}
+              onClick={() => setActive(i)}
+              className={`tab-link whitespace-nowrap ${i === active ? 'tab-active' : ''}`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+      </div>
+      {tabs.map((tab, i) => (
+        <div
+          key={tab.key}
+          id={`${id}-panel-${i}`}
+          role="tabpanel"
+          aria-labelledby={`${id}-tab-${i}`}
+          tabIndex={0}
+          hidden={i !== active}
+          className="tab-content px-0! py-6 md:py-8"
+        >
+          {tab.content}
+        </div>
+      ))}
+    </div>
+  )
+}

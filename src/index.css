@@ -1,0 +1,15 @@
+/* UAE Design System 3.0 setup, per https://designsystem.gov.ae/docs/installation (Tailwind v4) */
+@layer base;
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+@plugin "@aegov/design-system";
+
+/* EGEEP brand primary typeface (DESIGN.md#typography). Declared only; versions opt in via font-family. */
+@font-face {
+  font-family: "Sakkal Majalla";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Sakkal Majalla"), local("SakkalMajalla"), url("/brand/fonts/sakkal-majalla-regular.woff2") format("woff2");
+}

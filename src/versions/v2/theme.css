@@ -1,0 +1,216 @@
+/*
+ * v2 "Global Atlas": tech blue primary with a sparing gold accent. Every rule is scoped to .v2-root.
+ * Unlayered on purpose: the DS plugin emits its component classes into Tailwind's utilities layer,
+ * so overrides of DS internals (nav links, breadcrumb, button variants) must sit outside the layers.
+ */
+/* Neutralise DS base element styles (paragraph margins and sizes, link underlines) inside v2;
+   kept in the base layer so Tailwind utilities on the same elements still win. */
+@layer base {
+  .v2-root p,
+  .v2-root p.text-sm,
+  .v2-root p.text-xs {
+    margin-bottom: 0;
+  }
+
+  .v2-root p:not([class*='text-']) {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .v2-root a {
+    text-decoration-line: none;
+  }
+}
+
+.v2-root {
+  --color-primary: var(--color-techblue-600);
+  --color-primary-50: var(--color-techblue-50);
+  --color-primary-100: var(--color-techblue-100);
+  --color-primary-200: var(--color-techblue-200);
+  --color-primary-300: var(--color-techblue-300);
+  --color-primary-400: var(--color-techblue-400);
+  --color-primary-500: var(--color-techblue-500);
+  --color-primary-600: var(--color-techblue-600);
+  --color-primary-700: var(--color-techblue-700);
+  --color-primary-800: var(--color-techblue-800);
+  --color-primary-900: var(--color-techblue-900);
+  --color-primary-950: var(--color-techblue-950);
+  font-family: var(--font-body);
+  color: var(--color-aeblack-800);
+  background-color: var(--color-whitely-50);
+}
+
+.v2-root :focus-visible:not([tabindex='-1']) {
+  outline: 3px solid var(--color-techblue-700);
+  outline-offset: 2px;
+}
+
+.v2-root .v2-dark :focus-visible:not([tabindex='-1']),
+.v2-root .aegov-modal-close:focus-visible {
+  outline-color: var(--color-aegold-300);
+}
+
+.v2-root .v2-display {
+  font-family: var(--font-alexandria);
+  font-feature-settings: 'tnum' 1;
+  letter-spacing: -0.02em;
+}
+
+/* Skip link */
+.v2-root .v2-skip {
+  position: absolute;
+  inset-inline-start: 1rem;
+  top: -4rem;
+  z-index: 60;
+  border-radius: 0.5rem;
+  background: var(--color-aegold-300);
+  color: var(--color-techblue-950);
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  transition: top 0.15s ease;
+}
+
+.v2-root .v2-skip:focus {
+  top: 1rem;
+}
+
+/* Header: dark band carrying the white entity logo */
+.v2-root .aegov-header.v2-header {
+  --header-gradient-from: var(--color-aegold-300);
+  --header-gradient-to: var(--color-aegold-500);
+  background-color: var(--color-techblue-950);
+  color: var(--color-whitely-50);
+}
+
+.v2-root .v2-header .header-navs {
+  background-color: transparent;
+}
+
+.v2-root .v2-header .main-navigation .nav-menu > .menu-item > a {
+  color: var(--color-techblue-100);
+}
+
+.v2-root .v2-header .main-navigation .nav-menu > .menu-item > a:hover,
+.v2-root .v2-header .main-navigation .nav-menu > .menu-item.active-page > a {
+  color: var(--color-whitely-50);
+  border-color: var(--color-aegold-400);
+}
+
+.v2-root .v2-header .hamburger-icon {
+  color: var(--color-whitely-50);
+}
+
+/* Breadcrumb on dark page headers */
+.v2-root .v2-dark nav.aegov-breadcrumb > ol,
+.v2-root .v2-dark nav.aegov-breadcrumb > ol > li {
+  color: var(--color-techblue-100);
+}
+
+.v2-root .v2-dark nav.aegov-breadcrumb a {
+  color: var(--color-techblue-100);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.v2-root .v2-dark nav.aegov-breadcrumb a:hover {
+  color: var(--color-whitely-50);
+}
+
+.v2-root .v2-dark nav.aegov-breadcrumb [aria-current='page'] {
+  color: var(--color-aegold-200);
+  max-width: none;
+}
+
+/* Buttons on dark backgrounds */
+.v2-root .aegov-btn.v2-btn-gold {
+  --btn-bg: var(--color-aegold-300);
+  --btn-fg: var(--color-techblue-950);
+  --btn-bg-hover: var(--color-aegold-200);
+  --btn-shadow: none;
+  color: var(--color-techblue-950);
+}
+
+.v2-root .aegov-btn.btn-outline.v2-btn-ghost {
+  --btn-bg: transparent;
+  --btn-fg: var(--color-whitely-50);
+  --btn-border-color: var(--color-techblue-100);
+  --btn-bg-hover: var(--color-techblue-800);
+  color: var(--color-whitely-50);
+  border-color: var(--color-techblue-100);
+}
+
+.v2-root .aegov-btn.btn-outline.v2-btn-ghost:hover {
+  color: var(--color-whitely-50);
+  border-color: var(--color-aegold-200);
+}
+
+/* Quotes on dark backgrounds */
+.v2-root .aegov-quote.v2-quote-dark {
+  --quote-fg: var(--color-whitely-50);
+  --quote-author-fg: var(--color-aegold-200);
+  --quote-cite-fg: var(--color-techblue-100);
+}
+
+.v2-root .aegov-quote.v2-quote-dark .quote-icon {
+  color: var(--color-aegold-300);
+}
+
+/* Footer in the dark atlas palette */
+.v2-root .aegov-footer.v2-footer {
+  --footer-bg: var(--color-techblue-950);
+  --footer-link-fg: var(--color-techblue-100);
+  --footer-link-fg-hover: var(--color-whitely-50);
+  --footer-contact-link-fg: var(--color-whitely-50);
+  --footer-contact-link-fg-hover: var(--color-aegold-200);
+  --footer-social-link-fg: var(--color-techblue-100);
+  --footer-social-link-fg-hover: var(--color-whitely-50);
+  --footer-bottom-border: color-mix(in oklab, var(--color-techblue-200) 25%, transparent);
+  --footer-gradient-from: var(--color-aegold-300);
+  --footer-gradient-to: var(--color-aegold-500);
+  color: var(--color-techblue-100);
+}
+
+/* Authored atlas grid used behind dark bands */
+.v2-root .v2-grid-bg {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, var(--color-techblue-300) 12%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--color-techblue-300) 12%, transparent) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Vertical tabs used on Best Practices */
+@media (width >= 64rem) {
+  .v2-root .aegov-tab.v2-tab-vertical {
+    border-bottom: 0;
+    border-inline-end: 2px solid var(--color-aeblack-100);
+  }
+
+  .v2-root .aegov-tab.v2-tab-vertical .tab-items {
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-inline-end: -2px;
+    text-align: start;
+  }
+
+  .v2-root .aegov-tab.v2-tab-vertical .tab-link {
+    width: 100%;
+    padding-block: 0.75rem;
+    justify-content: flex-start;
+    border-bottom-width: 0;
+    border-inline-end: 2px solid transparent;
+    border-radius: 0;
+    padding-inline-end: 1rem;
+    white-space: normal;
+    text-align: start;
+  }
+
+  .v2-root .aegov-tab.v2-tab-vertical .tab-link.tab-active {
+    border-inline-end-color: var(--color-techblue-600);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .v2-root .v2-bar {
+    transition: width 0.4s ease, height 0.4s ease;
+  }
+}

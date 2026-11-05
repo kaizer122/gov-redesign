@@ -1,0 +1,1420 @@
+/*
+ * v7 "Chronicle": Deep Charcoal and Ivory with Royal Gold hairlines, Sakkal Majalla set large.
+ * Tokens sit on the version root; resets live in the base layer and every v7 class in the
+ * components layer, so Tailwind utilities on the same element still win.
+ */
+
+.v7-root {
+  --egeep-gold: #997133;
+  --egeep-grey-light: #e7e7e7;
+  --egeep-charcoal: #1a1a19;
+  --egeep-ivory: #f9f7f1;
+  --egeep-blue: #2f5ca0;
+  --egeep-espresso: #4b3b2a;
+  --egeep-burgundy: #7b1f2d;
+  --egeep-green: #417b5d;
+
+  /* Royal Gold scale (600 = brand gold) so DS components follow the brand */
+  --color-primary-50: #fcf6ee;
+  --color-primary-100: #f9ebd7;
+  --color-primary-200: #f0d6b3;
+  --color-primary-300: #e1ba82;
+  --color-primary-400: #c99c59;
+  --color-primary-500: #ad823f;
+  --color-primary-600: #997133;
+  --color-primary-700: #7c5921;
+  --color-primary-800: #66451f;
+  --color-primary-900: #52361e;
+  --color-primary-950: #311f13;
+  --color-primary-support-600: #7c5921;
+
+  /* Secondary text #5c5e60 (6.08:1 on ivory); ivory at 78% on charcoal (≈11:1) */
+  --v7-muted: #5c5e60;
+  --v7-on-dark-muted: #cfccc3;
+  --v7-surface: #f1eee6;
+  --v7-hairline: rgb(26 26 25 / 0.12);
+  --v7-hairline-strong: rgb(26 26 25 / 0.28);
+  --v7-hairline-dark: rgb(249 247 241 / 0.16);
+  --v7-focus: #7c5921;
+
+  /* Sakkal Majalla renders about 20% small: lift the Tailwind scale and loosen leading */
+  --text-sm: 1rem;
+  --text-sm--line-height: 1.5;
+  --text-base: 1.125rem;
+  --text-base--line-height: 1.55;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 1.55;
+  --text-xl: 1.4375rem;
+  --text-xl--line-height: 1.5;
+  --text-2xl: 1.75rem;
+  --text-2xl--line-height: 1.35;
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: var(--egeep-ivory);
+  color: var(--egeep-charcoal);
+  font-size: 1.25rem;
+  line-height: 1.55;
+}
+
+.v7-root,
+.v7-root[dir='rtl'] {
+  --font-body: 'Sakkal Majalla', sans-serif;
+  --font-heading: 'Sakkal Majalla', sans-serif;
+  --font-alexandria: 'Sakkal Majalla', sans-serif;
+  --font-notokufi: 'Sakkal Majalla', sans-serif;
+  --font-inter: 'Sakkal Majalla', sans-serif;
+  --font-roboto: 'Sakkal Majalla', sans-serif;
+  font-family: 'Sakkal Majalla', sans-serif;
+  /* Only Sakkal Majalla Regular exists: never let the browser smear a fake bold (DESIGN.md#typography). */
+  font-synthesis-weight: none;
+}
+
+.v7-root[dir='rtl'] {
+  --text-base: 1.1875rem;
+  --text-base--line-height: 1.8;
+  --text-lg: 1.3125rem;
+  --text-lg--line-height: 1.8;
+  --text-xl: 1.5rem;
+  --text-xl--line-height: 1.75;
+  --text-2xl: 1.875rem;
+  --text-2xl--line-height: 1.6;
+  font-size: 1.3125rem;
+  line-height: 1.8;
+}
+
+@layer base {
+  .v7-root > main {
+    flex: 1 0 auto;
+  }
+
+  .v7-root p {
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .v7-root h1,
+  .v7-root h2,
+  .v7-root h3 {
+    font-weight: 400;
+  }
+
+  .v7-root ::selection {
+    background: var(--color-primary-200);
+    color: var(--egeep-charcoal);
+  }
+}
+
+@layer components {
+  /* Focus: gold-700 ring on light, gold-300 on charcoal */
+  .v7-root :focus-visible {
+    outline: 2px solid var(--v7-focus);
+    outline-offset: 2px;
+  }
+
+  .v7-root .v7-dark,
+  .v7-root .v7-header,
+  .v7-root .v7-footer,
+  .v7-root .v7-lightbox,
+  .v7-root .v7-mobile-menu {
+    --v7-focus: #e1ba82;
+  }
+
+  .v7-root main:focus-visible {
+    outline: none;
+  }
+
+  .v7-root .v7-dark {
+    background-color: var(--egeep-charcoal);
+    color: var(--egeep-ivory);
+  }
+
+  /* Skip link */
+  .v7-root .v7-skip-link {
+    position: absolute;
+    top: 0.75rem;
+    inset-inline-start: 0.75rem;
+    z-index: 100;
+    transform: translateY(-200%);
+    background-color: var(--egeep-ivory);
+    padding: 0.75rem 1.25rem;
+    color: var(--egeep-charcoal);
+    text-decoration: none;
+  }
+
+  .v7-root .v7-skip-link:focus {
+    transform: none;
+  }
+
+  /* ---------- Type ---------- */
+  .v7-root .v7-mega {
+    font-size: clamp(3rem, 1rem + 9vw, 9.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.015em;
+  }
+
+  .v7-root[dir='rtl'] .v7-mega {
+    font-size: clamp(3.5rem, 1.25rem + 7.5vw, 8.25rem);
+    line-height: 1.15;
+    letter-spacing: 0;
+  }
+
+  .v7-root .v7-display {
+    font-size: clamp(3rem, 1.5rem + 5vw, 7.5rem);
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+
+  .v7-root[dir='rtl'] .v7-display {
+    font-size: clamp(3.25rem, 1.75rem + 5.5vw, 8rem);
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+
+  .v7-root .v7-h2 {
+    font-size: clamp(2.5rem, 1.6rem + 3.4vw, 5rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+
+  .v7-root[dir='rtl'] .v7-h2 {
+    font-size: clamp(2.75rem, 1.75rem + 3.6vw, 5.5rem);
+    line-height: 1.4;
+    letter-spacing: 0;
+  }
+
+  .v7-root .v7-h3 {
+    font-size: clamp(1.875rem, 1.4rem + 1.6vw, 2.875rem);
+    line-height: 1.15;
+  }
+
+  .v7-root[dir='rtl'] .v7-h3 {
+    font-size: clamp(2rem, 1.5rem + 1.7vw, 3rem);
+    line-height: 1.55;
+  }
+
+  .v7-root .v7-lead {
+    font-size: clamp(1.375rem, 1.2rem + 0.6vw, 1.75rem);
+    line-height: 1.42;
+  }
+
+  .v7-root[dir='rtl'] .v7-lead {
+    font-size: clamp(1.4375rem, 1.25rem + 0.65vw, 1.875rem);
+    line-height: 1.8;
+  }
+
+  .v7-root .v7-body {
+    font-size: clamp(1.3125rem, 1.2rem + 0.25vw, 1.4375rem);
+    line-height: 1.55;
+  }
+
+  .v7-root[dir='rtl'] .v7-body {
+    font-size: clamp(1.375rem, 1.25rem + 0.3vw, 1.5rem);
+    line-height: 1.85;
+  }
+
+  .v7-root .v7-pull {
+    font-size: clamp(1.75rem, 1.3rem + 1.5vw, 2.75rem);
+    line-height: 1.35;
+    color: var(--egeep-charcoal);
+  }
+
+  .v7-root[dir='rtl'] .v7-pull {
+    line-height: 1.75;
+  }
+
+  .v7-root .v7-mega-dark {
+    font-size: clamp(3rem, 2rem + 5vw, 7rem);
+    line-height: 1.05;
+    color: var(--egeep-charcoal);
+  }
+
+  .v7-root[dir='rtl'] .v7-mega-dark {
+    line-height: 1.4;
+  }
+
+  .v7-root .v7-eyebrow {
+    color: var(--color-primary-700);
+    font-size: 1.4375rem;
+    line-height: 1.3;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.12em;
+  }
+
+  .v7-root[dir='rtl'] .v7-eyebrow {
+    font-size: 1.3125rem;
+    line-height: 1.6;
+    font-variant-caps: normal;
+    letter-spacing: 0;
+  }
+
+  .v7-root .v7-eyebrow-dark {
+    color: var(--color-primary-300);
+  }
+
+  .v7-root .v7-rule {
+    display: inline-block;
+    flex-shrink: 0;
+    height: 1px;
+    background-color: var(--egeep-gold);
+  }
+
+  .v7-root .v7-numeral {
+    font-size: 1.75rem;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .v7-root .v7-numeral-sm {
+    color: var(--color-primary-700);
+    font-size: 1.125rem;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .v7-root .v7-dark .v7-numeral-sm {
+    color: var(--color-primary-300);
+  }
+
+  .v7-root .v7-caption {
+    color: var(--v7-muted);
+    font-size: 1.0625rem;
+    line-height: 1.5;
+  }
+
+  .v7-root .v7-caption-dark {
+    color: var(--v7-on-dark-muted);
+  }
+
+  .v7-root .v7-figure {
+    display: block;
+    color: var(--color-primary-400);
+    font-size: clamp(3rem, 1.5rem + 6vw, 8.5rem);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .v7-root .v7-figure-unit {
+    font-size: 0.5em;
+    white-space: nowrap;
+  }
+
+  .v7-root .v7-figure-light {
+    display: block;
+    font-size: clamp(3rem, 2rem + 3.5vw, 5.5rem);
+    line-height: 1;
+  }
+
+  .v7-root .v7-figure-md {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+
+  .v7-root .v7-figure-sm {
+    font-size: 2.25rem;
+    line-height: 1.1;
+  }
+
+  .v7-root[dir='ltr'] .v7-dropcap > p:first-child::first-letter {
+    float: inline-start;
+    margin-top: 0.08em;
+    padding-inline-end: 0.12em;
+    color: var(--egeep-gold);
+    font-size: 4.6em;
+    line-height: 0.8;
+  }
+
+  .v7-root .v7-year {
+    color: var(--egeep-gold);
+    font-size: clamp(3.5rem, 2.5rem + 3vw, 6rem);
+    line-height: 1;
+  }
+
+  .v7-root .v7-atlas-letter {
+    color: var(--egeep-gold);
+    font-size: clamp(4rem, 3rem + 3vw, 6.5rem);
+    line-height: 0.9;
+  }
+
+  .v7-root[dir='rtl'] .v7-atlas-letter {
+    line-height: 1.2;
+  }
+
+}
+
+/* The DS plugin emits its component rules into the utilities layer, so overrides of DS
+   classes live there too (higher specificity wins within the layer). */
+@layer utilities {
+  /* ---------- Links and buttons ---------- */
+  .v7-root .aegov-btn {
+    --btn-bg: var(--color-primary-700);
+    --btn-fg: var(--egeep-ivory);
+    --btn-border-color: var(--color-primary-700);
+    --btn-bg-hover: var(--color-primary-800);
+    --btn-focus-ring: var(--v7-focus);
+    --btn-shadow: none;
+    border-radius: 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+  .v7-root .aegov-btn.btn-lg {
+    height: 3.5rem;
+    padding-inline: 2rem;
+    font-size: 1.25rem;
+  }
+
+  .v7-root .aegov-btn.btn-outline {
+    --btn-bg: transparent;
+    --btn-fg: var(--color-primary-800);
+    --btn-border-color: var(--color-primary-700);
+    --btn-bg-hover: var(--color-primary-50);
+  }
+
+  .v7-root .aegov-btn.btn-link {
+    --btn-bg: transparent;
+    --btn-border-color: transparent;
+    --btn-bg-hover: transparent;
+    --btn-fg: var(--color-primary-700);
+    padding-inline: 0;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .v7-root .aegov-btn.v7-btn-ivory {
+    --btn-bg: var(--egeep-ivory);
+    --btn-fg: var(--egeep-charcoal);
+    --btn-border-color: var(--egeep-ivory);
+    --btn-bg-hover: #ffffff;
+  }
+
+  .v7-root .aegov-btn.v7-btn-ghost {
+    --btn-bg: transparent;
+    --btn-fg: var(--egeep-ivory);
+    --btn-border-color: rgb(249 247 241 / 0.6);
+    --btn-bg-hover: rgb(249 247 241 / 0.12);
+  }
+
+  .v7-root .aegov-link.v7-link {
+    --link-fg: var(--color-primary-700);
+    --link-fg-hover: var(--color-primary-800);
+    --link-focus-ring: var(--v7-focus);
+    font-size: 1.1875rem;
+  }
+
+  .v7-root .aegov-link.v7-link-dark {
+    --link-fg: var(--egeep-ivory);
+    --link-fg-hover: var(--color-primary-300);
+    --link-focus-ring: var(--v7-focus);
+    font-size: 1.1875rem;
+  }
+
+  .v7-root .v7-link-plain {
+    color: var(--egeep-charcoal);
+    text-decoration: none;
+  }
+
+  .v7-root .v7-link-plain:hover {
+    color: var(--color-primary-800);
+  }
+
+  .v7-root .v7-on-dark-link {
+    color: var(--egeep-ivory);
+    text-decoration: none;
+  }
+
+  .v7-root .v7-on-dark-link:hover {
+    color: var(--color-primary-300);
+  }
+
+  .v7-root .v7-text-btn {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--egeep-charcoal);
+    font-size: 1.125rem;
+  }
+
+  .v7-root .v7-text-btn:hover {
+    color: var(--color-primary-800);
+  }
+
+  .v7-root .v7-icon-btn {
+    display: inline-flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    color: var(--egeep-ivory);
+    transition: background-color 0.2s;
+  }
+
+  .v7-root .v7-icon-btn:hover {
+    background-color: rgb(249 247 241 / 0.1);
+  }
+
+  .v7-root .v7-icon-btn-light {
+    color: var(--egeep-charcoal);
+  }
+
+  .v7-root .v7-icon-btn-light:hover {
+    background-color: rgb(26 26 25 / 0.06);
+  }
+
+  .v7-root .v7-round-btn {
+    display: inline-flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--v7-hairline-strong);
+    border-radius: 9999px;
+    color: var(--egeep-charcoal);
+    transition:
+      background-color 0.2s,
+      color 0.2s;
+  }
+
+  .v7-root .v7-round-btn:hover:not(:disabled) {
+    background-color: var(--egeep-charcoal);
+    color: var(--egeep-ivory);
+  }
+
+  .v7-root .v7-round-btn:disabled {
+    cursor: default;
+    opacity: 0.35;
+  }
+
+  .v7-root .v7-round-btn-dark {
+    border-color: rgb(249 247 241 / 0.4);
+    color: var(--egeep-ivory);
+  }
+
+  .v7-root .v7-round-btn-dark:hover:not(:disabled) {
+    background-color: var(--egeep-ivory);
+    color: var(--egeep-charcoal);
+  }
+
+  .v7-root .v7-flag-link {
+    display: inline-flex;
+    padding: 3px;
+    outline-offset: 1px;
+    box-shadow: inset 0 0 0 1px var(--v7-hairline-strong);
+  }
+
+  .v7-root .v7-flag-link:hover {
+    box-shadow: inset 0 0 0 1px var(--egeep-gold);
+  }
+
+  /* ---------- Header ---------- */
+  .v7-root .aegov-header.v7-header {
+    padding-top: 0;
+    border-bottom: 1px solid var(--egeep-gold);
+    background-color: var(--egeep-charcoal);
+    color: var(--egeep-ivory);
+  }
+
+  .v7-root .aegov-header.v7-header::before {
+    display: none;
+  }
+
+  .v7-root .v7-header .header-navs {
+    border-top: 1px solid var(--v7-hairline-dark);
+    background-color: transparent;
+  }
+
+  .v7-root .aegov-header .logo img.v7-logo {
+    width: auto;
+    max-width: none;
+    height: 4.5rem;
+    max-height: none;
+  }
+
+  .v7-root .aegov-header .logo img.v7-logo-mobile {
+    width: auto;
+    max-width: min(15rem, 56vw);
+    height: auto;
+    max-height: 3rem;
+  }
+
+  .v7-root .v7-header .main-navigation .nav-menu > .menu-item > a,
+  .v7-root .v7-header .main-navigation .v7-nav-toggle {
+    display: inline-flex;
+    height: 3.5rem;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 2px solid transparent;
+    padding-inline: 0.625rem;
+    color: var(--egeep-ivory);
+    font-size: 1.1875rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition-delay: 0s;
+  }
+
+  .v7-root .v7-header .main-navigation .nav-menu > .menu-item > a:hover,
+  .v7-root .v7-header .main-navigation .v7-nav-toggle:hover,
+  .v7-root .v7-header .main-navigation .v7-nav-toggle[aria-expanded='true'] {
+    border-color: var(--color-primary-400);
+    color: #ffffff;
+  }
+
+  .v7-root .v7-header .main-navigation .nav-menu > .menu-item.active-page > a,
+  .v7-root .v7-header .main-navigation .active-page > .v7-nav-toggle {
+    border-color: var(--color-primary-300);
+    color: #ffffff;
+  }
+
+  .v7-root .v7-header .v7-submenu {
+    border: 1px solid var(--v7-hairline-dark);
+    background-color: #242423;
+  }
+
+  .v7-root .v7-header .v7-submenu a {
+    display: block;
+    padding: 0.625rem 1.25rem;
+    color: var(--egeep-ivory);
+    font-size: 1.1875rem;
+    text-decoration: none;
+  }
+
+  .v7-root .v7-header .v7-submenu a:hover,
+  .v7-root .v7-header .v7-submenu a[aria-current='page'] {
+    background-color: rgb(249 247 241 / 0.06);
+    color: var(--color-primary-300);
+  }
+
+  .v7-root .v7-lang {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    border: 1px solid var(--v7-hairline-dark);
+    padding-inline: 0.875rem;
+    color: var(--egeep-ivory);
+    font-size: 1.1875rem;
+    text-decoration: none;
+  }
+
+  .v7-root .v7-lang:hover {
+    border-color: var(--color-primary-400);
+  }
+
+  .v7-root .v7-search .form-control-input {
+    border-color: var(--v7-hairline-dark);
+    background-color: rgb(249 247 241 / 0.06);
+    --form-input-ring: rgb(249 247 241 / 0.3);
+  }
+
+  .v7-root .v7-search input {
+    color: var(--egeep-ivory);
+    font-size: 1.0625rem;
+  }
+
+  .v7-root .v7-search input::placeholder {
+    color: var(--v7-on-dark-muted);
+    opacity: 1;
+  }
+
+  .v7-root .v7-search .control-suffix {
+    color: var(--egeep-ivory);
+  }
+
+  .v7-root .v7-search .aegov-dropdown {
+    border-radius: 0;
+    background-color: var(--egeep-ivory);
+  }
+
+  .v7-root .v7-mobile-menu {
+    background-color: var(--egeep-charcoal);
+    color: var(--egeep-ivory);
+  }
+
+  .v7-root .v7-mobile-nav > li {
+    border-bottom: 1px solid var(--v7-hairline-dark);
+  }
+
+  .v7-root .v7-mobile-link {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 0.75rem;
+    padding-block: 0.875rem;
+    color: var(--egeep-ivory);
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  .v7-root .v7-mobile-link[aria-current='page'] {
+    color: var(--color-primary-300);
+  }
+
+  /* ---------- Footer ---------- */
+  .v7-root .aegov-footer.v7-footer {
+    --footer-bg: var(--egeep-charcoal);
+    padding-top: 0;
+    border-top: 1px solid var(--egeep-gold);
+    color: var(--egeep-ivory);
+  }
+
+  .v7-root .aegov-footer.v7-footer::before {
+    display: none;
+  }
+
+  .v7-root .aegov-footer.v7-footer a {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  /* ---------- Breadcrumb, tabs, accordion, badges, forms ---------- */
+  .v7-root nav.aegov-breadcrumb > ol {
+    color: var(--v7-muted);
+    font-size: 1.0625rem;
+  }
+
+  .v7-root nav.aegov-breadcrumb a {
+    max-width: none;
+    color: var(--color-primary-700);
+  }
+
+  .v7-root nav.aegov-breadcrumb a:hover {
+    color: var(--color-primary-800);
+  }
+
+  .v7-root nav.aegov-breadcrumb [aria-current='page'] {
+    max-width: none;
+  }
+
+  .v7-root .v7-tab {
+    margin-bottom: -1px;
+    border-bottom: 2px solid transparent;
+    padding-block: 0.75rem;
+    color: var(--v7-muted);
+    font-size: 1.25rem;
+  }
+
+  .v7-root .v7-tab[aria-selected='true'] {
+    border-color: var(--egeep-gold);
+    color: var(--egeep-charcoal);
+  }
+
+  .v7-root .v7-tab:hover {
+    color: var(--egeep-charcoal);
+  }
+
+  .v7-root .aegov-accordion.v7-accordion {
+    --accordion-title-fg: var(--egeep-charcoal);
+    --accordion-title-fg-hover: var(--color-primary-800);
+    --accordion-title-fg-active: var(--color-primary-800);
+    --accordion-item-border: var(--v7-hairline-strong);
+    --accordion-content-fg: var(--egeep-charcoal);
+    --accordion-focus-ring: var(--v7-focus);
+    border-top: 1px solid var(--egeep-gold);
+  }
+
+  .v7-root .v7-accordion .accordion-title button {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: start;
+  }
+
+  .v7-root .aegov-badge.v7-badge-active,
+  .v7-root .aegov-badge.v7-badge-done {
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .v7-root .aegov-badge.v7-badge-active {
+    --badge-bg: var(--egeep-charcoal);
+    --badge-fg: var(--egeep-ivory);
+  }
+
+  .v7-root .aegov-badge.v7-badge-done {
+    --badge-bg: transparent;
+    --badge-fg: var(--egeep-charcoal);
+    box-shadow: inset 0 0 0 1px var(--v7-hairline-strong);
+  }
+
+  .v7-root .aegov-form-control label {
+    color: var(--egeep-charcoal);
+    font-size: 1.1875rem;
+    font-weight: 400;
+  }
+
+  .v7-root .aegov-form-control .form-control-input {
+    border-radius: 0;
+    --form-input-focus-ring: var(--v7-focus);
+  }
+
+  .v7-root .aegov-form-control input,
+  .v7-root .aegov-form-control select,
+  .v7-root .aegov-form-control textarea {
+    font-size: 1.1875rem;
+  }
+
+  .v7-root .aegov-form-control .error-message {
+    font-size: 1.0625rem;
+  }
+
+  /* ---------- Quotes ---------- */
+  .v7-root .aegov-quote.v7-quote {
+    margin: 0;
+    border: 0;
+    background: none;
+    padding: 0;
+  }
+
+  .v7-root .v7-quote p {
+    font-size: clamp(1.75rem, 1.2rem + 1.9vw, 3.125rem);
+    line-height: 1.3;
+  }
+
+  .v7-root[dir='rtl'] .v7-quote p {
+    font-size: clamp(1.875rem, 1.3rem + 2vw, 3.25rem);
+    line-height: 1.7;
+  }
+
+  .v7-root .v7-workflow .step-badge.v7-step-badge {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    width: 3.5rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--egeep-gold);
+    border-radius: 9999px;
+    background-color: var(--egeep-ivory);
+    color: var(--color-primary-800);
+    font-size: 1.375rem;
+    font-weight: 400;
+  }
+
+  .v7-root .v7-workflow-dark .step-badge.v7-step-badge {
+    background-color: var(--egeep-charcoal);
+    color: var(--color-primary-300);
+  }
+
+}
+
+@layer components {
+  /* ---------- Page openings and patterns ---------- */
+  .v7-root .v7-opening-pattern {
+    position: absolute;
+    top: -14rem;
+    inset-inline-end: -12rem;
+    width: min(52rem, 80vw);
+    aspect-ratio: 1;
+    background: url('/brand/pattern/connected-circles.svg') no-repeat center / contain;
+    opacity: 0.16;
+    pointer-events: none;
+  }
+
+  .v7-root .v7-impact-pattern {
+    position: absolute;
+    top: -20%;
+    inset-inline-end: -18%;
+    width: min(60rem, 90vw);
+    aspect-ratio: 1;
+    background: url('/brand/pattern/unified-impact.svg') no-repeat center / contain;
+    opacity: 0.14;
+    pointer-events: none;
+  }
+
+  .v7-root .v7-chapter-link {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: baseline;
+    gap: 0.625rem;
+    padding-top: 0.5rem;
+    color: var(--egeep-charcoal);
+    font-size: 1.1875rem;
+    text-decoration: none;
+  }
+
+  .v7-root .v7-chapter-link:hover {
+    color: var(--color-primary-800);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  /* ---------- Home opening film ---------- */
+  .v7-root .v7-film {
+    background-color: var(--egeep-charcoal);
+  }
+
+  .v7-root .v7-film-shade {
+    background:
+      linear-gradient(to top, rgb(26 26 25 / 0.96) 0%, rgb(26 26 25 / 0.82) 45%, rgb(26 26 25 / 0.45) 100%),
+      linear-gradient(to right, rgb(26 26 25 / 0.55), transparent 70%);
+  }
+
+  .v7-root[dir='rtl'] .v7-film-shade {
+    background:
+      linear-gradient(to top, rgb(26 26 25 / 0.96) 0%, rgb(26 26 25 / 0.82) 45%, rgb(26 26 25 / 0.45) 100%),
+      linear-gradient(to left, rgb(26 26 25 / 0.55), transparent 70%);
+  }
+
+  .v7-root .v7-film-toggle {
+    position: absolute;
+    bottom: 1.5rem;
+    inset-inline-end: 1.25rem;
+    z-index: 10;
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    gap: 0.625rem;
+    border: 1px solid rgb(249 247 241 / 0.35);
+    border-radius: 9999px;
+    background-color: rgb(26 26 25 / 0.7);
+    padding-inline: 1rem;
+    color: var(--egeep-ivory);
+    font-size: 1.0625rem;
+  }
+
+  .v7-root .v7-film-toggle:hover {
+    border-color: var(--color-primary-300);
+  }
+
+  .v7-root .v7-chapter-tab {
+    display: flex;
+    min-height: 4.5rem;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.75rem;
+    padding: 1.25rem 1rem;
+    color: var(--egeep-ivory);
+    font-size: clamp(1.0625rem, 0.8rem + 1.1vw, 1.75rem);
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+
+  .v7-root .v7-chapter-tab:hover {
+    background-color: rgb(249 247 241 / 0.05);
+  }
+
+  /* ---------- Area index ---------- */
+  .v7-root .v7-index-row {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding-block: 1.25rem;
+    color: var(--egeep-charcoal);
+    text-decoration: none;
+  }
+
+  .v7-root .v7-index-title {
+    font-size: clamp(1.5rem, 1.2rem + 1vw, 2.25rem);
+    line-height: 1.2;
+    transition:
+      color 0.3s,
+      translate 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .v7-root[dir='rtl'] .v7-index-title {
+    line-height: 1.5;
+  }
+
+  .v7-root .v7-index-arrow {
+    color: var(--color-primary-700);
+    opacity: 0.35;
+    transition: opacity 0.3s;
+  }
+
+  .v7-root .v7-index-row:hover .v7-index-title,
+  .v7-root .v7-index-row.is-active .v7-index-title {
+    color: var(--color-primary-800);
+    translate: 0.5rem 0;
+  }
+
+  .v7-root[dir='rtl'] .v7-index-row:hover .v7-index-title,
+  .v7-root[dir='rtl'] .v7-index-row.is-active .v7-index-title {
+    translate: -0.5rem 0;
+  }
+
+  .v7-root .v7-index-row:hover .v7-index-arrow,
+  .v7-root .v7-index-row.is-active .v7-index-arrow {
+    opacity: 1;
+  }
+
+  .v7-root .v7-index-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    color: var(--egeep-charcoal);
+    text-decoration: none;
+  }
+
+  .v7-root .v7-index-link:hover {
+    color: var(--color-primary-800);
+  }
+
+  .v7-root .v7-crossfade {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+
+  .v7-root .v7-crossfade.is-shown {
+    opacity: 1;
+  }
+
+  /* ---------- Development figures ---------- */
+  .v7-root .v7-figures {
+    border-block: 1px solid var(--egeep-gold);
+  }
+
+  .v7-root .v7-figure-cell {
+    border-bottom: 1px solid var(--v7-hairline-dark);
+    padding-block: 2.5rem;
+    padding-inline-end: 2rem;
+  }
+
+  @media (width >= 40rem) {
+    .v7-root .v7-figure-cell {
+      padding-inline: 0 2.5rem;
+    }
+  }
+
+  /* ---------- Years timeline ---------- */
+  .v7-root .v7-years {
+    --v7-col-muted: var(--v7-muted);
+    --v7-col-rule: var(--egeep-gold);
+    gap: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .v7-root .v7-scroll {
+    scrollbar-color: var(--egeep-gold) transparent;
+    scrollbar-width: thin;
+  }
+
+  .v7-root .v7-year-col {
+    width: min(78vw, 19rem);
+    border-inline-start: 1px solid var(--v7-hairline-strong);
+    padding-inline: 1.5rem;
+  }
+
+  @media (width >= 40rem) {
+    .v7-root .v7-year-col.is-wide {
+      width: 36rem;
+    }
+  }
+
+  .v7-root .v7-year-country {
+    display: flex;
+    min-height: 2rem;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--egeep-charcoal);
+    font-size: 1.125rem;
+    line-height: 1.35;
+    text-decoration: none;
+  }
+
+  .v7-root .v7-year-country:hover {
+    color: var(--color-primary-800);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .v7-root .v7-quote-mark {
+    display: block;
+    height: 3.5rem;
+    font-size: 7rem;
+    line-height: 1;
+  }
+
+  /* ---------- Featured film facade ---------- */
+  .v7-root .v7-film-facade {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .v7-root .v7-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-flex;
+    width: 5rem;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background-color: var(--egeep-ivory);
+    color: var(--egeep-charcoal);
+    transform: translate(-50%, -50%);
+    transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .v7-root .v7-film-facade:hover .v7-play {
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+
+  @media (width >= 48rem) {
+    .v7-root .v7-play {
+      width: 6.5rem;
+      height: 6.5rem;
+    }
+  }
+
+  .v7-root .v7-play-label {
+    position: absolute;
+    bottom: 1.25rem;
+    inset-inline-start: 1.5rem;
+    color: var(--egeep-ivory);
+    font-size: 1.25rem;
+  }
+
+  /* ---------- Participate ---------- */
+  .v7-root .v7-cta-shade {
+    background: linear-gradient(to right, rgb(26 26 25 / 0.94) 0%, rgb(26 26 25 / 0.8) 50%, rgb(26 26 25 / 0.35) 100%);
+  }
+
+  .v7-root[dir='rtl'] .v7-cta-shade {
+    background: linear-gradient(to left, rgb(26 26 25 / 0.94) 0%, rgb(26 26 25 / 0.8) 50%, rgb(26 26 25 / 0.35) 100%);
+  }
+
+  /* ---------- Workflow ---------- */
+  .v7-root .v7-workflow li {
+    position: relative;
+  }
+
+  .v7-root .v7-step-line {
+    position: absolute;
+    top: 3.5rem;
+    bottom: 0;
+    inset-inline-start: 1.75rem;
+    width: 1px;
+    background-color: var(--egeep-gold);
+  }
+
+  .v7-root .v7-workflow li:last-child .v7-step-line {
+    display: none;
+  }
+
+  @media (width >= 64rem) {
+    .v7-root .v7-step-line {
+      top: 1.75rem;
+      bottom: auto;
+      inset-inline: 3.5rem -2rem;
+      width: auto;
+      height: 1px;
+    }
+  }
+
+  /* ---------- About long read ---------- */
+  .v7-root .v7-progress {
+    position: fixed;
+    top: 0;
+    inset-inline: 0;
+    z-index: 60;
+    height: 3px;
+    background-color: var(--egeep-gold);
+    transform-origin: left center;
+  }
+
+  .v7-root[dir='rtl'] .v7-progress {
+    transform-origin: right center;
+  }
+
+  .v7-root .v7-toc-link {
+    display: flex;
+    min-height: 2.75rem;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-inline-start: -1px;
+    border-inline-start: 2px solid transparent;
+    padding: 0.5rem 1rem;
+    color: var(--v7-muted);
+    font-size: 1.1875rem;
+    text-decoration: none;
+  }
+
+  .v7-root .v7-toc-link:hover {
+    color: var(--egeep-charcoal);
+  }
+
+  .v7-root .v7-toc-link[aria-current='location'] {
+    border-color: var(--egeep-gold);
+    color: var(--egeep-charcoal);
+  }
+
+  /* ---------- Atlas ---------- */
+  .v7-root .v7-alphabet {
+    gap: 0.25rem;
+  }
+
+  .v7-root .v7-letter {
+    display: inline-flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--v7-hairline-strong);
+    color: var(--egeep-charcoal);
+    font-size: 1.375rem;
+    text-decoration: none;
+  }
+
+  .v7-root a.v7-letter:hover {
+    border-color: var(--egeep-charcoal);
+    background-color: var(--egeep-charcoal);
+    color: var(--egeep-ivory);
+  }
+
+  .v7-root .v7-letter.is-empty {
+    border-color: transparent;
+    color: rgb(26 26 25 / 0.32);
+  }
+
+  .v7-root .v7-atlas-entry {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 1rem;
+    text-align: start;
+  }
+
+  .v7-root .v7-atlas-entry:hover span span:first-child {
+    color: var(--color-primary-800);
+  }
+
+  .v7-root .v7-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    background-color: rgb(26 26 25 / 0.55);
+  }
+
+  .v7-root .v7-panel {
+    --v7-slide: 100%;
+    box-shadow: 0 0 60px rgb(26 26 25 / 0.25);
+  }
+
+  .v7-root[dir='rtl'] .v7-panel {
+    --v7-slide: -100%;
+  }
+
+  /* ---------- Chronicle ---------- */
+  .v7-root .v7-chronicle > li + li {
+    margin-top: 4rem;
+  }
+
+  .v7-root .v7-chronicle-year {
+    border-top: 1px solid var(--egeep-gold);
+    padding-top: 2rem;
+  }
+
+  .v7-root .v7-chronicle-entry {
+    position: relative;
+    border-inline-start: 1px solid var(--v7-hairline-strong);
+    padding-inline-start: 1.75rem;
+  }
+
+  .v7-root .v7-chronicle-dot {
+    position: absolute;
+    top: 1.75rem;
+    inset-inline-start: -0.4rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 9999px;
+    box-shadow: 0 0 0 3px var(--egeep-ivory);
+  }
+
+  .v7-root .v7-chronicle-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    color: var(--egeep-charcoal);
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+
+  .v7-root .v7-chronicle-link:hover {
+    background-color: var(--v7-surface);
+  }
+
+  /* ---------- Media ---------- */
+  .v7-root .v7-thumb {
+    display: block;
+    width: 100%;
+  }
+
+  .v7-root .v7-thumb-zoom {
+    position: absolute;
+    top: 0.75rem;
+    inset-inline-end: 0.75rem;
+    display: inline-flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background-color: rgb(249 247 241 / 0.92);
+    color: var(--egeep-charcoal);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .v7-root .v7-thumb:hover .v7-thumb-zoom,
+  .v7-root .v7-thumb:focus-visible .v7-thumb-zoom {
+    opacity: 1;
+  }
+
+  .v7-root .v7-channel {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.75rem 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+
+  .v7-root .v7-channel:hover {
+    background-color: var(--egeep-ivory);
+  }
+
+  .v7-root .v7-lightbox {
+    background-color: rgb(26 26 25 / 0.97);
+    color: var(--egeep-ivory);
+  }
+
+  /* ---------- Motion (all of it off under reduced motion) ---------- */
+  @media (prefers-reduced-motion: no-preference) {
+    .v7-root .v7-mega-line {
+      animation: v7-rise 1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    }
+
+    .v7-root .v7-panel {
+      animation: v7-slide-in 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    }
+
+    .v7-root .v7-backdrop,
+    .v7-root .v7-lightbox {
+      animation: v7-fade 0.3s ease both;
+    }
+
+    .v7-root .v7-lightbox-img {
+      animation: v7-fade 0.4s ease both;
+    }
+
+    .v7-root .v7-impact-pattern {
+      animation: v7-drift 90s linear infinite;
+    }
+
+    /* Scroll-driven reveals start after the reader's first scroll (see Layout), so pages
+       captured or opened without scrolling always show their final state. */
+    @supports (animation-timeline: view()) {
+      html[data-v7-motion] .v7-root .v7-reveal {
+        animation: v7-reveal linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 70%;
+      }
+
+      html[data-v7-motion] .v7-root .v7-clip {
+        animation: v7-clip linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 90%;
+      }
+
+      html[data-v7-motion] .v7-root .v7-parallax {
+        scale: 1.12;
+        animation: v7-parallax linear both;
+        animation-timeline: view();
+        animation-range: cover;
+      }
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .v7-root *,
+    .v7-root *::before,
+    .v7-root *::after {
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@keyframes v7-rise {
+  from {
+    opacity: 0;
+    translate: 0 0.35em;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes v7-reveal {
+  from {
+    opacity: 0;
+    translate: 0 2.5rem;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes v7-clip {
+  from {
+    clip-path: inset(10% 6% 10% 6%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes v7-parallax {
+  from {
+    translate: 0 -5%;
+  }
+  to {
+    translate: 0 5%;
+  }
+}
+
+@keyframes v7-slide-in {
+  from {
+    translate: var(--v7-slide) 0;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+
+@keyframes v7-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes v7-drift {
+  to {
+    rotate: 360deg;
+  }
+}

@@ -1,0 +1,330 @@
+/* v3 "The Exchange" — editorial theme. Everything is scoped under .v3-root. */
+
+.v3-root {
+  /* Headings in Alexandria, body in Roboto */
+  --font-heading: var(--font-alexandria);
+
+  /* Shift the gold scale one step darker so gold buttons and links meet 4.5:1 on paper */
+  --color-primary-600: var(--color-aegold-700);
+  --color-primary-700: var(--color-aegold-800);
+  --color-primary-800: var(--color-aegold-900);
+  --color-primary-900: var(--color-aegold-950);
+
+  --v3-paper: var(--color-camel-50);
+  --v3-paper-deep: var(--color-desert-50);
+  --v3-ink: var(--color-aeblack-900);
+  --v3-rule: color-mix(in oklch, var(--color-aeblack-900) 14%, transparent);
+
+  min-height: 100vh;
+  background-color: var(--v3-paper);
+  color: var(--v3-ink);
+  font-family: var(--font-body);
+  overflow-x: clip;
+}
+
+.v3-root h1,
+.v3-root h2,
+.v3-root h3,
+.v3-root h4,
+.v3-root .card-title {
+  font-family: var(--font-alexandria);
+  letter-spacing: -0.01em;
+}
+
+/*
+ * Base-layer resets: the DS base gives every <p> a 2rem bottom margin and a fixed 1rem size, and
+ * every <a> gold text, an underline and an inline-block box. This layout sets text colour, size and
+ * spacing on the elements and containers (and gold on light paper fails contrast on dark bands),
+ * so neutralise those here; being in the base layer, Tailwind utilities and DS component classes
+ * still override them.
+ */
+@layer base {
+  .v3-root [id] {
+    scroll-margin-top: 1.5rem;
+  }
+
+  .v3-root p {
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .v3-root a {
+    display: inline;
+    color: inherit;
+    text-decoration-line: none;
+  }
+}
+
+/* Layout */
+.v3-wrap {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .v3-wrap {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .v3-wrap {
+    padding-inline: 2.5rem;
+  }
+}
+
+.v3-measure {
+  max-width: 65ch;
+}
+
+.v3-paper-deep {
+  background-color: var(--v3-paper-deep);
+}
+
+.v3-rule {
+  border-color: var(--v3-rule);
+}
+
+/* Typographic details */
+.v3-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-aegold-800);
+}
+
+.v3-kicker::before {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.v3-dark .v3-kicker {
+  color: var(--color-aegold-300);
+}
+
+.v3-numeral {
+  font-family: var(--font-alexandria);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.v3-dropcap::first-letter {
+  float: left;
+  margin: 0.08em 0.12em 0 0;
+  font-family: var(--font-alexandria);
+  font-size: 4.25em;
+  font-weight: 700;
+  line-height: 0.82;
+  color: var(--color-aegold-800);
+}
+
+.v3-prose p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-aeblack-800);
+}
+
+.v3-prose p + p {
+  margin-top: 1.25rem;
+}
+
+/* Dark editorial bands */
+.v3-dark {
+  background-color: var(--color-aeblack-950);
+  color: var(--color-whitely-50);
+}
+
+/* Focus */
+.v3-root :focus-visible {
+  outline: 3px solid var(--color-aegold-700);
+  outline-offset: 3px;
+}
+
+.v3-root .v3-dark :focus-visible,
+.v3-root .aegov-footer :focus-visible {
+  outline-color: var(--color-aegold-300);
+}
+
+.v3-skip:focus {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 60;
+}
+
+/* Header */
+.v3-root .aegov-header {
+  background-color: var(--v3-paper);
+  border-bottom: 1px solid var(--v3-rule);
+}
+
+.v3-logo {
+  filter: brightness(0);
+}
+
+.v3-nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-block: 0.875rem;
+  font-family: var(--font-alexandria);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-aeblack-800);
+  text-decoration: none;
+}
+
+.v3-nav-link::after {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  bottom: -1px;
+  height: 3px;
+  background-color: var(--color-aegold-600);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.v3-nav-link:hover::after,
+.v3-nav-link[aria-current='page']::after {
+  transform: scaleX(1);
+}
+
+.v3-nav-link[aria-current='page'] {
+  color: var(--color-aegold-900);
+}
+
+/* Footer */
+.v3-root .aegov-footer {
+  --footer-bg: var(--color-aeblack-950);
+  --footer-link-fg: var(--color-aeblack-100);
+  --footer-link-fg-hover: var(--color-aegold-300);
+  color: var(--color-aeblack-100);
+}
+
+/* DS blockquote, editorial scale */
+.v3-root .aegov-quote .quote-icon {
+  color: var(--color-aegold-600);
+}
+
+.v3-quote-xl.aegov-quote p {
+  font-family: var(--font-alexandria);
+  font-size: clamp(1.375rem, 1rem + 1.6vw, 2.25rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: inherit;
+}
+
+.v3-quote-xl.aegov-quote .quote-author {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.v3-quote-xl.aegov-quote .quote-cite {
+  font-size: 0.9375rem;
+}
+
+.v3-dark .aegov-quote {
+  --quote-fg: var(--color-whitely-50);
+  --quote-author-fg: var(--color-aegold-300);
+  --quote-cite-fg: var(--color-aeblack-100);
+}
+
+.v3-dark .aegov-quote .quote-icon {
+  color: var(--color-aegold-400);
+}
+
+.v3-pull.aegov-quote.quote-colored {
+  --quote-bg: var(--color-whitely-50);
+  --quote-border: var(--color-aegold-600);
+}
+
+.v3-pull.aegov-quote p {
+  font-family: var(--font-alexandria);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+/* Tabs rendered as buttons */
+.v3-root .aegov-tab button.tab-link {
+  cursor: pointer;
+  background: transparent;
+}
+
+/* Images */
+.v3-zoom {
+  overflow: hidden;
+}
+
+.v3-zoom img {
+  transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.v3-zoom:hover img,
+a:focus-visible .v3-zoom img {
+  transform: scale(1.03);
+}
+
+/* Area logos mix dark artwork on transparent and full-bleed artwork, so they sit on a white card */
+.v3-plate {
+  background-color: var(--color-whitely-50);
+  box-shadow: 0 0 0 1px var(--v3-rule);
+}
+
+/* Restrained entrance motion */
+@keyframes v3-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.v3-rise {
+  animation: v3-rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.v3-rise-2 {
+  animation-delay: 0.08s;
+}
+
+.v3-rise-3 {
+  animation-delay: 0.16s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* The DS base enables smooth scrolling on small screens; only applies while this version is mounted */
+  html:has(.v3-root) {
+    scroll-behavior: auto;
+  }
+
+  .v3-root *,
+  .v3-root *::before,
+  .v3-root *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .v3-zoom:hover img,
+  a:focus-visible .v3-zoom img {
+    transform: none;
+  }
+}

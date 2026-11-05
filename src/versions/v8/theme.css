@@ -1,0 +1,629 @@
+/*
+ * v8 "Impact Grid": a modular grid on Ivory. White tiles, Light Grey structure lines, Royal Gold
+ * accents, Deep Charcoal text and footer. Tokens are scoped to .v8-root (no global @theme).
+ */
+
+.v8-root {
+  --egeep-gold: #997133;
+  --egeep-grey-light: #e7e7e7;
+  --egeep-charcoal: #1a1a19;
+  --egeep-ivory: #f9f7f1;
+  --egeep-blue: #2f5ca0;
+  --egeep-espresso: #4b3b2a;
+  --egeep-burgundy: #7b1f2d;
+  --egeep-green: #417b5d;
+
+  /* Royal Gold scale (600 = brand gold) so DS components follow the brand */
+  --color-primary-50: #fcf6ee;
+  --color-primary-100: #f9ebd7;
+  --color-primary-200: #f0d6b3;
+  --color-primary-300: #e1ba82;
+  --color-primary-400: #c99c59;
+  --color-primary-500: #ad823f;
+  --color-primary-600: #997133;
+  --color-primary-700: #7c5921;
+  --color-primary-800: #66451f;
+  --color-primary-900: #52361e;
+  --color-primary-950: #311f13;
+  --color-primary-support-600: #1a1a19;
+
+  --v8-text: #1a1a19;
+  --v8-text-2: #5c5e60;
+  --v8-line: #e7e7e7;
+  --v8-line-strong: #d4d2cc;
+  --v8-tile: #ffffff;
+  --v8-radius: 0.625rem;
+  --v8-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* Sakkal Majalla renders about 20% smaller than Roboto: scale the type ramp up */
+  --text-xs: 1rem;
+  --text-xs--line-height: 1.5;
+  --text-sm: 1.0625rem;
+  --text-sm--line-height: 1.5;
+  --text-base: 1.25rem;
+  --text-base--line-height: 1.55;
+  --text-lg: 1.375rem;
+  --text-lg--line-height: 1.55;
+  --text-xl: 1.5rem;
+  --text-xl--line-height: 1.5;
+  --text-2xl: 1.75rem;
+  --text-2xl--line-height: 1.35;
+  --text-3xl: 2.125rem;
+  --text-3xl--line-height: 1.25;
+  --text-4xl: 2.625rem;
+  --text-4xl--line-height: 1.15;
+  --text-5xl: 3.25rem;
+  --text-5xl--line-height: 1.1;
+  --text-6xl: 4rem;
+  --text-6xl--line-height: 1.05;
+  --text-7xl: 4.75rem;
+  --text-7xl--line-height: 1;
+  --text-h1: 4.5rem;
+  --text-h2: 3.5rem;
+  --text-h3: 3rem;
+  --text-h4: 2.5rem;
+  --text-h4--line-height: 1.2;
+  --text-h5: 2rem;
+  --text-h5--line-height: 1.25;
+  --text-h6: 1.625rem;
+  --text-h6--line-height: 1.3;
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: var(--egeep-ivory);
+  color: var(--v8-text);
+  font-size: var(--text-base);
+  line-height: 1.55;
+  font-synthesis-weight: none;
+}
+
+.v8-root,
+.v8-root[dir='rtl'],
+.v8-root [dir='rtl'],
+.v8-root [dir='ltr'] {
+  --font-body: 'Sakkal Majalla', sans-serif;
+  --font-heading: 'Sakkal Majalla', sans-serif;
+  --font-alexandria: 'Sakkal Majalla', sans-serif;
+  --font-notokufi: 'Sakkal Majalla', sans-serif;
+  --font-inter: 'Sakkal Majalla', sans-serif;
+  --font-roboto: 'Sakkal Majalla', sans-serif;
+  font-family: 'Sakkal Majalla', sans-serif;
+}
+
+/* Arabic: a step larger and more open */
+.v8-root[dir='rtl'] {
+  --text-xs: 1.0625rem;
+  --text-xs--line-height: 1.7;
+  --text-sm: 1.125rem;
+  --text-sm--line-height: 1.7;
+  --text-base: 1.3125rem;
+  --text-base--line-height: 1.8;
+  --text-lg: 1.4375rem;
+  --text-lg--line-height: 1.8;
+  --text-xl: 1.5625rem;
+  --text-xl--line-height: 1.7;
+  --text-2xl: 1.8125rem;
+  --text-2xl--line-height: 1.55;
+  --text-3xl: 2.1875rem;
+  --text-3xl--line-height: 1.45;
+  --text-4xl: 2.6875rem;
+  --text-4xl--line-height: 1.35;
+  --text-5xl: 3.25rem;
+  --text-5xl--line-height: 1.3;
+  --text-h4--line-height: 1.4;
+  --text-h5--line-height: 1.45;
+  --text-h6--line-height: 1.5;
+  line-height: 1.8;
+}
+
+/* No bold file exists: every weight renders Regular, hierarchy comes from size, colour and rules */
+.v8-root,
+.v8-root * {
+  font-synthesis: none;
+}
+
+.v8-root :is(h1, h2, h3, h4, h5, h6, strong, b, th, label, legend, .aegov-btn, .aegov-badge, .tab-link) {
+  font-weight: 400;
+}
+
+.v8-root > main {
+  flex: 1 0 auto;
+}
+
+@layer base {
+  /* Links take their colour from context; components add colour/underline with utilities */
+  .v8-root a:not([class*='aegov-']) {
+    color: inherit;
+    text-decoration-line: none;
+    text-underline-offset: 0.2em;
+  }
+
+  /* The DS lets every button's flex items wrap; keep icons beside their labels */
+  .v8-root button:not(.aegov-btn) {
+    flex-wrap: nowrap;
+  }
+
+  .v8-root p {
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .v8-root :is(h1, h2, h3, h4, h5, h6) {
+    margin-bottom: 0;
+    letter-spacing: -0.005em;
+  }
+
+  .v8-root[dir='rtl'] :is(h1, h2, h3, h4, h5, h6) {
+    letter-spacing: 0;
+  }
+}
+
+/* Skip link */
+.v8-root .v8-skip-link {
+  position: absolute;
+  inset-inline-start: 0.75rem;
+  top: 0.75rem;
+  z-index: 100;
+  transform: translateY(-200%);
+  border-radius: 0.375rem;
+  background-color: var(--egeep-charcoal);
+  padding: 0.75rem 1.25rem;
+  color: var(--egeep-ivory);
+  text-decoration: none;
+}
+
+.v8-root .v8-skip-link:focus {
+  transform: none;
+}
+
+/* Visible focus: 2px charcoal ring on light surfaces, ivory on dark */
+.v8-root :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--egeep-charcoal);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+.v8-root .v8-dark :is(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline-color: var(--egeep-ivory);
+}
+
+/* DS inputs draw their own focus ring on the wrapper */
+.v8-root .form-control-input :is(input, select, textarea):focus-visible {
+  outline: none;
+}
+
+.v8-root main:focus-visible {
+  outline: none;
+}
+
+/* ---------- Surfaces ---------- */
+
+.v8-root .v8-tile {
+  position: relative;
+  border: 1px solid var(--v8-line);
+  border-radius: var(--v8-radius);
+  background-color: var(--v8-tile);
+}
+
+.v8-root .v8-lift {
+  transition:
+    transform 260ms var(--v8-ease),
+    box-shadow 260ms var(--v8-ease),
+    border-color 260ms var(--v8-ease);
+}
+
+.v8-root .v8-lift:hover,
+.v8-root .v8-lift:focus-within {
+  transform: translateY(-3px);
+  border-color: var(--color-primary-300);
+  box-shadow: 0 18px 36px -24px rgb(26 26 25 / 0.35);
+}
+
+/* Structural grid behind the hero and page headers */
+.v8-root .v8-gridlines {
+  background-color: var(--egeep-ivory);
+  background-image:
+    linear-gradient(to right, rgb(231 231 231 / 0.75) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(231 231 231 / 0.75) 1px, transparent 1px);
+  background-size: 4rem 4rem;
+  background-position: -1px -1px;
+}
+
+/* Brand pattern in a corner, thin lines at low opacity */
+.v8-root .v8-pattern {
+  pointer-events: none;
+  position: absolute;
+  opacity: 0.18;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.v8-root .v8-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--v8-text-2);
+  font-size: var(--text-sm);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.v8-root[dir='rtl'] .v8-eyebrow {
+  letter-spacing: 0;
+}
+
+.v8-root .v8-eyebrow::before {
+  content: '';
+  display: block;
+  width: 1.75rem;
+  height: 2px;
+  flex-shrink: 0;
+  background-color: var(--egeep-gold);
+}
+
+.v8-root .v8-dark .v8-eyebrow {
+  color: #d9d6cd;
+}
+
+.v8-root .v8-dark .v8-eyebrow::before {
+  background-color: var(--color-primary-400);
+}
+
+.v8-root .v8-muted {
+  color: var(--v8-text-2);
+}
+
+.v8-root .v8-gold-title {
+  color: var(--egeep-gold);
+}
+
+/* Programme colour as a tag: dot + text, never colour alone */
+.v8-root .v8-prog-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0.05rem 0.75rem;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.v8-root .v8-prog-tag::before {
+  content: '';
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background-color: currentColor;
+}
+
+/* ---------- DS component alignment ---------- */
+
+.v8-root .aegov-btn {
+  --btn-bg: var(--color-primary-700);
+  --btn-bg-hover: var(--color-primary-800);
+  --btn-border-color: var(--color-primary-700);
+  --btn-fg: #ffffff;
+  --btn-focus-ring: var(--egeep-charcoal);
+  font-size: var(--text-base);
+  line-height: 1.2;
+}
+
+.v8-root .aegov-btn.btn-outline {
+  --btn-bg: transparent;
+  --btn-bg-hover: var(--color-primary-50);
+  --btn-border-color: var(--color-primary-700);
+  --btn-fg: var(--color-primary-800);
+}
+
+.v8-root .aegov-btn.btn-soft {
+  --btn-bg: var(--color-primary-50);
+  --btn-bg-hover: var(--color-primary-100);
+  --btn-fg: var(--color-primary-800);
+}
+
+.v8-root .aegov-btn.btn-link {
+  --btn-bg: transparent;
+  --btn-bg-hover: transparent;
+  --btn-border-color: transparent;
+  --btn-fg: var(--color-primary-800);
+}
+
+.v8-root .aegov-btn.btn-secondary {
+  --btn-bg: var(--egeep-charcoal);
+  --btn-bg-hover: #000;
+  --btn-border-color: var(--egeep-charcoal);
+  --btn-fg: var(--egeep-ivory);
+}
+
+.v8-root .aegov-btn.btn-sm {
+  font-size: var(--text-sm);
+}
+
+.v8-root .v8-dark .aegov-btn.btn-outline {
+  --btn-bg-hover: rgb(255 255 255 / 0.08);
+  --btn-border-color: var(--color-primary-300);
+  --btn-fg: var(--egeep-ivory);
+}
+
+.v8-root .aegov-link {
+  --link-fg: var(--color-primary-700);
+  --link-fg-hover: var(--color-primary-900);
+}
+
+.v8-root .aegov-badge {
+  font-size: var(--text-sm);
+}
+
+/* DS quote: a gold rule instead of the wide icon indent, which crowds 390px screens */
+.v8-root .aegov-quote {
+  margin: 0;
+  padding-block: 0;
+  border-inline-start: 2px solid var(--egeep-gold);
+  padding-inline-start: 1.25rem;
+}
+
+.v8-root .aegov-quote::before {
+  display: none;
+}
+
+.v8-root .aegov-form-control label {
+  font-size: var(--text-sm);
+  color: var(--v8-text);
+}
+
+.v8-root .aegov-form-control :is(input, select, textarea) {
+  font-size: var(--text-base);
+}
+
+.v8-root .aegov-tab {
+  --tab-link-active-fg: var(--color-primary-900);
+  --tab-link-active-border: var(--color-primary-600);
+  --tab-link-fg: var(--v8-text-2);
+}
+
+.v8-root .tab-link {
+  font-size: var(--text-base);
+}
+
+.v8-root .aegov-breadcrumb {
+  font-size: var(--text-sm);
+}
+
+.v8-root nav.aegov-breadcrumb > ol {
+  color: var(--v8-text-2);
+}
+
+.v8-root nav.aegov-breadcrumb a {
+  max-width: none;
+  color: var(--color-primary-700);
+}
+
+.v8-root nav.aegov-breadcrumb [aria-current='page'] {
+  max-width: none;
+}
+
+.v8-root .aegov-modal-wrapper {
+  border-radius: var(--v8-radius);
+}
+
+/* ---------- Header ---------- */
+
+.v8-root .aegov-header {
+  --header-gradient-from: var(--egeep-gold);
+  --header-gradient-to: var(--egeep-gold);
+  position: relative;
+  z-index: 40;
+  border-bottom: 1px solid var(--v8-line);
+  background-color: #fff;
+}
+
+.v8-root .aegov-header .v8-logo {
+  width: auto;
+  max-width: none;
+  height: 4.5rem;
+}
+
+.v8-root .aegov-header .v8-logo-mobile,
+.v8-root .v8-menu .v8-logo-mobile {
+  width: auto;
+  max-width: 60vw;
+  height: 2.75rem;
+}
+
+.v8-root .v8-nav-link {
+  position: relative;
+  display: inline-flex;
+  height: 3.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  padding-inline: 0.875rem;
+  color: var(--v8-text);
+  font-size: var(--text-base);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.v8-root .v8-nav-link::after {
+  content: '';
+  position: absolute;
+  inset-inline: 0.875rem;
+  bottom: -1px;
+  height: 2px;
+  transform: scaleX(0);
+  background-color: var(--egeep-gold);
+  transition: transform 220ms var(--v8-ease);
+}
+
+.v8-root .v8-nav-link:hover::after,
+.v8-root .v8-nav-link[aria-current='page']::after,
+.v8-root .v8-nav-link[data-active='true']::after,
+.v8-root .v8-nav-link[aria-expanded='true']::after {
+  transform: scaleX(1);
+}
+
+.v8-root .v8-nav-link[aria-current='page'],
+.v8-root .v8-nav-link[data-active='true'] {
+  color: var(--color-primary-800);
+}
+
+.v8-root .v8-kbd {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--v8-line-strong);
+  border-radius: 0.3rem;
+  background-color: var(--egeep-ivory);
+  padding: 0 0.4rem;
+  color: var(--v8-text-2);
+  font-size: var(--text-xs);
+  line-height: 1.4;
+}
+
+/* ---------- Footer ---------- */
+
+.v8-root .aegov-footer {
+  --footer-bg: var(--egeep-charcoal);
+  --footer-link-fg: #e7e5df;
+  --footer-link-fg-hover: #ffffff;
+  --footer-contact-link-fg: #e7e5df;
+  --footer-contact-link-fg-hover: #ffffff;
+  --footer-social-link-fg: #e7e5df;
+  --footer-social-link-fg-hover: #ffffff;
+  --footer-bottom-border: rgb(255 255 255 / 0.14);
+  --footer-accordion-btn-fg: var(--egeep-ivory);
+  --footer-accordion-btn-fg-active: var(--egeep-ivory);
+  --footer-accordion-icon-fg: var(--color-primary-300);
+  --footer-gradient-from: var(--egeep-gold);
+  --footer-gradient-to: var(--egeep-gold);
+  background-color: var(--egeep-charcoal);
+  color: #e7e5df;
+}
+
+.v8-root .aegov-footer a {
+  color: #e7e5df;
+}
+
+.v8-root .aegov-footer a:hover {
+  color: #fff;
+}
+
+/* ---------- Charts ---------- */
+
+.v8-root .v8-bar {
+  transform-box: fill-box;
+  transition:
+    transform 900ms var(--v8-ease),
+    fill 200ms ease;
+}
+
+.v8-root .v8-bar-col {
+  transform-origin: bottom;
+}
+
+.v8-root .v8-bar-row {
+  transform-origin: left;
+}
+
+.v8-root[dir='rtl'] .v8-bar-row {
+  transform-origin: right;
+}
+
+.v8-root .v8-chart[data-in='false'] .v8-bar-col {
+  transform: scaleY(0);
+}
+
+.v8-root .v8-chart[data-in='false'] .v8-bar-row {
+  transform: scaleX(0);
+}
+
+.v8-root .v8-chart [data-active='true'] .v8-bar {
+  fill: var(--color-primary-700);
+}
+
+.v8-root .v8-chart svg:focus-visible {
+  outline: 2px solid var(--egeep-charcoal);
+  outline-offset: 4px;
+}
+
+.v8-root .v8-tooltip {
+  pointer-events: none;
+  position: absolute;
+  z-index: 5;
+  transform: translate(-50%, calc(-100% - 10px));
+  border-radius: 0.375rem;
+  background-color: var(--egeep-charcoal);
+  padding: 0.35rem 0.75rem;
+  color: var(--egeep-ivory);
+  font-size: var(--text-sm);
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+/* Map arcs draw in once */
+.v8-root .v8-arc {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1600ms var(--v8-ease);
+}
+
+.v8-root .v8-map[data-in='false'] .v8-arc {
+  stroke-dashoffset: 1;
+}
+
+/* Smooth filter transitions (View Transitions API crossfade) */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 220ms;
+}
+
+/* Drawer */
+.v8-root .v8-drawer {
+  animation: v8-drawer-in 320ms var(--v8-ease);
+}
+
+@keyframes v8-drawer-in {
+  from {
+    transform: translateX(var(--v8-drawer-from, 100%));
+  }
+}
+
+.v8-root[dir='rtl'] .v8-drawer {
+  --v8-drawer-from: -100%;
+}
+
+.v8-root .v8-fade-in {
+  animation: v8-fade 260ms var(--v8-ease);
+}
+
+@keyframes v8-fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .v8-root *,
+  .v8-root *::before,
+  .v8-root *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .v8-root .v8-lift:hover,
+  .v8-root .v8-lift:focus-within {
+    transform: none;
+  }
+
+  .v8-root .v8-chart[data-in='false'] .v8-bar-col,
+  .v8-root .v8-chart[data-in='false'] .v8-bar-row {
+    transform: none;
+  }
+
+  .v8-root .v8-map[data-in='false'] .v8-arc {
+    stroke-dashoffset: 0;
+  }
+}

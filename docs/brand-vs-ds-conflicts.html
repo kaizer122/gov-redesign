@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EGEEP brand guide vs UAE Design System: conflicts</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #000; color: #fff; font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 17px; margin: 28px 0 8px; padding-top: 12px; border-top: 1px solid #333; }
+  p, li { color: #ddd; }
+  .meta { color: #999; font-size: 13px; margin: 0 0 16px; }
+  a { color: #d7bc6d; }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #222; vertical-align: top; }
+  th { color: #999; font-weight: 600; }
+  code { font: 13px ui-monospace, SFMono-Regular, Menlo, monospace; color: #eee; }
+  .sw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; border: 1px solid #444; vertical-align: -1px; margin-right: 6px; }
+  .tag { font-size: 12px; padding: 1px 6px; border-radius: 3px; background: #1a1a1a; border: 1px solid #333; white-space: nowrap; }
+  .high { border-color: #b33; color: #f99; }
+  .med { border-color: #a80; color: #fc6; }
+  .low { border-color: #555; color: #bbb; }
+  .fail { color: #f88; }
+  .pass { color: #8d8; }
+</style>
+</head>
+<body>
+<main>
+<h1>EGEEP brand guide vs UAE Design System 3.0</h1>
+<p class="meta">Sources: EGEEP Brand Guideline (Aug 2026) and the <a href="https://designsystem.gov.ae/docs/getting-started" target="_blank" rel="noopener noreferrer">UAE Design System</a> package <code>@aegov/design-system</code> 3.0.7.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>#</th><th>Conflict</th><th>Severity</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Typefaces</td><td><span class="tag high">High</span></td></tr>
+<tr><td>2</td><td>How much gold the UI uses</td><td><span class="tag high">High</span></td></tr>
+<tr><td>3</td><td>Royal Gold vs DS gold, button contrast</td><td><span class="tag med">Medium</span></td></tr>
+<tr><td>4</td><td>Cool DS greys vs warm brand charcoal</td><td><span class="tag low">Low</span></td></tr>
+<tr><td>5</td><td>Programme colours missing from the DS</td><td><span class="tag med">Medium</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>1. Typefaces</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th></th><th>Brand</th><th>Design System default</th></tr></thead>
+<tbody>
+<tr><td>Latin body / headings</td><td>Sakkal Majalla</td><td>Roboto / Inter</td></tr>
+<tr><td>Arabic body / headings</td><td>Sakkal Majalla</td><td>Noto Kufi Arabic / Alexandria</td></tr>
+<tr><td>Source</td><td>Self-hosted woff2</td><td>Google Fonts</td></tr>
+</tbody>
+</table>
+</div>
+<h2>2. How much gold the UI uses</h2>
+<p>The DS sets <code>primary</code> to gold. 26 component styles use it, including solid buttons, links, tabs, focus states, form controls, header, hero and footer.</p>
+<p>The brand says: avoid large gold backgrounds and avoid overusing gold in digital UI. It reserves gold for headings, dividers and accents.</p>
+<h2>3. Royal Gold vs DS gold</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Brand</th><th>Nearest DS shade</th><th>White text on it</th></tr></thead>
+<tbody>
+<tr><td><span class="sw" style="background:#997133"></span>Royal Gold <code>#997133</code></td><td><span class="sw" style="background:#92722A"></span><code>aegold-600</code> <code>#92722A</code></td><td><span class="fail">4.41 on Royal Gold (fails AA)</span><br><span class="pass">4.50 on aegold-600 (passes)</span></td></tr>
+<tr><td><span class="sw" style="background:#B68A33"></span>Logo gold <code>#B68A33</code></td><td><span class="sw" style="background:#B68A35"></span><code>aegold-500</code> <code>#B68A35</code></td><td>Identical colour; logo only</td></tr>
+</tbody>
+</table>
+</div>
+<h2>4. Neutrals</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Brand</th><th>Nearest DS</th><th>Result</th></tr></thead>
+<tbody>
+<tr><td><span class="sw" style="background:#F9F7F1"></span>Ivory <code>#F9F7F1</code></td><td><span class="sw" style="background:#F9F7ED"></span><code>aegold-50</code></td><td class="pass">Match</td></tr>
+<tr><td><span class="sw" style="background:#E7E7E7"></span>Light Grey <code>#E7E7E7</code></td><td><span class="sw" style="background:#E8E8E8"></span><code>whitely-500</code></td><td class="pass">Match</td></tr>
+<tr><td><span class="sw" style="background:#1A1A19"></span>Charcoal <code>#1A1A19</code></td><td><span class="sw" style="background:#1B1D21"></span><code>aeblack-900</code></td><td>DS greys lean blue; brand charcoal is warm</td></tr>
+</tbody>
+</table>
+</div>
+<h2>5. Programme colours</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Brand</th><th>Nearest DS</th><th>Gap</th></tr></thead>
+<tbody>
+<tr><td><span class="sw" style="background:#2F5CA0"></span>Deep Blue <code>#2F5CA0</code></td><td><span class="sw" style="background:#00608D"></span><code>seablue-800</code></td><td>Large</td></tr>
+<tr><td><span class="sw" style="background:#4B3B2A"></span>Espresso <code>#4B3B2A</code></td><td><span class="sw" style="background:#5D3B26"></span><code>aegold-900</code></td><td>Moderate</td></tr>
+<tr><td><span class="sw" style="background:#7B1F2D"></span>Burgundy <code>#7B1F2D</code></td><td><span class="sw" style="background:#7C2320"></span><code>aered-900</code></td><td>Small, but reads as the DS error red</td></tr>
+<tr><td><span class="sw" style="background:#417B5D"></span>Green <code>#417B5D</code></td><td><span class="sw" style="background:#3F8E50"></span><code>aegreen-600</code></td><td>Large</td></tr>
+</tbody>
+</table>
+</div>
+<p>The DS supporting colours (camel, sea blue) are not in the brand palette.</p>
+<h2>No conflict</h2>
+<ul>
+<li>Patterns: the DS has none, so the brand rules add to it.</li>
+<li>Accessibility and component markup: the brand guide is silent; DS rules apply.</li>
+</ul>
+</main>
+</body>
+</html>

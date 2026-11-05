@@ -1,0 +1,492 @@
+/*
+ * v5 "Federal Prestige": the brand guide's own page grammar on the web. White pages, Ivory bands,
+ * a Royal Gold hairline under every heading block, Deep Charcoal footer closed by a solid gold band.
+ * Tokens are scoped to .v5-root (docs/DESIGN_SYSTEM.md#per-version-theming).
+ */
+
+.v5-root {
+  --egeep-gold: #997133;
+  --egeep-grey-light: #e7e7e7;
+  --egeep-charcoal: #1a1a19;
+  --egeep-ivory: #f9f7f1;
+  --egeep-blue: #2f5ca0;
+  --egeep-espresso: #4b3b2a;
+  --egeep-burgundy: #7b1f2d;
+  --egeep-green: #417b5d;
+  --v5-muted: #5c5e60;
+
+  /* Royal Gold scale (600 = brand gold) so DS components follow the brand */
+  --color-primary-50: #fcf6ee;
+  --color-primary-100: #f9ebd7;
+  --color-primary-200: #f0d6b3;
+  --color-primary-300: #e1ba82;
+  --color-primary-400: #c99c59;
+  --color-primary-500: #ad823f;
+  --color-primary-600: #997133;
+  --color-primary-700: #7c5921;
+  --color-primary-800: #66451f;
+  --color-primary-900: #52361e;
+  --color-primary-950: #311f13;
+  /* DS focus rings use the support scale: a dark gold ring is ≥ 3:1 on white and ivory */
+  --color-primary-support-600: #66451f;
+
+  /* Sakkal Majalla renders about 20% smaller than Roboto: scale the type tokens up */
+  --text-xs: 1rem;
+  --text-xs--line-height: 1.5;
+  --text-sm: 1.125rem;
+  --text-sm--line-height: 1.5;
+  --text-base: 1.25rem;
+  --text-base--line-height: 1.55;
+  --text-lg: 1.375rem;
+  --text-lg--line-height: 1.55;
+  --text-xl: 1.5rem;
+  --text-xl--line-height: 1.45;
+  --text-2xl: 1.75rem;
+  --text-2xl--line-height: 1.35;
+  --text-3xl: 2.25rem;
+  --text-3xl--line-height: 1.25;
+  --text-4xl: 2.75rem;
+  --text-4xl--line-height: 1.2;
+  --text-5xl: 3.5rem;
+  --text-5xl--line-height: 1.12;
+  --text-6xl: 4.25rem;
+  --text-6xl--line-height: 1.08;
+  --text-h1: 4.25rem;
+  --text-h1--line-height: 1.1;
+  --text-h2: 3.5rem;
+  --text-h2--line-height: 1.12;
+  --text-h3: 3rem;
+  --text-h3--line-height: 1.15;
+  --text-h4: 2.5rem;
+  --text-h4--line-height: 1.2;
+  --text-h5: 2rem;
+  --text-h5--line-height: 1.25;
+  --text-h6: 1.625rem;
+  --text-h6--line-height: 1.3;
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #fff;
+  color: var(--egeep-charcoal);
+  font-size: var(--text-base);
+  line-height: var(--text-base--line-height);
+  /* Only Regular exists: never let the browser fake a bold */
+  font-synthesis: none;
+}
+
+/* Arabic needs more size and leading than Latin at the same token */
+.v5-root[dir='rtl'] {
+  --text-xs: 1.0625rem;
+  --text-xs--line-height: 1.7;
+  --text-sm: 1.1875rem;
+  --text-sm--line-height: 1.75;
+  --text-base: 1.3125rem;
+  --text-base--line-height: 1.8;
+  --text-lg: 1.4375rem;
+  --text-lg--line-height: 1.8;
+  --text-xl: 1.5625rem;
+  --text-xl--line-height: 1.7;
+  --text-2xl: 1.8125rem;
+  --text-2xl--line-height: 1.55;
+  --text-3xl: 2.3125rem;
+  --text-3xl--line-height: 1.45;
+  --text-4xl: 2.8125rem;
+  --text-4xl--line-height: 1.4;
+  --text-h1--line-height: 1.3;
+  --text-h2--line-height: 1.35;
+  --text-h3--line-height: 1.35;
+  --text-h4--line-height: 1.4;
+  --text-h5--line-height: 1.45;
+  --text-h6--line-height: 1.5;
+}
+
+.v5-root,
+.v5-root[dir='rtl'] {
+  --font-body: 'Sakkal Majalla', sans-serif;
+  --font-heading: 'Sakkal Majalla', sans-serif;
+  --font-alexandria: 'Sakkal Majalla', sans-serif;
+  --font-notokufi: 'Sakkal Majalla', sans-serif;
+  --font-inter: 'Sakkal Majalla', sans-serif;
+  --font-roboto: 'Sakkal Majalla', sans-serif;
+  font-family: 'Sakkal Majalla', sans-serif;
+}
+
+.v5-root > main {
+  flex: 1 0 auto;
+}
+
+@layer base {
+  .v5-root p {
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  /* Large and light: hierarchy comes from size, colour and gold rules, never a synthetic bold */
+  .v5-root :is(h1, h2, h3, h4, h5, h6, strong, b, th, dt, dd, label, button, .aegov-btn) {
+    font-weight: 400;
+  }
+
+  .v5-root :is(h1, h2, h3, h4, h5, h6) {
+    font-family: 'Sakkal Majalla', sans-serif;
+  }
+}
+
+/* Latin-only small capitals for eyebrows; Arabic is never tracked or upper-cased */
+.v5-root .v5-eyebrow {
+  color: var(--v5-muted);
+  font-size: var(--text-sm);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.v5-root[dir='rtl'] .v5-eyebrow {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Gold hairline under a heading block (the guide's page grammar) */
+.v5-root .v5-hairline {
+  height: 1px;
+  border: 0;
+  background-color: var(--egeep-gold);
+}
+
+/* Skip link */
+.v5-root .v5-skip-link {
+  position: absolute;
+  inset-inline-start: 0.75rem;
+  top: 0.75rem;
+  z-index: 100;
+  transform: translateY(-200%);
+  background-color: var(--egeep-charcoal);
+  padding: 0.75rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.v5-root .v5-skip-link:focus {
+  transform: none;
+  outline: 2px solid var(--color-primary-400);
+  outline-offset: 2px;
+}
+
+/* Visible focus: 2 px dark gold ring on light surfaces, light gold on charcoal */
+.v5-root :is(a, button, input, select, textarea, summary, [tabindex='0']):focus-visible,
+.v5-root main:focus-visible {
+  outline: 2px solid var(--color-primary-800);
+  outline-offset: 2px;
+}
+
+.v5-root .v5-dark :is(a, button):focus-visible {
+  outline-color: var(--color-primary-300);
+}
+
+/* Buttons: filled buttons are gold-700 (white text 6.35:1); hover goes darker, never lighter */
+.v5-root .aegov-btn {
+  --btn-bg: var(--color-primary-700);
+  --btn-border-color: var(--color-primary-700);
+  --btn-bg-hover: var(--color-primary-800);
+  --btn-fg: #fff;
+  border-radius: 0;
+  font-size: var(--text-base);
+  letter-spacing: 0.01em;
+}
+
+.v5-root .aegov-btn.btn-outline {
+  --btn-bg: transparent;
+  --btn-fg: var(--color-primary-800);
+  --btn-border-color: var(--color-primary-600);
+  --btn-bg-hover: var(--color-primary-50);
+}
+
+.v5-root .aegov-btn.btn-secondary {
+  --btn-bg: var(--egeep-charcoal);
+  --btn-border-color: var(--egeep-charcoal);
+  --btn-bg-hover: #000;
+  --btn-fg: #fff;
+}
+
+.v5-root .aegov-btn.btn-link {
+  --btn-fg: var(--color-primary-800);
+}
+
+.v5-root .v5-dark .aegov-btn.btn-outline {
+  --btn-fg: #fff;
+  --btn-border-color: var(--color-primary-300);
+  --btn-bg-hover: rgb(255 255 255 / 0.08);
+}
+
+.v5-root .aegov-link {
+  --link-fg: var(--color-primary-700);
+  --link-fg-hover: var(--color-primary-900);
+  font-size: var(--text-base);
+}
+
+.v5-root .aegov-badge {
+  --badge-bg: var(--egeep-ivory);
+  --badge-fg: var(--egeep-charcoal);
+  border-radius: 0;
+  font-size: var(--text-sm);
+  font-weight: 400;
+}
+
+.v5-root .aegov-card {
+  border-radius: 0;
+}
+
+.v5-root .aegov-accordion {
+  --accordion-title-fg: var(--egeep-charcoal);
+  --accordion-title-fg-hover: var(--color-primary-800);
+  --accordion-title-fg-active: var(--color-primary-800);
+  --accordion-item-border: var(--egeep-grey-light);
+}
+
+.v5-root .aegov-accordion .accordion-title button {
+  font-size: var(--text-lg);
+}
+
+.v5-root .aegov-quote {
+  --quote-bg: transparent;
+  --quote-border: var(--egeep-gold);
+  --quote-fg: var(--egeep-charcoal);
+  padding-inline-end: 0;
+  padding-block: 0.25rem;
+}
+
+.v5-root .aegov-form-control:not(.control-error) {
+  --form-input-ring: var(--color-primary-600);
+  --form-label-fg: var(--egeep-charcoal);
+}
+
+.v5-root .aegov-form-control :is(input, select, textarea) {
+  border-radius: 0;
+  font-size: var(--text-base);
+}
+
+.v5-root .aegov-form-control label {
+  font-size: var(--text-base);
+}
+
+/* Breadcrumb: secondary grey text with gold-700 links */
+.v5-root nav.aegov-breadcrumb > ol {
+  color: var(--v5-muted);
+  font-size: var(--text-sm);
+}
+
+.v5-root nav.aegov-breadcrumb a {
+  max-width: none;
+  color: var(--color-primary-700);
+}
+
+.v5-root nav.aegov-breadcrumb a:hover {
+  color: var(--color-primary-900);
+}
+
+.v5-root nav.aegov-breadcrumb [aria-current='page'] {
+  max-width: none;
+}
+
+/* Tabs */
+.v5-root .aegov-tab .tab-link {
+  font-size: var(--text-lg);
+  font-weight: 400;
+}
+
+/* Header */
+.v5-root .aegov-header {
+  --header-gradient-from: var(--egeep-gold);
+  --header-gradient-to: var(--egeep-gold);
+  background-color: #fff;
+}
+
+.v5-root .aegov-header .header-navs {
+  border-top: 1px solid var(--egeep-grey-light);
+  border-bottom: 1px solid var(--egeep-gold);
+  background-color: #fff;
+}
+
+.v5-root .aegov-header .main-navigation .menu > .menu-item > a,
+.v5-root .main-navigation .v5-nav-toggle {
+  font-size: var(--text-lg);
+  font-weight: 400;
+}
+
+.v5-root .main-navigation .v5-nav-toggle {
+  display: inline-flex;
+  height: calc(var(--spacing) * 16);
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+  border-bottom: 0.188rem solid transparent;
+  padding-inline: calc(var(--spacing) * 3);
+  color: var(--egeep-charcoal);
+}
+
+.v5-root .main-navigation .v5-nav-toggle:hover,
+.v5-root .main-navigation .v5-nav-toggle[aria-expanded='true'] {
+  border-color: var(--color-primary-600);
+  color: var(--color-primary-800);
+}
+
+.v5-root .main-navigation .active-page > .v5-nav-toggle {
+  border-color: var(--color-primary-600);
+  color: var(--color-primary-800);
+}
+
+/* Footer: Deep Charcoal with the white logo and a solid Royal Gold band along the bottom edge */
+.v5-root .aegov-footer {
+  --footer-bg: var(--egeep-charcoal);
+  --footer-link-fg: #e7e7e7;
+  --footer-link-fg-hover: var(--color-primary-300);
+  --footer-contact-link-fg: #fff;
+  --footer-contact-link-fg-hover: var(--color-primary-300);
+  --footer-social-link-fg: #e7e7e7;
+  --footer-social-link-fg-hover: var(--color-primary-300);
+  --footer-accordion-btn-fg: #fff;
+  --footer-accordion-btn-fg-active: var(--color-primary-300);
+  --footer-accordion-icon-fg: var(--color-primary-300);
+  --footer-bottom-border: rgb(255 255 255 / 0.14);
+  background-color: var(--egeep-charcoal);
+  color: #e7e7e7;
+}
+
+.v5-root .aegov-footer::before {
+  display: none;
+}
+
+/* Workflow: DS steps with gold connectors */
+.v5-root .v5-workflow {
+  --step-badge-bg: #fff;
+  --step-badge-fg: var(--color-primary-800);
+  --step-badge-border: var(--egeep-gold);
+  --step-connector-bg: var(--egeep-gold);
+}
+
+.v5-root .v5-workflow .step-badge {
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: var(--text-2xl);
+  font-weight: 400;
+}
+
+.v5-root .v5-workflow .step-connector {
+  inset-inline-start: 4.25rem;
+  width: calc(100% - 4.75rem);
+}
+
+.v5-root .v5-workflow .step-connector-state {
+  height: 1px;
+}
+
+.v5-root .v5-workflow .step-connector-vertical {
+  inset-inline-start: 1.625rem;
+  top: 4rem;
+  height: calc(100% - 4.5rem);
+  width: 1px;
+  margin-inline-start: 0;
+}
+
+/* Modal */
+.v5-root .aegov-modal-wrapper {
+  border-radius: 0;
+  border-top: 3px solid var(--egeep-gold);
+}
+
+/* Motion: fade/rise reveal, hero crossfade with slow zoom, pattern drift. Off under reduced motion. */
+.v5-root .v5-reveal {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+
+.v5-root .v5-reveal.v5-in {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes v5-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes v5-drift {
+  from {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  to {
+    transform: translate3d(0, -1.5rem, 0) rotate(4deg);
+  }
+}
+
+.v5-root .v5-zoom {
+  animation: v5-zoom 10s ease-out both;
+}
+
+.v5-root .v5-drift {
+  animation: v5-drift 18s ease-in-out infinite alternate;
+}
+
+.v5-root .v5-hero-image {
+  transition: opacity 1.4s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .v5-root .v5-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .v5-root .v5-zoom,
+  .v5-root .v5-drift {
+    animation: none;
+  }
+
+  .v5-root .v5-hero-image {
+    transition: none;
+  }
+}
+
+/* Header logo: full-colour bilingual lockup sized by height; padding keeps the 18% clear space */
+.v5-root .aegov-header .logo img.v5-logo {
+  width: auto;
+  max-width: none;
+  height: 5rem;
+  max-height: none;
+}
+
+.v5-root .aegov-header .logo img.v5-logo-mobile,
+.v5-root .responsive-menu img.v5-logo-mobile {
+  width: auto;
+  max-width: none;
+  height: 3.25rem;
+  max-height: none;
+}
+
+/* Hero controls: 44 px targets with a thin gold frame */
+.v5-root .v5-hero-control {
+  display: inline-flex;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid color-mix(in srgb, var(--egeep-gold) 55%, transparent);
+  color: var(--egeep-charcoal);
+  transition: background-color 0.2s;
+}
+
+.v5-root .v5-hero-control:hover {
+  background-color: #fff;
+}
+
+.v5-root .v5-hero-control:disabled {
+  opacity: 0.5;
+}
