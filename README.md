@@ -20,7 +20,7 @@ Every version implements the same 8 pages: home, about, areas, countries, best-p
 
 ## Run it locally
 
-You need [Node.js](https://nodejs.org) 20.19 or newer (22 LTS works) and access to this private repository.
+You need [Node.js](https://nodejs.org) 20.19 or newer (22 LTS works).
 
 ```sh
 git clone https://github.com/kaizer122/gov-redesign.git
